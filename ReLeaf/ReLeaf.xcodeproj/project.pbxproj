@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F94C8AF2D0DAE1600CEA70D /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */; };
+		3F94C8B02D0DAE1600CEA70D /*  ProdComp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8AE2D0DAE1600CEA70D /*  ProdComp.storyboard */; };
 		8398BCD62D07137A00DD8CFD /* AdminDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */; };
 		ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */; };
 		F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233682C2CF4854000A988FC /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
+		3F94C8AE2D0DAE1600CEA70D /*  ProdComp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = " ProdComp.storyboard"; sourceTree = "<group>"; };
 		8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminDashboard.storyboard; sourceTree = "<group>"; };
 		ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Impact Tracker.storyboard"; sourceTree = "<group>"; };
 		F23368292CF4854000A988FC /* ReLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +113,8 @@
 				F23368322CF4854000A988FC /* Main.storyboard */,
 				F23368352CF4854200A988FC /* Assets.xcassets */,
 				F23368372CF4854200A988FC /* LaunchScreen.storyboard */,
+				3F94C8AE2D0DAE1600CEA70D /*  ProdComp.storyboard */,
+				3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */,
 				ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */,
 				8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */,
 				F233683A2CF4854200A988FC /* Info.plist */,
@@ -241,7 +247,9 @@
 				8398BCD62D07137A00DD8CFD /* AdminDashboard.storyboard in Resources */,
 				ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */,
 				F23368362CF4854200A988FC /* Assets.xcassets in Resources */,
+				3F94C8AF2D0DAE1600CEA70D /* Reviews.storyboard in Resources */,
 				F23368342CF4854000A988FC /* Main.storyboard in Resources */,
+				3F94C8B02D0DAE1600CEA70D /*  ProdComp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,10 @@
 		3F94C8AF2D0DAE1600CEA70D /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */; };
 		3F94C8B02D0DAE1600CEA70D /*  ProdComp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8AE2D0DAE1600CEA70D /*  ProdComp.storyboard */; };
 		8398BCD62D07137A00DD8CFD /* AdminDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */; };
+		83F9ECA52D0DB8A700816FC8 /* bader special offer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */; };
+		83F9ECA62D0DB8A700816FC8 /* bader's search and filter page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */; };
+		83F9ECA72D0DB8A700816FC8 /* Bader discount page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA32D0DB8A700816FC8 /* Bader discount page.storyboard */; };
+		83F9ECA82D0DB8A700816FC8 /* Bader set coupons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */; };
 		ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */; };
 		D096691F2D0DB377003DA933 /* Cart Page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D096691E2D0DB377003DA933 /* Cart Page.storyboard */; };
 		D09669212D0DB38F003DA933 /* Order page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669202D0DB38F003DA933 /* Order page.storyboard */; };
@@ -48,6 +52,10 @@
 		3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
 		3F94C8AE2D0DAE1600CEA70D /*  ProdComp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = " ProdComp.storyboard"; sourceTree = "<group>"; };
 		8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminDashboard.storyboard; sourceTree = "<group>"; };
+		83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "bader special offer.storyboard"; sourceTree = "<group>"; };
+		83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "bader's search and filter page.storyboard"; sourceTree = "<group>"; };
+		83F9ECA32D0DB8A700816FC8 /* Bader discount page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bader discount page.storyboard"; sourceTree = "<group>"; };
+		83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bader set coupons.storyboard"; sourceTree = "<group>"; };
 		ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Impact Tracker.storyboard"; sourceTree = "<group>"; };
 		D096691E2D0DB377003DA933 /* Cart Page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Cart Page.storyboard"; sourceTree = "<group>"; };
 		D09669202D0DB38F003DA933 /* Order page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Order page.storyboard"; sourceTree = "<group>"; };
@@ -128,6 +136,10 @@
 				F23368372CF4854200A988FC /* LaunchScreen.storyboard */,
 				3F94C8AE2D0DAE1600CEA70D /*  ProdComp.storyboard */,
 				3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */,
+				83F9ECA32D0DB8A700816FC8 /* Bader discount page.storyboard */,
+				83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */,
+				83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */,
+				83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */,
 				ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */,
 				8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */,
 				D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */,
@@ -262,13 +274,17 @@
 				D5165D4A2D0DB1B100CC2BF7 /* Notifications.storyboard in Resources */,
 				8398BCD62D07137A00DD8CFD /* AdminDashboard.storyboard in Resources */,
 				ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */,
+				83F9ECA82D0DB8A700816FC8 /* Bader set coupons.storyboard in Resources */,
+				83F9ECA52D0DB8A700816FC8 /* bader special offer.storyboard in Resources */,
 				D09669212D0DB38F003DA933 /* Order page.storyboard in Resources */,
 				F23368362CF4854200A988FC /* Assets.xcassets in Resources */,
 				3F94C8AF2D0DAE1600CEA70D /* Reviews.storyboard in Resources */,
 				D096691F2D0DB377003DA933 /* Cart Page.storyboard in Resources */,
+				83F9ECA72D0DB8A700816FC8 /* Bader discount page.storyboard in Resources */,
 				F23368342CF4854000A988FC /* Main.storyboard in Resources */,
 				D5165D4C2D0DB1BB00CC2BF7 /* StoreManager.storyboard in Resources */,
 				3F94C8B02D0DAE1600CEA70D /*  ProdComp.storyboard in Resources */,
+				83F9ECA62D0DB8A700816FC8 /* bader's search and filter page.storyboard in Resources */,
 				D09669252D0DB3DE003DA933 /* Product Info.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

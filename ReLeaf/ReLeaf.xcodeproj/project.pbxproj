@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3F94C8AF2D0DAE1600CEA70D /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */; };
-		3F94C8B02D0DAE1600CEA70D /*  ProdComp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8AE2D0DAE1600CEA70D /*  ProdComp.storyboard */; };
+		3F94C8B02D0DAE1600CEA70D /*  ProductComparison.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8AE2D0DAE1600CEA70D /*  ProductComparison.storyboard */; };
+		3F94C8B22D0DBCA800CEA70D /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94C8B12D0DBCA800CEA70D /* WriteReviewViewController.swift */; };
+		3F94C8B42D0DC25400CEA70D /* ProdCompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94C8B32D0DC25400CEA70D /* ProdCompViewController.swift */; };
+		3F94C8B62D0DCE7B00CEA70D /* ProductComp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8B52D0DCE7B00CEA70D /* ProductComp.storyboard */; };
 		8398BCD62D07137A00DD8CFD /* AdminDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */; };
 		83F9ECA52D0DB8A700816FC8 /* bader special offer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */; };
 		83F9ECA62D0DB8A700816FC8 /* bader's search and filter page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */; };
@@ -51,7 +54,10 @@
 
 /* Begin PBXFileReference section */
 		3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
-		3F94C8AE2D0DAE1600CEA70D /*  ProdComp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = " ProdComp.storyboard"; sourceTree = "<group>"; };
+		3F94C8AE2D0DAE1600CEA70D /*  ProductComparison.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = " ProductComparison.storyboard"; sourceTree = "<group>"; };
+		3F94C8B12D0DBCA800CEA70D /* WriteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
+		3F94C8B32D0DC25400CEA70D /* ProdCompViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdCompViewController.swift; sourceTree = "<group>"; };
+		3F94C8B52D0DCE7B00CEA70D /* ProductComp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductComp.storyboard; sourceTree = "<group>"; };
 		8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminDashboard.storyboard; sourceTree = "<group>"; };
 		83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "bader special offer.storyboard"; sourceTree = "<group>"; };
 		83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "bader's search and filter page.storyboard"; sourceTree = "<group>"; };
@@ -136,8 +142,11 @@
 				F23368322CF4854000A988FC /* Main.storyboard */,
 				F23368352CF4854200A988FC /* Assets.xcassets */,
 				F23368372CF4854200A988FC /* LaunchScreen.storyboard */,
-				3F94C8AE2D0DAE1600CEA70D /*  ProdComp.storyboard */,
+				3F94C8AE2D0DAE1600CEA70D /*  ProductComparison.storyboard */,
+				3F94C8B52D0DCE7B00CEA70D /* ProductComp.storyboard */,
+				3F94C8B32D0DC25400CEA70D /* ProdCompViewController.swift */,
 				3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */,
+				3F94C8B12D0DBCA800CEA70D /* WriteReviewViewController.swift */,
 				83F9ECA32D0DB8A700816FC8 /* Bader discount page.storyboard */,
 				83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */,
 				83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */,
@@ -287,9 +296,10 @@
 				83F9ECA72D0DB8A700816FC8 /* Bader discount page.storyboard in Resources */,
 				F23368342CF4854000A988FC /* Main.storyboard in Resources */,
 				D5165D4C2D0DB1BB00CC2BF7 /* StoreManager.storyboard in Resources */,
-				3F94C8B02D0DAE1600CEA70D /*  ProdComp.storyboard in Resources */,
+				3F94C8B02D0DAE1600CEA70D /*  ProductComparison.storyboard in Resources */,
 				83F9ECA62D0DB8A700816FC8 /* bader's search and filter page.storyboard in Resources */,
 				D09669252D0DB3DE003DA933 /* Product Info.storyboard in Resources */,
+				3F94C8B62D0DCE7B00CEA70D /* ProductComp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +326,8 @@
 			files = (
 				F23368312CF4854000A988FC /* ViewController.swift in Sources */,
 				F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */,
+				3F94C8B22D0DBCA800CEA70D /* WriteReviewViewController.swift in Sources */,
+				3F94C8B42D0DC25400CEA70D /* ProdCompViewController.swift in Sources */,
 				F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

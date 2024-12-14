@@ -177,7 +177,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Submit Review"/>
                                 <connections>
-                                    <action selector="submitReviewTapped:" destination="5xA-mn-fUN" eventType="touchUpInside" id="ewT-kl-KPi"/>
+                                    <action selector="submitReviewTapped:" destination="5xA-mn-fUN" eventType="touchUpInside" id="Ss8-KH-hTe"/>
                                     <action selector="submitReviewTapped:" destination="5lE-Ir-nUI" eventType="touchUpInside" id="whS-As-Lhd"/>
                                 </connections>
                             </button>
@@ -221,7 +221,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Continue"/>
                                         <connections>
-                                            <action selector="continueButtonTapped:" destination="5xA-mn-fUN" eventType="touchUpInside" id="xUr-u9-Zbl"/>
+                                            <action selector="continueButtonTapped:" destination="5xA-mn-fUN" eventType="touchUpInside" id="2g8-IO-Mch"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -239,8 +239,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Write a Review" style="editor" id="A1K-AE-Vwo"/>
                     <connections>
-                        <outlet property="opaqueView" destination="JVA-V9-ZNC" id="JwD-cF-gx0"/>
-                        <outlet property="thankYouPopupView" destination="Bip-LD-t5c" id="JWd-wf-H9i"/>
+                        <outlet property="opaqueView" destination="JVA-V9-ZNC" id="Cyf-TF-Jfd"/>
+                        <outlet property="thankYouPopupView" destination="Bip-LD-t5c" id="Lyg-88-IXs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huT-ZS-ZgP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

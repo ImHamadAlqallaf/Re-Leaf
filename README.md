@@ -1,2 +1,1 @@
-# Re-Leaf
-new ReLeaf
+# ReLeaf

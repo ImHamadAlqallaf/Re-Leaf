@@ -153,6 +153,37 @@
             </objects>
             <point key="canvasLocation" x="572" y="25"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="7BO-fF-5QS">
+            <objects>
+                <viewController id="P32-V8-8Wx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="waW-fN-xPM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" usesAttributedText="YES" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7zS-At-aem">
+                                <rect key="frame" x="53" y="396" width="281" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Once upon a time, in a world full of tall trees and giant volcanoes, there lived a little dinosaur named Dino. Dino wasn’t like the other dinosaurs. While his friends loved to stomp through the jungle or swim in the lakes, Dino always looked up at the sky, dreaming about the stars.</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="cellTitle"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iXO-a9-pfg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TyZ-fn-vkd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342.7480916030534" y="30.985915492957748"/>
+        </scene>
     </scenes>
     <resources>
         <image name="hand" width="1466" height="1466"/>

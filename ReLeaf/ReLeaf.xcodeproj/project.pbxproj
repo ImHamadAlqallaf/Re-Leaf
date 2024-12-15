@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F94C8AF2D0DAE1600CEA70D /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */; };
-		3F94C8B02D0DAE1600CEA70D /*  ProductComparison.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8AE2D0DAE1600CEA70D /*  ProductComparison.storyboard */; };
 		3F94C8B22D0DBCA800CEA70D /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94C8B12D0DBCA800CEA70D /* WriteReviewViewController.swift */; };
 		3F94C8B42D0DC25400CEA70D /* ProdCompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94C8B32D0DC25400CEA70D /* ProdCompViewController.swift */; };
 		3F94C8B62D0DCE7B00CEA70D /* ProductComp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8B52D0DCE7B00CEA70D /* ProductComp.storyboard */; };
@@ -33,6 +32,16 @@
 		F23368442CF4854300A988FC /* ReLeafTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23368432CF4854300A988FC /* ReLeafTests.swift */; };
 		F233684E2CF4854300A988FC /* ReLeafUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233684D2CF4854300A988FC /* ReLeafUITests.swift */; };
 		F23368502CF4854300A988FC /* ReLeafUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233684F2CF4854300A988FC /* ReLeafUITestsLaunchTests.swift */; };
+		F281C9562D0F397E00EFC1CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F281C9552D0F397E00EFC1CB /* GoogleService-Info.plist */; };
+		F281C9572D0F397E00EFC1CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F281C9552D0F397E00EFC1CB /* GoogleService-Info.plist */; };
+		F281C9582D0F397E00EFC1CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F281C9552D0F397E00EFC1CB /* GoogleService-Info.plist */; };
+		F281C95B2D0F3AA300EFC1CB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F281C95A2D0F3AA300EFC1CB /* FirebaseDatabase */; };
+		F281C95D2D0F45F600EFC1CB /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281C95C2D0F45F600EFC1CB /* ReviewsViewController.swift */; };
+		F281C95E2D0F45F600EFC1CB /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281C95C2D0F45F600EFC1CB /* ReviewsViewController.swift */; };
+		F281C95F2D0F45F600EFC1CB /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281C95C2D0F45F600EFC1CB /* ReviewsViewController.swift */; };
+		F281C9612D0F477700EFC1CB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F281C9602D0F477700EFC1CB /* FirebaseFirestore */; };
+		F281C9632D0F4DE900EFC1CB /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281C9622D0F4DE900EFC1CB /* Review.swift */; };
+		F281C9672D0F58D600EFC1CB /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281C9662D0F58D600EFC1CB /* ReviewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +63,6 @@
 
 /* Begin PBXFileReference section */
 		3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
-		3F94C8AE2D0DAE1600CEA70D /*  ProductComparison.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = " ProductComparison.storyboard"; sourceTree = "<group>"; };
 		3F94C8B12D0DBCA800CEA70D /* WriteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
 		3F94C8B32D0DC25400CEA70D /* ProdCompViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdCompViewController.swift; sourceTree = "<group>"; };
 		3F94C8B52D0DCE7B00CEA70D /* ProductComp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductComp.storyboard; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 		F23368492CF4854300A988FC /* ReLeafUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReLeafUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F233684D2CF4854300A988FC /* ReLeafUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReLeafUITests.swift; sourceTree = "<group>"; };
 		F233684F2CF4854300A988FC /* ReLeafUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReLeafUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F281C9552D0F397E00EFC1CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F281C95C2D0F45F600EFC1CB /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
+		F281C9622D0F4DE900EFC1CB /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		F281C9662D0F58D600EFC1CB /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F281C95B2D0F3AA300EFC1CB /* FirebaseDatabase in Frameworks */,
+				F281C9612D0F477700EFC1CB /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +156,12 @@
 				F23368322CF4854000A988FC /* Main.storyboard */,
 				F23368352CF4854200A988FC /* Assets.xcassets */,
 				F23368372CF4854200A988FC /* LaunchScreen.storyboard */,
-				3F94C8AE2D0DAE1600CEA70D /*  ProductComparison.storyboard */,
 				3F94C8B52D0DCE7B00CEA70D /* ProductComp.storyboard */,
 				3F94C8B32D0DC25400CEA70D /* ProdCompViewController.swift */,
 				3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */,
+				F281C9662D0F58D600EFC1CB /* ReviewsTableViewCell.swift */,
+				F281C95C2D0F45F600EFC1CB /* ReviewsViewController.swift */,
+				F281C9622D0F4DE900EFC1CB /* Review.swift */,
 				3F94C8B12D0DBCA800CEA70D /* WriteReviewViewController.swift */,
 				83F9ECA32D0DB8A700816FC8 /* Bader discount page.storyboard */,
 				83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */,
@@ -157,6 +173,7 @@
 				D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */,
 				D5165D4B2D0DB1BB00CC2BF7 /* StoreManager.storyboard */,
 				F233683A2CF4854200A988FC /* Info.plist */,
+				F281C9552D0F397E00EFC1CB /* GoogleService-Info.plist */,
 			);
 			path = ReLeaf;
 			sourceTree = "<group>";
@@ -194,6 +211,10 @@
 			dependencies = (
 			);
 			name = ReLeaf;
+			packageProductDependencies = (
+				F281C95A2D0F3AA300EFC1CB /* FirebaseDatabase */,
+				F281C9602D0F477700EFC1CB /* FirebaseFirestore */,
+			);
 			productName = ReLeaf;
 			productReference = F23368292CF4854000A988FC /* ReLeaf.app */;
 			productType = "com.apple.product-type.application";
@@ -266,6 +287,9 @@
 				Base,
 			);
 			mainGroup = F23368202CF4854000A988FC;
+			packageReferences = (
+				F281C9592D0F3AA300EFC1CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F233682A2CF4854000A988FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -293,10 +317,10 @@
 				F23368362CF4854200A988FC /* Assets.xcassets in Resources */,
 				3F94C8AF2D0DAE1600CEA70D /* Reviews.storyboard in Resources */,
 				D096691F2D0DB377003DA933 /* Cart Page.storyboard in Resources */,
+				F281C9562D0F397E00EFC1CB /* GoogleService-Info.plist in Resources */,
 				83F9ECA72D0DB8A700816FC8 /* Bader discount page.storyboard in Resources */,
 				F23368342CF4854000A988FC /* Main.storyboard in Resources */,
 				D5165D4C2D0DB1BB00CC2BF7 /* StoreManager.storyboard in Resources */,
-				3F94C8B02D0DAE1600CEA70D /*  ProductComparison.storyboard in Resources */,
 				83F9ECA62D0DB8A700816FC8 /* bader's search and filter page.storyboard in Resources */,
 				D09669252D0DB3DE003DA933 /* Product Info.storyboard in Resources */,
 				3F94C8B62D0DCE7B00CEA70D /* ProductComp.storyboard in Resources */,
@@ -307,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F281C9572D0F397E00EFC1CB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F281C9582D0F397E00EFC1CB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +352,11 @@
 			files = (
 				F23368312CF4854000A988FC /* ViewController.swift in Sources */,
 				F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */,
+				F281C9632D0F4DE900EFC1CB /* Review.swift in Sources */,
 				3F94C8B22D0DBCA800CEA70D /* WriteReviewViewController.swift in Sources */,
 				3F94C8B42D0DC25400CEA70D /* ProdCompViewController.swift in Sources */,
+				F281C9672D0F58D600EFC1CB /* ReviewsTableViewCell.swift in Sources */,
+				F281C95D2D0F45F600EFC1CB /* ReviewsViewController.swift in Sources */,
 				F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F281C95E2D0F45F600EFC1CB /* ReviewsViewController.swift in Sources */,
 				F23368442CF4854300A988FC /* ReLeafTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F233684E2CF4854300A988FC /* ReLeafUITests.swift in Sources */,
+				F281C95F2D0F45F600EFC1CB /* ReviewsViewController.swift in Sources */,
 				F23368502CF4854300A988FC /* ReLeafUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,6 +700,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F281C9592D0F3AA300EFC1CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F281C95A2D0F3AA300EFC1CB /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F281C9592D0F3AA300EFC1CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		F281C9602D0F477700EFC1CB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F281C9592D0F3AA300EFC1CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F23368212CF4854000A988FC /* Project object */;
 }

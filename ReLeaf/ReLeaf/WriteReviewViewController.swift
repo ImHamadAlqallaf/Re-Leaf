@@ -13,15 +13,6 @@ protocol WriteReviewDelegate: AnyObject {
     func didSubmitReview(_ review: Review)
 }
 
-class ReviewTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var reviewTextLabel: UILabel!
-
-    func configure(with review: Review) {
-        reviewTextLabel.text = review.text
-    }
-}
-
 class WriteReviewViewController: UIViewController {
     
     @IBOutlet weak var reviewTextView: UITextView!
@@ -47,7 +38,9 @@ class WriteReviewViewController: UIViewController {
     
     
     //MARK: Star Rating Logic
-    @IBAction func starTapped(_ sender: UIButton){
+    
+    @IBAction func starTapped(_ sender: UIButton) {
+        
         switch sender {
         case star1:
             updateStarRating(to: 1)
@@ -75,33 +68,25 @@ class WriteReviewViewController: UIViewController {
                 button?.setImage(UIImage(systemName: "star"), for: .normal)
             }
         }
+        
     }
     
     
     
     // MARK: - Submit Review
     @IBAction func submitReviewTapped(_ sender: UIButton) {
-//        // CCheck if the review text is empty
-//        guard let reviewText = reviewTextView.text, !reviewText.trimmingCharacters(in: .whitespaces).isEmpty else {
-//            // show alert when the text is empty
-//            let alert = UIAlertController(title: "Invalid Input", message: "Please write somrthing in the review before submitiing", preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//            self.present(alert, animated: true, completion: nil)
-//            return
-//        }
-//        
-//        // Proceed to confirmation Alert
-//        showConfirmationAlert(reviewText: reviewText)
         
+        // validate Text Review
         guard let text = reviewTextView.text, !text.isEmpty else {
                     showAlert(message: "Please enter your review.")
                     return
                 }
+        //validate star rating
                 guard selectedRating > 0 else {
                     showAlert(message: "Please select a star rating.")
                     return
                 }
-
+        //Create new Review object
                 let newReview = Review(
                     id: UUID().uuidString,
                     userName: "Test User", // Replace with actual username from Firebase Auth later
@@ -109,16 +94,39 @@ class WriteReviewViewController: UIViewController {
                     rating: selectedRating,
                     timestamp: Date()
                 )
-
-                do {
-                    try db.collection("reviews").document(newReview.id).setData(from: newReview)
-                    showAlert(message: "Review submitted successfully!") {
-                        self.navigationController?.popViewController(animated: true)
+        
+        // Save review to Firestore
+        saveReviewToFirestore(review: newReview)
+    }
+    
+    private func saveReviewToFirestore(review: Review) {
+        do {
+                    try db.collection("reviews").document(review.id).setData(from: review) { [weak self] error in
+                        if let error = error {
+                            print("Error saving review: \(error.localizedDescription)")
+                            self?.showAlert(message: "Failed to submit review. Please try again.")
+                        } else {
+                            self?.delegate?.didSubmitReview(review)
+                            self?.showThankYouPopup()
+                        }
                     }
                 } catch {
-                    print("Error saving review: \(error.localizedDescription)")
+                    print("Error saving review to Firestore: \(error.localizedDescription)")
+                    showAlert(message: "Failed to submit review. Please try again.")
                 }
-    }
+            }
+    
+    // MARK: - Thank You Popup
+        private func showThankYouPopup() {
+            opaqueView.isHidden = false
+            thankYouPopupView.isHidden = false
+        }
+
+        @IBAction func thankYouContinueTapped(_ sender: UIButton) {
+            opaqueView.isHidden = true
+            thankYouPopupView.isHidden = true
+            navigationController?.popViewController(animated: true)
+        }
     
     // MARK: - Alert Helper
         private func showAlert(message: String, completion: (() -> Void)? = nil) {
@@ -129,6 +137,23 @@ class WriteReviewViewController: UIViewController {
             present(alert, animated: true)
         }
     }
+
+    // MARK: - UITextViewDelegate
+        extension WriteReviewViewController: UITextViewDelegate {
+            func textViewDidBeginEditing(_ textView: UITextView) {
+                if textView.text == "Write your review here..." {
+                    textView.text = ""
+                    textView.textColor = .black
+                }
+            }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Write your review here..."
+            textView.textColor = .lightGray
+        }
+    }
+}
 
     
 //    func showConfirmationAlert(reviewText: String) {

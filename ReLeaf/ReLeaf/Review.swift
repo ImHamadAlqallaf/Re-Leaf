@@ -13,5 +13,5 @@ struct Review: Codable {
     let userName: String
     let text: String
     let rating: Int // Rating from 1 to 5
-    let timestamp: Date
+    @ServerTimestamp var timestamp: Date?
 }

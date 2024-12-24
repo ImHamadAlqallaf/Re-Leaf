@@ -62,19 +62,6 @@ class ReviewsViewController: UIViewController,  UITableViewDataSource, UITableVi
            cell.configure(with: review)
            return cell
        }
-       
-////    @IBAction func addReviewTapped(_ sender: UIButton) {
-////        guard let writeReviewVC = storyboard?.instantiateViewController(withIdentifier: "WriteReviewViewController") as? WriteReviewViewController else {
-////            print("❌ Failed to instantiate WriteReviewViewController")
-////            return
-////        }
-//        
-//        // Set the delegate
-//        writeReviewVC.delegate = self
-//        print("🟢 Delegate set to ReviewsViewController")
-//        
-//        navigationController?.pushViewController(writeReviewVC, animated: true)
-//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "WriteReviewSegue" {
@@ -90,7 +77,7 @@ class ReviewsViewController: UIViewController,  UITableViewDataSource, UITableVi
    extension ReviewsViewController: WriteReviewDelegate {
        func didSubmitReview(_ review: Review) {
            print("🟢 Delegate method didSubmitReview triggered")
-           LocalDataService.shared.addReview(review) // Add the review to local storage
+           //LocalDataService.shared.addReview(review) // Add the review to local storage
                // Reload the reviews and update the table view
                loadReviews()  // This reloads the reviews and updates the UI
 

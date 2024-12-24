@@ -31,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="-2066.4122137404579" y="-305.63380281690144"/>
         </scene>
-        <!--ProductComp-->
+        <!--Reviews-->
         <scene sceneID="Uw9-Wv-36d">
             <objects>
-                <viewControllerPlaceholder storyboardName="ProductComp" id="dzX-s7-ffI" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Reviews" id="dzX-s7-ffI" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="uI6-Wv-mtT"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDJ-Sg-wIL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

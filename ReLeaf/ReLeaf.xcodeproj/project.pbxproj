@@ -21,13 +21,14 @@
 		D09669252D0DB3DE003DA933 /* Product Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669242D0DB3DE003DA933 /* Product Info.storyboard */; };
 		D5165D4A2D0DB1B100CC2BF7 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */; };
 		D5165D4C2D0DB1BB00CC2BF7 /* StoreManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5165D4B2D0DB1BB00CC2BF7 /* StoreManager.storyboard */; };
-		D538B0992D1AD029009F6E74 /* Reviewss.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D538B0982D1AD029009F6E74 /* Reviewss.storyboard */; };
+		D538B0992D1AD029009F6E74 /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D538B0982D1AD029009F6E74 /* Reviews.storyboard */; };
 		D538B09B2D1AD066009F6E74 /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538B09A2D1AD066009F6E74 /* ReviewsTableViewCell.swift */; };
 		D538B09D2D1AD073009F6E74 /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538B09C2D1AD073009F6E74 /* ReviewsViewController.swift */; };
 		D538B09F2D1AD078009F6E74 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538B09E2D1AD078009F6E74 /* Review.swift */; };
 		D538B0A32D1AD0B8009F6E74 /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538B0A22D1AD0B8009F6E74 /* WriteReviewViewController.swift */; };
 		D538B0A52D1AE231009F6E74 /* localData.json in Resources */ = {isa = PBXBuildFile; fileRef = D538B0A42D1AE231009F6E74 /* localData.json */; };
 		D538B0A92D1AFFAA009F6E74 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D538B0A82D1AFFAA009F6E74 /* Home.storyboard */; };
+		D538B0AB2D1B2EAB009F6E74 /* AReviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D538B0AA2D1B2EAB009F6E74 /* AReviews.storyboard */; };
 		F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233682C2CF4854000A988FC /* AppDelegate.swift */; };
 		F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233682E2CF4854000A988FC /* SceneDelegate.swift */; };
 		F23368312CF4854000A988FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23368302CF4854000A988FC /* ViewController.swift */; };
@@ -71,13 +72,14 @@
 		D09669242D0DB3DE003DA933 /* Product Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Info.storyboard"; sourceTree = "<group>"; };
 		D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		D5165D4B2D0DB1BB00CC2BF7 /* StoreManager.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreManager.storyboard; sourceTree = "<group>"; };
-		D538B0982D1AD029009F6E74 /* Reviewss.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Reviewss.storyboard; path = "../../../Re-Leaf_Abood/ReLeaf/ReLeaf/Reviewss.storyboard"; sourceTree = "<group>"; };
+		D538B0982D1AD029009F6E74 /* Reviews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Reviews.storyboard; path = "../../../Re-Leaf_Abood/ReLeaf/ReLeaf/Reviews.storyboard"; sourceTree = "<group>"; };
 		D538B09A2D1AD066009F6E74 /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
 		D538B09C2D1AD073009F6E74 /* ReviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
 		D538B09E2D1AD078009F6E74 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		D538B0A22D1AD0B8009F6E74 /* WriteReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
 		D538B0A42D1AE231009F6E74 /* localData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localData.json; sourceTree = "<group>"; };
 		D538B0A82D1AFFAA009F6E74 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D538B0AA2D1B2EAB009F6E74 /* AReviews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AReviews.storyboard; sourceTree = "<group>"; };
 		F23368292CF4854000A988FC /* ReLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F233682C2CF4854000A988FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F233682E2CF4854000A988FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,7 +154,8 @@
 				F23368372CF4854200A988FC /* LaunchScreen.storyboard */,
 				3F94C8B52D0DCE7B00CEA70D /* ProductComp.storyboard */,
 				3F94C8B32D0DC25400CEA70D /* ProdCompViewController.swift */,
-				D538B0982D1AD029009F6E74 /* Reviewss.storyboard */,
+				D538B0982D1AD029009F6E74 /* Reviews.storyboard */,
+				D538B0AA2D1B2EAB009F6E74 /* AReviews.storyboard */,
 				D538B0A82D1AFFAA009F6E74 /* Home.storyboard */,
 				D538B09E2D1AD078009F6E74 /* Review.swift */,
 				D538B09A2D1AD066009F6E74 /* ReviewsTableViewCell.swift */,
@@ -294,7 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D538B0992D1AD029009F6E74 /* Reviewss.storyboard in Resources */,
+				D538B0992D1AD029009F6E74 /* Reviews.storyboard in Resources */,
 				83F9ECAA2D0DB9E600816FC8 /* loginPage.storyboard in Resources */,
 				F23368392CF4854200A988FC /* LaunchScreen.storyboard in Resources */,
 				D5165D4A2D0DB1B100CC2BF7 /* Notifications.storyboard in Resources */,
@@ -303,6 +306,7 @@
 				ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */,
 				83F9ECA82D0DB8A700816FC8 /* Bader set coupons.storyboard in Resources */,
 				83F9ECA52D0DB8A700816FC8 /* bader special offer.storyboard in Resources */,
+				D538B0AB2D1B2EAB009F6E74 /* AReviews.storyboard in Resources */,
 				D09669212D0DB38F003DA933 /* Order page.storyboard in Resources */,
 				F23368362CF4854200A988FC /* Assets.xcassets in Resources */,
 				D096691F2D0DB377003DA933 /* Cart Page.storyboard in Resources */,

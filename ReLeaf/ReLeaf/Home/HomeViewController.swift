@@ -116,6 +116,31 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("🛒 Selected item at \(indexPath)")
+        let storyboard = UIStoryboard(name: "Product Info", bundle: nil)
+        guard let productInfoVC = storyboard.instantiateViewController(withIdentifier: "ProductinfoViewController") as? ProductinfoViewController else {
+            print("❌ Failed to instantiate ProductInfoViewController. Check Storyboard ID.")
+            return
+        }
+        
+        let selectedProduct: Product
+        
+        switch collectionView {
+        case recommendedCollectionView:
+            selectedProduct = recommendedItems[indexPath.item]
+        case forYouCollectionView:
+            selectedProduct = forYouItems[indexPath.item]
+        case previousPurchasesCollectionView:
+            selectedProduct = previousPurchasesItems[indexPath.item]
+        default:
+            return
+        }
+        
+        // Pass the product data
+        productInfoVC.selectedProduct = selectedProduct
+        
+        navigationController?.pushViewController(productInfoVC, animated: true)
     }
+
+
+
 }

@@ -21,8 +21,11 @@ struct Shop: Codable {
 struct Product: Codable {
     let id: String
     let name: String
-    let image: String
     let price: Double
+    let stock: Int
+    let description: String
+    let category: String
+    let image: String
 }
 
 // For handling products specifically

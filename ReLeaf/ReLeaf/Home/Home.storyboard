@@ -240,6 +240,14 @@
             </objects>
             <point key="canvasLocation" x="32.824427480916029" y="3.5211267605633805"/>
         </scene>
+        <!--SpecialOffer-->
+        <scene sceneID="YWn-rc-0bB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SpecialOffer" id="MbV-6x-n3G" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCP-OF-fkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="-189"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

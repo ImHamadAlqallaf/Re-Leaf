@@ -56,7 +56,7 @@
                 {
                     "id": "product3",
                     "name": "Organic Cotton T-Shirt",
-                    "price": 15.99,
+                    "price": 3.99,
                     "stock": 100,
                     "description": "100% organic cotton t-shirt",
                     "category": "Clothing",
@@ -68,7 +68,7 @@
                     "price": 29.99,
                     "stock": 20,
                     "description": "Sustainable wooden desk organizer",
-                    "category": "Office Supplies",
+                    "category": "Kitchen Utensils Supplies",
                     "image": "bamboo_cutlery_set.png"
                 }
             ]

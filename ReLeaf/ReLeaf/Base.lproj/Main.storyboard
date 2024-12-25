@@ -31,6 +31,27 @@
             </objects>
             <point key="canvasLocation" x="-2065" y="-305"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f7g-C4-YSX">
+            <objects>
+                <navigationController id="H4p-AU-BXp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hYk-CW-lGY">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R41-3f-a70" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2106" y="454"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="TPC-q7-MkH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="Ro3-db-uJF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Gy-Xj-tse" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1491" y="433"/>
+        </scene>
         <!--Login-->
         <scene sceneID="Uzr-od-5Sn">
             <objects>

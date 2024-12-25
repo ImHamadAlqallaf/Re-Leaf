@@ -1,85 +1,99 @@
-//
-//  SearchPage.swift
-//  ReLeaf
-//
-//  Created by Bader on 24/12/2024.
-//
-
 import UIKit
 
 class SearchPage: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
-   // func updateSearchResults(for searchController: UISearchController) {
-  //      <#code#>
-//    }
-    
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Label1.count
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? SearchPageTableViewCell
-        cell?.ProductImage.image = UIImage(named: ProductImage[indexPath.row])
-
-        cell?.Label1.text = Label1[indexPath.row]
-        cell?.Label2.text = Label2[indexPath.row]
-        return cell!
-        
-    }
-    
-
     @IBOutlet weak var searchtableview: UITableView!
     @IBOutlet weak var Searchbar: UISearchBar!
     
     
-    var Label1 = ["Bamboo ToothBrush", "Reusable water bottle ", "bamboo straws"]
-    
-    var ProductImage = ["image1", "image2", "image3", "image4"]
-    
-    var Label2 = ["10 bd", "12 bd", "13 bd", "10 bd"]
-    
-    var filterData = [String]()
+    var products: [Product] = []
+    var filterData: [Product] = []
     var searchbarController: UISearchController!
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        filterData = Label1
-        searchbarController = UISearchController (searchResultsController: nil)
+        
+       
+        loadData()
+
+        
+        searchbarController = UISearchController(searchResultsController: nil)
         searchbarController.searchBar.delegate = self
         searchbarController.searchBar.placeholder = "Search here..."
         searchbarController.obscuresBackgroundDuringPresentation = false
         self.Searchbar.delegate = self
         self.searchtableview.delegate = self
         self.searchtableview.dataSource = self
-        
-      //  tableView.tableHeaderView = searchbarController.searchBar
-   
     }
-    
 
+   
+    func loadData() {
+        
+        let shop1Products = [
+            Product(id: "product1", name: "Bamboo Toothbrush", price: 3.99, stock: 50, description: "Eco-friendly toothbrush", category: "Oral Care", image: "bamboo_toothbrush.png"),
+            Product(id: "product2", name: "Reusable Water Bottle", price: 10.99, stock: 30, description: "Stainless steel bottle", category: "Drinkware", image: "reusable_bottle.png")
+        ]
+        
+        let shop2Products = [
+            Product(id: "product3", name: "Organic Cotton T-Shirt", price: 15.99, stock: 100, description: "100% organic cotton t-shirt", category: "Clothing", image: "organic_tshirt.png"),
+            Product(id: "product4", name: "Wooden Desk Organizer", price: 29.99, stock: 20, description: "Sustainable wooden desk organizer", category: "Office Supplies", image: "wooden_desk_organizer.png")
+        ]
+        
+        
+        products = shop1Products + shop2Products
+        filterData = products
+
+        // Reload the table view
+        searchtableview.reloadData()
     }
+
     
-extension SearchPage {
-    
-    func searchResultUpdate (for searchbarcontroller: UISearchController){
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return filterData.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SearchPageTableViewCell
         
-        guard let textField = searchbarcontroller.searchBar.text
-        else {return}
+        
+        let product = filterData[indexPath.row]
         
         
-        if textField.isEmpty {
-            filterData = Label1
-            
-        }
-        else {
-            
-            filterData = Label1.filter{ $0.lowercased().contains(textField.lowercased()) }
+        cell.ProductImage.image = UIImage(named: product.image)
+        cell.Label1.text = product.name
+        cell.Label2.text = "\(product.price) BD"
         
-                
+        return cell
+    }
+
+    // MARK: - UISearchBar Delegate Methods
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchText.isEmpty {
+            filterData = products
+        } else {
+            filterData = products.filter { product in
+                product.name.lowercased().contains(searchText.lowercased())
             }
         }
         
+       
+        searchtableview.reloadData()
     }
+}
+
+
+struct Product {
+    let id: String
+    let name: String
+    let price: Double
+    let stock: Int
+    let description: String
+    let category: String
+    let image: String
+}
 
 
 

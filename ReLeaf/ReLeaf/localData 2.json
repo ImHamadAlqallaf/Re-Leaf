@@ -3,7 +3,7 @@
         {
             "id": "1",
             "userName": "Alice",
-            "productId": "product1",  // Added productId to link review to a specific product
+            "productId": "product1",
             "text": "Great product!",
             "rating": 5,
             "timestamp": "2024-12-19T17:37:05Z"
@@ -11,7 +11,7 @@
         {
             "id": "2",
             "userName": "Bob",
-            "productId": "product2",  // Added productId to link review to a specific product
+            "productId": "product2",
             "text": "Could be better.",
             "rating": 3,
             "timestamp": "2024-12-19T17:45:10Z"
@@ -32,7 +32,7 @@
                     "stock": 50,
                     "description": "Eco-friendly toothbrush",
                     "category": "Oral Care",
-                    "image": "bamboo_toothbrush.png"  // Image filename linked to the product
+                    "image": "bamboo_toothbrush.png"  the product
                 },
                 {
                     "id": "product2",

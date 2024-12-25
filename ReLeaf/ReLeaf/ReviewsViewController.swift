@@ -25,7 +25,7 @@ class ReviewsViewController: UIViewController,  UITableViewDataSource, UITableVi
        
        // MARK: - Load Reviews
        func loadReviews() {
-           reviews = LocalDataService.shared.getReviews()
+           reviews = ReviewLocalDataService.shared.getReviews()
                print("📊 Reviews Loaded: \(reviews.count)")  // Check if the reviews are loaded correctly
                updateAverageRating()
                tableView.reloadData()
@@ -33,7 +33,7 @@ class ReviewsViewController: UIViewController,  UITableViewDataSource, UITableVi
        
        // MARK: - Update Average Rating
        func updateAverageRating() {
-           let averageRating = LocalDataService.shared.calculateAverageRating()
+           let averageRating = ReviewLocalDataService.shared.calculateAverageRating()
            averageRatingLabel.text = String(format: "%.1f", averageRating)
            updateStars(for: averageRating)
        }

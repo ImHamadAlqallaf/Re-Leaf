@@ -110,7 +110,7 @@ class WriteReviewViewController: UIViewController {
           )
 
           // Add review locally and notify delegate
-          LocalDataService.shared.addReview(newReview)
+          ReviewLocalDataService.shared.addReview(newReview)
           print("✅ Review successfully added locally")
           delegate?.didSubmitReview(newReview)
           print("🟢 Delegate notified about new review")

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F5542712D1C1CFF00FBE75C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5542702D1C1CFF00FBE75C /* HomeViewController.swift */; };
+		3F5542742D1C1F5200FBE75C /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5542732D1C1F5200FBE75C /* Shop.swift */; };
+		3F5542762D1C1F7700FBE75C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5542752D1C1F7700FBE75C /* User.swift */; };
+		3F5542782D1C1F8600FBE75C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5542772D1C1F8600FBE75C /* Order.swift */; };
+		3F55427A2D1C262900FBE75C /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5542792D1C262900FBE75C /* LocalData.swift */; };
+		3F55427C2D1C270900FBE75C /* OrderProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55427B2D1C270900FBE75C /* OrderProduct.swift */; };
+		3F55427E2D1C2D4B00FBE75C /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55427D2D1C2D4B00FBE75C /* ProductCollectionViewCell.swift */; };
 		3F94C8B42D0DC25400CEA70D /* ProdCompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94C8B32D0DC25400CEA70D /* ProdCompViewController.swift */; };
 		3F94C8B62D0DCE7B00CEA70D /* ProductComp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94C8B52D0DCE7B00CEA70D /* ProductComp.storyboard */; };
 		8398BCD62D07137A00DD8CFD /* AdminDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */; };
@@ -58,6 +65,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F5542702D1C1CFF00FBE75C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3F5542732D1C1F5200FBE75C /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		3F5542752D1C1F7700FBE75C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3F5542772D1C1F8600FBE75C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		3F5542792D1C262900FBE75C /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		3F55427B2D1C270900FBE75C /* OrderProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProduct.swift; sourceTree = "<group>"; };
+		3F55427D2D1C2D4B00FBE75C /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F94C8B32D0DC25400CEA70D /* ProdCompViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdCompViewController.swift; sourceTree = "<group>"; };
 		3F94C8B52D0DCE7B00CEA70D /* ProductComp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductComp.storyboard; sourceTree = "<group>"; };
 		8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminDashboard.storyboard; sourceTree = "<group>"; };
@@ -120,6 +134,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F5542722D1C1F2900FBE75C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D538B09E2D1AD078009F6E74 /* Review.swift */,
+				3F5542732D1C1F5200FBE75C /* Shop.swift */,
+				3F5542752D1C1F7700FBE75C /* User.swift */,
+				3F5542772D1C1F8600FBE75C /* Order.swift */,
+				3F55427B2D1C270900FBE75C /* OrderProduct.swift */,
+				3F5542792D1C262900FBE75C /* LocalData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E0BA1CC82D1B46BD009F63B9 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,17 +182,19 @@
 				F233682C2CF4854000A988FC /* AppDelegate.swift */,
 				F233682E2CF4854000A988FC /* SceneDelegate.swift */,
 				F23368302CF4854000A988FC /* ViewController.swift */,
+				3F5542722D1C1F2900FBE75C /* Models */,
 				D09669242D0DB3DE003DA933 /* Product Info.storyboard */,
 				D09669202D0DB38F003DA933 /* Order page.storyboard */,
 				D096691E2D0DB377003DA933 /* Cart Page.storyboard */,
 				F23368322CF4854000A988FC /* Main.storyboard */,
 				F23368352CF4854200A988FC /* Assets.xcassets */,
 				F23368372CF4854200A988FC /* LaunchScreen.storyboard */,
+				D538B0A82D1AFFAA009F6E74 /* Home.storyboard */,
+				3F5542702D1C1CFF00FBE75C /* HomeViewController.swift */,
+				3F55427D2D1C2D4B00FBE75C /* ProductCollectionViewCell.swift */,
 				3F94C8B52D0DCE7B00CEA70D /* ProductComp.storyboard */,
 				3F94C8B32D0DC25400CEA70D /* ProdCompViewController.swift */,
 				D538B0AA2D1B2EAB009F6E74 /* AReviews.storyboard */,
-				D538B0A82D1AFFAA009F6E74 /* Home.storyboard */,
-				D538B09E2D1AD078009F6E74 /* Review.swift */,
 				D538B09A2D1AD066009F6E74 /* ReviewsTableViewCell.swift */,
 				D538B09C2D1AD073009F6E74 /* ReviewsViewController.swift */,
 				D538B0A22D1AD0B8009F6E74 /* WriteReviewViewController.swift */,
@@ -349,14 +378,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F55427A2D1C262900FBE75C /* LocalData.swift in Sources */,
 				F23368312CF4854000A988FC /* ViewController.swift in Sources */,
 				D538B09F2D1AD078009F6E74 /* Review.swift in Sources */,
 				F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */,
+				3F55427C2D1C270900FBE75C /* OrderProduct.swift in Sources */,
+				3F5542742D1C1F5200FBE75C /* Shop.swift in Sources */,
 				3F94C8B42D0DC25400CEA70D /* ProdCompViewController.swift in Sources */,
+				3F55427E2D1C2D4B00FBE75C /* ProductCollectionViewCell.swift in Sources */,
 				D538B09D2D1AD073009F6E74 /* ReviewsViewController.swift in Sources */,
+				3F5542782D1C1F8600FBE75C /* Order.swift in Sources */,
+				3F5542712D1C1CFF00FBE75C /* HomeViewController.swift in Sources */,
 				F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */,
 				D538B0A32D1AD0B8009F6E74 /* WriteReviewViewController.swift in Sources */,
 				D538B09B2D1AD066009F6E74 /* ReviewsTableViewCell.swift in Sources */,
+				3F5542762D1C1F7700FBE75C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

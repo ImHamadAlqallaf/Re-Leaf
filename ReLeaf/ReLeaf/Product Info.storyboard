@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wk6-0b-S7U">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Productinfo View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="ProductinfoViewController" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="71" y="83" width="248" height="250"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Av2-7B-JVh">
-                                <rect key="frame" x="32" y="350" width="158" height="27"/>
+                                <rect key="frame" x="32" y="350" width="163" height="27"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Product name">
                                         <attributes>
@@ -47,7 +47,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCm-DO-lQJ">
-                                <rect key="frame" x="32" y="385" width="326" height="143"/>
+                                <rect key="frame" x="32" y="385" width="326" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="9qn-81-TE5"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Product info">
                                         <attributes>
@@ -59,20 +62,76 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9LQ-MK-5eh">
-                                <rect key="frame" x="32" y="545" width="94" height="32"/>
-                            </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POA-g8-fDZ">
-                                <rect key="frame" x="144" y="546.66666666666663" width="15" height="28.666666666666629"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="mIB-ov-ZZJ">
-                                <rect key="frame" x="32" y="585" width="163.33333333333334" height="142.33333333333337"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yj-eJ-6SR">
+                                <rect key="frame" x="49" y="775.66666666666663" width="292" height="34.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.333333333333371" id="RJc-QJ-zJv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add to cart"/>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.50677219128466888" green="0.71485731336805558" blue="0.14367970642566244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addToCart:" destination="wQG-wP-P6t" eventType="touchUpInside" id="nHz-pQ-n2P"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kQi-lw-AVY">
+                                <rect key="frame" x="31.999999999999993" y="519" width="105.33333333333331" height="55.666666666666629"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzQ-fi-rTh">
-                                        <rect key="frame" x="0.0" y="0.0" width="163.33333333333334" height="30.333333333333332"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-FR-MHM">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="55.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="-">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0074313786032853373" green="0.16610193734217171" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="36" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="decrementQuantity:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jmQ-Oz-NrQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POA-g8-fDZ">
+                                        <rect key="frame" x="46" y="0.0" width="11" height="55.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pR-9R-253">
+                                        <rect key="frame" x="67" y="0.0" width="38.333333333333343" height="55.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="+">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.054594186845496509" green="0.1345054549400253" blue="0.053999324982962525" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="24" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="incrementQuantity:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8Bb-pc-9ol"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="mIB-ov-ZZJ">
+                                <rect key="frame" x="32" y="589" width="163.33333333333334" height="151.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzQ-fi-rTh">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.33333333333334" height="30.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
@@ -91,7 +150,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4p-eg-XUb">
-                                        <rect key="frame" x="0.0" y="37.333333333333371" width="97.333333333333329" height="30.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="39.333333333333371" width="97.333333333333329" height="33.666666666666657"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
@@ -106,8 +165,8 @@
                                             </attributedString>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiQ-aY-g6S">
-                                        <rect key="frame" x="0.0" y="74.666666666666629" width="77" height="30.333333333333329"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiQ-aY-g6S">
+                                        <rect key="frame" x="0.0" y="82" width="77" height="30.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
@@ -122,8 +181,8 @@
                                             </attributedString>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiK-6j-cIQ">
-                                        <rect key="frame" x="0.0" y="112" width="99" height="30.333333333333343"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiK-6j-cIQ">
+                                        <rect key="frame" x="0.0" y="121.33333333333336" width="99" height="30.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
@@ -140,51 +199,47 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yj-eJ-6SR">
-                                <rect key="frame" x="49" y="771.66666666666663" width="292" height="38.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Add to cart"/>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.50677219128466888" green="0.71485731336805558" blue="0.14367970642566244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="z0o-EK-aHh" firstAttribute="baseline" secondItem="Av2-7B-JVh" secondAttribute="firstBaseline" id="12c-Sy-xdy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mIB-ov-ZZJ" secondAttribute="trailing" constant="194.66666666666669" id="7Vc-Dr-aRn"/>
                             <constraint firstItem="fha-we-Osw" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="83" id="7Xj-s4-bTX"/>
                             <constraint firstItem="5yj-eJ-6SR" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="EuS-HW-7lb"/>
-                            <constraint firstItem="POA-g8-fDZ" firstAttribute="leading" secondItem="9LQ-MK-5eh" secondAttribute="trailing" constant="18" id="FwN-jb-Rt4"/>
-                            <constraint firstItem="9LQ-MK-5eh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="I0V-WP-yaI"/>
-                            <constraint firstItem="9LQ-MK-5eh" firstAttribute="top" secondItem="UCm-DO-lQJ" secondAttribute="bottom" constant="17" id="Igu-Nf-ffN"/>
                             <constraint firstItem="fha-we-Osw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="71" id="JLt-pO-eWr"/>
-                            <constraint firstItem="UCm-DO-lQJ" firstAttribute="top" secondItem="z0o-EK-aHh" secondAttribute="bottom" constant="8" id="KY8-YK-1MH"/>
                             <constraint firstItem="Av2-7B-JVh" firstAttribute="top" secondItem="fha-we-Osw" secondAttribute="bottom" constant="17" id="QJV-k4-62z"/>
-                            <constraint firstItem="mIB-ov-ZZJ" firstAttribute="top" secondItem="9LQ-MK-5eh" secondAttribute="bottom" constant="8" id="Ra3-s0-cff"/>
-                            <constraint firstItem="mIB-ov-ZZJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="VsQ-xq-N5S"/>
+                            <constraint firstItem="kQi-lw-AVY" firstAttribute="leading" secondItem="UCm-DO-lQJ" secondAttribute="leading" id="Sa6-3k-yKO"/>
+                            <constraint firstItem="UCm-DO-lQJ" firstAttribute="top" secondItem="Av2-7B-JVh" secondAttribute="bottom" constant="8" id="VK1-2R-QS7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fha-we-Osw" secondAttribute="trailing" constant="71" id="Y6o-6I-JRL"/>
-                            <constraint firstItem="9LQ-MK-5eh" firstAttribute="centerY" secondItem="POA-g8-fDZ" secondAttribute="centerY" id="Yvh-SO-OnI"/>
+                            <constraint firstItem="UCm-DO-lQJ" firstAttribute="centerX" secondItem="fha-we-Osw" secondAttribute="centerX" id="Yip-dx-P45"/>
+                            <constraint firstItem="kQi-lw-AVY" firstAttribute="top" secondItem="UCm-DO-lQJ" secondAttribute="bottom" constant="22" id="Ztd-g3-ZIK"/>
                             <constraint firstItem="z0o-EK-aHh" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="350" id="agW-02-0tv"/>
-                            <constraint firstItem="UCm-DO-lQJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="cx2-LV-mwa"/>
-                            <constraint firstItem="z0o-EK-aHh" firstAttribute="leading" secondItem="Av2-7B-JVh" secondAttribute="trailing" constant="45" id="dCp-MW-G0w"/>
-                            <constraint firstAttribute="bottom" secondItem="9LQ-MK-5eh" secondAttribute="bottom" constant="267" id="fDy-7C-Xwh"/>
+                            <constraint firstItem="mIB-ov-ZZJ" firstAttribute="top" secondItem="kQi-lw-AVY" secondAttribute="bottom" constant="14.333333333333371" id="cfn-NA-7Cx"/>
+                            <constraint firstItem="z0o-EK-aHh" firstAttribute="leading" secondItem="Av2-7B-JVh" secondAttribute="trailing" constant="40" id="dCp-MW-G0w"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="z0o-EK-aHh" secondAttribute="trailing" constant="45" id="hUm-kS-jYt"/>
                             <constraint firstItem="Av2-7B-JVh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="ngc-jl-0yi"/>
                             <constraint firstItem="z0o-EK-aHh" firstAttribute="firstBaseline" secondItem="Av2-7B-JVh" secondAttribute="firstBaseline" id="o7k-l9-Okr"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5yj-eJ-6SR" secondAttribute="trailing" constant="49" id="vRB-pQ-Yxu"/>
+                            <constraint firstItem="UCm-DO-lQJ" firstAttribute="leading" secondItem="Av2-7B-JVh" secondAttribute="leading" id="vZ9-PD-0Wa"/>
+                            <constraint firstItem="5yj-eJ-6SR" firstAttribute="top" secondItem="mIB-ov-ZZJ" secondAttribute="bottom" constant="35" id="wzN-bc-O5z"/>
                             <constraint firstItem="5yj-eJ-6SR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="49" id="x7Y-zm-pdG"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UCm-DO-lQJ" secondAttribute="trailing" constant="32" id="xWh-3s-KB8"/>
-                            <constraint firstItem="z0o-EK-aHh" firstAttribute="leading" secondItem="Av2-7B-JVh" secondAttribute="trailing" constant="45" id="yKc-Yk-vMV"/>
+                            <constraint firstItem="z0o-EK-aHh" firstAttribute="leading" secondItem="Av2-7B-JVh" secondAttribute="trailing" constant="40" id="yKc-Yk-vMV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pSu-B6-RfF"/>
+                    <connections>
+                        <outlet property="QuantityLabelinfo" destination="POA-g8-fDZ" id="zOe-mL-Sc9"/>
+                        <outlet property="decreaseButton" destination="kbg-FR-MHM" id="oHL-Ju-m1d"/>
+                        <outlet property="increaseButton" destination="9pR-9R-253" id="Bur-KW-nEm"/>
+                        <outlet property="productNameLabelinfo" destination="Av2-7B-JVh" id="tPg-Qg-mUz"/>
+                        <outlet property="productPriceLabelinfo" destination="z0o-EK-aHh" id="nQx-IK-Jnf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wQG-wP-P6t" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="895.41984732824426" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1005" y="3"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ryn-AU-4W9">
@@ -396,7 +451,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ltm-w9-wp1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809.9236641221373" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1928" y="3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vps-SI-feP">
@@ -420,6 +475,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

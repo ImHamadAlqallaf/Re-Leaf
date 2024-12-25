@@ -17,76 +17,82 @@
             "timestamp": "2024-12-19T17:45:10Z"
         }
     ],
-    "shops": [
-        {
-            "id": "shop1",
-            "name": "EcoMart",
-            "location": "123 Green Street",
-            "owner": "John Doe",
-            "contact": "123-456-7890",
-            "products": [
-                {
-                    "id": "product1",
-                    "name": "Bamboo Toothbrush",
-                    "price": 3.99,
-                    "stock": 50,
-                    "description": "Eco-friendly toothbrush",
-                    "category": "Oral Care",
-                    "image": "bamboo_toothbrush.png"  // Image filename linked to the product
-                },
-                {
-                    "id": "product2",
-                    "name": "Reusable Water Bottle",
-                    "price": 10.99,
-                    "stock": 30,
-                    "description": "Stainless steel bottle",
-                    "category": "Drinkware",
-                    "image": "reusable_bottle.png"  // Image filename linked to the product
-                }
-            ]
-        },
-        {
-            "id": "shop2",
-            "name": "Green Goods",
-            "location": "456 Eco Road",
-            "owner": "Jane Smith",
-            "contact": "987-654-3210",
-            "products": [
-                {
-                    "id": "product3",
-                    "name": "Organic Cotton T-Shirt",
-                    "price": 15.99,
-                    "stock": 100,
-                    "description": "100% organic cotton t-shirt",
-                    "category": "Clothing",
-                    "image": "organic_tshirt.png"  // Image filename linked to the product
-                },
-                {
-                    "id": "product4",
-                    "name": "Wooden Desk Organizer",
-                    "price": 29.99,
-                    "stock": 20,
-                    "description": "Sustainable wooden desk organizer",
-                    "category": "Office Supplies",
-                    "image": "wooden_desk_organizer.png"  // Image filename linked to the product
-                }
-            ]
-        }
-    ],
+    "stores": [
+            {
+                "id": "store1",
+                "storeName": "EcoMart",
+                "storeEmail": "contact@ecomart.com",  // Store email
+                "storePassword": "hashed_password_123",  // Store password (hashed)
+                "storePhoneNumber": "123-456-7890",  // Store phone number
+                "storeDescription": "EcoMart is your one-stop-shop for sustainable and eco-friendly products.",  // Store description
+                "storeOwner": "John Doe",  // Store owner name
+                "products": [
+                    {
+                        "id": "product1",
+                        "name": "Bamboo Toothbrush",
+                        "price": 3.99,
+                        "stock": 50,
+                        "description": "Eco-friendly toothbrush",
+                        "category": "Oral Care",
+                        "image": "bamboo_toothbrush.png"
+                    },
+                    {
+                        "id": "product2",
+                        "name": "Reusable Water Bottle",
+                        "price": 10.99,
+                        "stock": 30,
+                        "description": "Stainless steel bottle",
+                        "category": "Drinkware",
+                        "image": "reusable_bottle.png"
+                    }
+                ]
+            },
+            {
+                "id": "store2",
+                "storeName": "Green Goods",
+                "storeEmail": "info@greengoods.com",  // Store email
+                "storePassword": "hashed_password_456",  // Store password (hashed)
+                "storePhoneNumber": "987-654-3210",  // Store phone number
+                "storeDescription": "Green Goods offers a variety of eco-conscious products that support a sustainable lifestyle.",  // Store description
+                "storeOwner": "Jane Smith",  // Store owner name
+                "products": [
+                    {
+                        "id": "product3",
+                        "name": "Organic Cotton T-Shirt",
+                        "price": 15.99,
+                        "stock": 100,
+                        "description": "100% organic cotton t-shirt",
+                        "category": "Clothing",
+                        "image": "organic_tshirt.png"
+                    },
+                    {
+                        "id": "product4",
+                        "name": "Wooden Desk Organizer",
+                        "price": 29.99,
+                        "stock": 20,
+                        "description": "Sustainable wooden desk organizer",
+                        "category": "Office Supplies",
+                        "image": "wooden_desk_organizer.png"
+                    }
+                ]
+            }
+        ],
     "users": [
         {
             "id": "user1",
             "userName": "Alice",
             "email": "alice@example.com",
             "password": "hashed_password_123",
-            "role": "customer"
+            "role": "customer",
+            "image": "alice_profile_image.png"  // User profile image
         },
         {
             "id": "user2",
             "userName": "Bob",
             "email": "bob@example.com",
             "password": "hashed_password_456",
-            "role": "customer"
+            "role": "customer",
+            "image": "bob_profile_image.png"  // User profile image
         }
     ],
     "orders": [
@@ -138,4 +144,3 @@
         ]
     }
 }
-

@@ -19,6 +19,12 @@
 		AC24F3AE2D1AE414002C711A /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F3AD2D1AE414002C711A /* ProductCollectionViewCell.swift */; };
 		AC24F3B02D1AECC7002C711A /* localData.json in Resources */ = {isa = PBXBuildFile; fileRef = AC24F3AF2D1AECC7002C711A /* localData.json */; };
 		ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */; };
+		ACF3BF6A2D1C24F5005783CF /* AddProductExternallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3BF692D1C24F5005783CF /* AddProductExternallyViewController.swift */; };
+		ACF3BF6C2D1C3DAC005783CF /* StoresListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3BF6B2D1C3DAC005783CF /* StoresListTableViewController.swift */; };
+		ACF3BF6E2D1C3E0B005783CF /* AddingStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3BF6D2D1C3E0B005783CF /* AddingStoreTableViewController.swift */; };
+		ACF3BF702D1C440B005783CF /* StoreDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3BF6F2D1C440B005783CF /* StoreDetails.swift */; };
+		ACF3BF722D1C5264005783CF /* StoresListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3BF712D1C5264005783CF /* StoresListTableViewCell.swift */; };
+		ACF3BF742D1C69B7005783CF /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3BF732D1C69B7005783CF /* ProductDetails.swift */; };
 		D096691F2D0DB377003DA933 /* Cart Page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D096691E2D0DB377003DA933 /* Cart Page.storyboard */; };
 		D09669212D0DB38F003DA933 /* Order page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669202D0DB38F003DA933 /* Order page.storyboard */; };
 		D09669252D0DB3DE003DA933 /* Product Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669242D0DB3DE003DA933 /* Product Info.storyboard */; };
@@ -65,6 +71,12 @@
 		AC24F3AD2D1AE414002C711A /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC24F3AF2D1AECC7002C711A /* localData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localData.json; sourceTree = "<group>"; };
 		ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Impact Tracker.storyboard"; sourceTree = "<group>"; };
+		ACF3BF692D1C24F5005783CF /* AddProductExternallyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductExternallyViewController.swift; sourceTree = "<group>"; };
+		ACF3BF6B2D1C3DAC005783CF /* StoresListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresListTableViewController.swift; sourceTree = "<group>"; };
+		ACF3BF6D2D1C3E0B005783CF /* AddingStoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingStoreTableViewController.swift; sourceTree = "<group>"; };
+		ACF3BF6F2D1C440B005783CF /* StoreDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetails.swift; sourceTree = "<group>"; };
+		ACF3BF712D1C5264005783CF /* StoresListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresListTableViewCell.swift; sourceTree = "<group>"; };
+		ACF3BF732D1C69B7005783CF /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 		D096691E2D0DB377003DA933 /* Cart Page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Cart Page.storyboard"; sourceTree = "<group>"; };
 		D09669202D0DB38F003DA933 /* Order page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Order page.storyboard"; sourceTree = "<group>"; };
 		D09669242D0DB3DE003DA933 /* Product Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Info.storyboard"; sourceTree = "<group>"; };
@@ -113,6 +125,7 @@
 		F23368202CF4854000A988FC = {
 			isa = PBXGroup;
 			children = (
+				ACF3BF692D1C24F5005783CF /* AddProductExternallyViewController.swift */,
 				F233682B2CF4854000A988FC /* ReLeaf */,
 				F23368422CF4854300A988FC /* ReLeafTests */,
 				F233684C2CF4854300A988FC /* ReLeafUITests */,
@@ -153,6 +166,11 @@
 				AC24F3AD2D1AE414002C711A /* ProductCollectionViewCell.swift */,
 				AC24F3AB2D1AC327002C711A /* ProductImpactTrackerViewController.swift */,
 				8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */,
+				ACF3BF712D1C5264005783CF /* StoresListTableViewCell.swift */,
+				ACF3BF6F2D1C440B005783CF /* StoreDetails.swift */,
+				ACF3BF732D1C69B7005783CF /* ProductDetails.swift */,
+				ACF3BF6D2D1C3E0B005783CF /* AddingStoreTableViewController.swift */,
+				ACF3BF6B2D1C3DAC005783CF /* StoresListTableViewController.swift */,
 				D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */,
 				D5165D4B2D0DB1BB00CC2BF7 /* StoreManager.storyboard */,
 				AC24F3AF2D1AECC7002C711A /* localData.json */,
@@ -324,10 +342,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF3BF6C2D1C3DAC005783CF /* StoresListTableViewController.swift in Sources */,
+				ACF3BF722D1C5264005783CF /* StoresListTableViewCell.swift in Sources */,
+				ACF3BF6A2D1C24F5005783CF /* AddProductExternallyViewController.swift in Sources */,
+				ACF3BF6E2D1C3E0B005783CF /* AddingStoreTableViewController.swift in Sources */,
 				F23368312CF4854000A988FC /* ViewController.swift in Sources */,
 				AC24F3AC2D1AC327002C711A /* ProductImpactTrackerViewController.swift in Sources */,
+				ACF3BF742D1C69B7005783CF /* ProductDetails.swift in Sources */,
 				AC24F3AE2D1AE414002C711A /* ProductCollectionViewCell.swift in Sources */,
 				F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */,
+				ACF3BF702D1C440B005783CF /* StoreDetails.swift in Sources */,
 				F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

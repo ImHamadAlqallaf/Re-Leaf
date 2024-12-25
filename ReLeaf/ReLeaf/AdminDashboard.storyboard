@@ -1,40 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yxk-0x-wcc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j1C-fe-Nx3">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="ScL-2D-n8n">
+        <!--Administrator Dashboard-->
+        <scene sceneID="38F-7h-z3Q">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yxk-0x-wcc" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GEd-0p-th9">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="lOD-g2-rJ6" kind="relationship" relationship="rootViewController" id="hnE-O3-ZdT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fSs-gh-zWu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController title="Administrator Dashboard" id="qiO-HE-xbH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="atS-B8-UqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="vWm-im-9fw">
+                                <rect key="frame" x="93.333333333333329" y="426.33333333333331" width="206.33333333333337" height="68.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1M-WI-qCd">
+                                        <rect key="frame" x="0.0" y="0.0" width="138.66666666666666" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Manage Stores"/>
+                                        <connections>
+                                            <segue destination="lOD-g2-rJ6" kind="show" id="07l-da-Xnj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeV-yC-Ond">
+                                        <rect key="frame" x="0.0" y="34.333333333333371" width="206.33333333333334" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Manage Discount Cards"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Sb-eD-vzk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vWm-im-9fw" firstAttribute="centerY" secondItem="7Sb-eD-vzk" secondAttribute="centerY" id="4dF-Si-5Hf"/>
+                            <constraint firstItem="vWm-im-9fw" firstAttribute="centerX" secondItem="7Sb-eD-vzk" secondAttribute="centerX" id="P90-Nw-rM2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Administrator Dashboard" id="1mK-U3-ngO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8j4-gd-jnW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-726" y="694"/>
         </scene>
         <!--Stores-->
         <scene sceneID="ZUd-UO-GXe">
             <objects>
-                <tableViewController id="lOD-g2-rJ6" sceneMemberID="viewController">
+                <tableViewController id="lOD-g2-rJ6" customClass="StoresListTableViewController" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="c0R-3B-tWQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="nQz-i0-gVw">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="nQz-i0-gVw" customClass="StoresListTableViewCell" customModule="ReLeaf" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="103"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nQz-i0-gVw" id="7JL-5F-zgF">
@@ -45,27 +68,37 @@
                                             <rect key="frame" x="20" y="0.0" width="162" height="103"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybU-xU-jRp">
-                                            <rect key="frame" x="207" y="41" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybU-xU-jRp">
+                                            <rect key="frame" x="207" y="41" width="90" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hES-xI-vLO">
-                                            <rect key="frame" x="318" y="11" width="75" height="35"/>
+                                            <rect key="frame" x="329" y="11" width="54" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Edit"/>
+                                            <connections>
+                                                <segue destination="Q0w-9q-ge2" kind="show" id="qbn-Bv-jzg"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sua-6p-jLt">
-                                            <rect key="frame" x="318" y="54" width="75" height="35"/>
+                                            <rect key="frame" x="319" y="54" width="74" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Delete"/>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="btnStoreDelete" destination="Sua-6p-jLt" id="RFh-4I-DC2"/>
+                                    <outlet property="btnStoreEdit" destination="hES-xI-vLO" id="hcj-mj-I7O"/>
+                                    <outlet property="imgProduct" destination="do2-X1-qlO" id="mn8-eQ-Oam"/>
+                                    <outlet property="lblStoreName" destination="ybU-xU-jRp" id="KOx-Ud-oZH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -74,17 +107,24 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Stores" id="Soy-dD-E26">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="foK-CH-s5V"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="foK-CH-s5V">
+                            <connections>
+                                <segue destination="Q0w-9q-ge2" kind="show" id="yw4-yw-Kfa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="btnStoreAdd" destination="foK-CH-s5V" id="0WP-dY-qtX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ub-Ei-RZm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046.5648854961833" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="552" y="694"/>
         </scene>
-        <!--Store-->
+        <!--Adding Store-->
         <scene sceneID="8fh-8A-Iif">
             <objects>
-                <tableViewController id="Q0w-9q-ge2" sceneMemberID="viewController">
+                <tableViewController id="Q0w-9q-ge2" customClass="AddingStoreTableViewController" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="5F2-9D-zEH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,6 +267,29 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="98" id="ccM-yL-OLN">
+                                        <rect key="frame" x="0.0" y="709" width="393" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ccM-yL-OLN" id="78W-iT-8fk">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store Owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRX-R8-val">
+                                                    <rect key="frame" x="20" y="11" width="96" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gTu-TY-0Pq">
+                                                    <rect key="frame" x="32" y="42" width="287" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -235,36 +298,42 @@
                             <outlet property="delegate" destination="Q0w-9q-ge2" id="bzu-kn-WSu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Store" id="7zk-KE-Und">
+                    <navigationItem key="navigationItem" title="Adding Store" id="7zk-KE-Und">
                         <barButtonItem key="rightBarButtonItem" title="Add Store" id="Z2x-hd-UWv"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UxX-yn-h4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2864.8854961832062" y="663.38028169014092"/>
+            <point key="canvasLocation" x="1482" y="702"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="QWS-Fl-gkM">
+        <scene sceneID="GeT-PY-OIG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dm5-YN-nPg" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j1C-fe-Nx3" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xlE-e6-XJH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m5h-h6-ybs">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Q0w-9q-ge2" kind="relationship" relationship="rootViewController" id="8vc-5N-c2Z"/>
+                        <segue destination="qiO-HE-xbH" kind="relationship" relationship="rootViewController" id="3Xg-L3-MYM"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jnc-ft-GgX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcm-nD-Xjn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908" y="648"/>
+            <point key="canvasLocation" x="-1653" y="694"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="yw4-yw-Kfa"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

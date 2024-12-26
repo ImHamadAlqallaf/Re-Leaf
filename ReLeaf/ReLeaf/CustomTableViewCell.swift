@@ -15,15 +15,15 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var AddProductbtn: UIButton!
    //2nd row
     @IBOutlet weak var StoreInfolbl: UILabel!
-   //3rd
+    //3rd
     @IBOutlet weak var StoreProductslbl: UILabel!
-   //product row
-    @IBOutlet weak var ProductPictureimg: UIImageView!
-    @IBOutlet weak var ProductNamelbl: UILabel!
-    @IBOutlet weak var productPricelbl: UILabel!
-    @IBOutlet weak var ProductQTYlbl: UILabel!
+    //product row
+    @IBOutlet weak var ProductPictureimg: UIImageView?
+    @IBOutlet weak var ProductNamelbl: UILabel?
+    @IBOutlet weak var ProductPricelbl: UILabel?
+    @IBOutlet weak var ProductQTYlbl: UILabel?
     @IBOutlet weak var UpdateProductbtn: UIButton!
-    @IBOutlet weak var Deleteproductbtn: UIButton!
+    @IBOutlet weak var DeleteProductbtn: UIButton!
     
     
     
@@ -33,7 +33,10 @@ class CustomTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         // Initialization code
+        print("CustomTableViewCell awakeFromNib called")
+        print("Store Name Label: \(String(describing: StoreNamelbl))")
     }
 
   

@@ -32,7 +32,7 @@
                     "stock": 50,
                     "description": "Eco-friendly toothbrush",
                     "category": "Oral Care",
-                    "image": "bamboo_toothbrush.png"
+                    "image": "bamboo_toothbrush.jpeg"
                 },
                 {
                     "id": "product2",
@@ -41,7 +41,7 @@
                     "stock": 30,
                     "description": "Stainless steel bottle",
                     "category": "Drinkware",
-                    "image": "reusable_bottle.png"
+                    "image": "reusable_bottle.jpeg"
                 }
             ]
         },

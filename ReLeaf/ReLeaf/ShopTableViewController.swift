@@ -13,15 +13,24 @@ class ShopTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
 
         // Load the JSON data when the view loads
         if let loadedShops = loadJSONFile(named: "localData") {
             self.shops = loadedShops
+            
+            print("Loaded Shops: \(self.shops)")
             // Reload the table view to reflect the loaded data
             tableView.reloadData()
         } else {
             print("Failed to load JSON data.")
         }
+        
+        tableView.rowHeight = 85
+        tableView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+
     }
 
 
@@ -38,6 +47,9 @@ class ShopTableViewController: UITableViewController {
                 // Decode the JSON data into the RootData object
                 let decoder = JSONDecoder()
                 let rootData = try decoder.decode(RootData.self, from: data)
+                
+                print("Decoded shops: \(rootData.shops)") // Debug print to verify the shops data
+
                 
                 // Return the shops array
                 return rootData.shops
@@ -59,28 +71,50 @@ class ShopTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return shops.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return shops[section].products.count
+        guard !shops.isEmpty else { return 0 }
+        return 3 + shops[0].products.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomTableViewCell
+        if indexPath.row == 0 {
+            // First cell: Store Name
+            let cell = tableView.dequeueReusableCell(withIdentifier: "storeCell", for: indexPath)
+            cell.textLabel?.text = shops[0].name // Display the shop name
+            return cell
+        } else if indexPath.row == 1 {
+            // Second cell: Store Info (e.g., location, owner, or contact)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
+            cell.textLabel?.text = """
+            Location: \(shops[0].location)
+            Owner: \(shops[0].owner)
+            Contact: \(shops[0].contact)
+            """ // Display multiple pieces of shop information
+            return cell
+        } else if indexPath.row == 2 {
+            // Third cell: Products Header
+            let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
+            cell.textLabel?.text = "Store Products"
+            return cell
+        } else {
+            // Remaining cells: Product details
+            let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomTableViewCell
+
+            let productIndex = indexPath.row - 3 // Adjust for the first three rows
+            let product = shops[0].products[productIndex]
+            
+            cell.ProductNamelbl?.text = product.name
+            cell.ProductPricelbl?.text = "$\(product.price)"
+            cell.ProductQTYlbl?.text = "QTY: \(product.stock)"
+            cell.ProductPictureimg?.image = UIImage(named: product.image)
+            
+            return cell
         
-        let shop = shops[indexPath.section]
-        let product = shop.products[indexPath.row]
-        
-        cell.ProductNamelbl.text = product.name
-        cell.productPricelbl.text = "$\(product.price)"
-        cell.ProductQTYlbl.text = "Stock: \(product.stock)"
-        
-        
-        cell.ProductPictureimg.image = UIImage(named: product.image)
-        
-        return cell
+    }
+
     }
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let shop = shops[section]

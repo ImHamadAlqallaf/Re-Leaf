@@ -32,7 +32,12 @@
                     "stock": 50,
                     "description": "Eco-friendly toothbrush",
                     "category": "Oral Care",
-                    "image": "bamboo_toothbrush.png"
+                    "image": "bamboo_toothbrush.png",
+                    "co2EmissionSaved": 2.5,
+                    "waterConserved": 500,
+                    "wasteReduced": 100,
+                    "materialsUsed": "100% Bamboo, Recyclable Nylon",
+                    "certificateImage": "eco_cert.jpg"
                 },
                 {
                     "id": "product2",
@@ -41,7 +46,12 @@
                     "stock": 30,
                     "description": "Stainless steel bottle",
                     "category": "Drinkware",
-                    "image": "reusable_bottle.png"
+                    "image": "reusable_bottle.png",
+                    "co2EmissionSaved": 4.5,
+                    "waterConserved": 100,
+                    "wasteReduced": 500,
+                    "materialsUsed": "Stainless Steel, Reusable lid, Anti-Carbon",
+                    "certificateImage": "eco_cert.jpg"
                 }
                 
             ]
@@ -60,7 +70,12 @@
                     "stock": 100,
                     "description": "100% organic cotton t-shirt",
                     "category": "Clothing",
-                    "image": "organic_tshirt.png"
+                    "image": "organic_tshirt.png",
+                    "co2EmissionSaved": 1,
+                    "waterConserved": 150,
+                    "wasteReduced": 500,
+                    "materialsUsed": "Made of organic cotton",
+                    "certificateImage": "eco_cert.jpg"
                 },
                 {
                     "id": "product4",
@@ -68,8 +83,13 @@
                     "price": 29.99,
                     "stock": 20,
                     "description": "Sustainable wooden desk organizer",
-                    "category": "Kitchen Utensils Supplies",
-                    "image": "bamboo_cutlery_set.png"
+                    "category": "Office Suppliesx",
+                    "image": "bamboo_cutlery_set.png",
+                    "co2EmissionSaved": 2,
+                    "waterConserved": 10,
+                    "wasteReduced": 90,
+                    "materialsUsed": "hds",
+                    "certificateImage": "eco_cert.jpg"
                 }
             ]
         }

@@ -27,7 +27,7 @@ class ProductinfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("🛠️ Loaded ProductInfoViewController with product: \(selectedProduct?.name ?? "No Product")")
         updateUI()
         }
     
@@ -74,5 +74,24 @@ class ProductinfoViewController: UIViewController {
                     updateUI()
                 }
     }
+    
+    @IBAction func viewMoreInfoTapped(_ sender: UIButton) {
+            guard let viewMoreInfoVC = storyboard?.instantiateViewController(withIdentifier: "ViewMoreInfoViewController") as? ViewMoreInfoViewController else {
+                print("❌ Failed to instantiate ViewMoreInfoViewController.")
+                return
+            }
+            
+            // Check if the selected product exists
+            if let selectedProduct = selectedProduct {
+                print("✅ Passing Product: \(selectedProduct.name)")
+                viewMoreInfoVC.product = selectedProduct
+            } else {
+                print("❌ selectedProduct is nil before passing.")
+            }
+            
+            navigationController?.pushViewController(viewMoreInfoVC, animated: true)
+        }
+
+
 }
 

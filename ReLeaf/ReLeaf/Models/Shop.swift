@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 struct Shop: Codable {
     let id: String
     let name: String
@@ -26,6 +24,11 @@ struct Product: Codable {
     let description: String
     let category: String
     let image: String
+    let co2EmissionSaved: Double
+    let waterConserved: Int
+    let wasteReduced: Int
+    let materialsUsed: String
+    let certificateImage: String
 }
 
 // For handling products specifically

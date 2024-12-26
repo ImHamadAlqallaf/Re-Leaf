@@ -22,7 +22,7 @@ struct ReviewLocalData: Codable {
 
 class ReviewLocalDataService {
     static let shared = ReviewLocalDataService()
-    private let fileName = "reviewData.json"
+    private let fileName = "localData.json"
     private var data: ReviewLocalData = ReviewLocalData(reviews: [])
     
     private init() {

@@ -138,6 +138,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         // Pass the product data
         productInfoVC.selectedProduct = selectedProduct
         
+        print("🛠️ Passing product to ProductInfoViewController: \(selectedProduct.name)")
         navigationController?.pushViewController(productInfoVC, animated: true)
     }
 

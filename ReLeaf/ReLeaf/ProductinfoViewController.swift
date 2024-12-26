@@ -18,7 +18,7 @@ class ProductinfoViewController: UIViewController {
     @IBOutlet weak var increaseButton: UIButton!
     
     var productName: String = "Product name"
-    var productPrice: Double = 3.00
+    var productPrice: Double = 0.00
     var productQuantity: Int = 1
     
     

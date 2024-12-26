@@ -18,12 +18,12 @@ struct Shop: Codable {
     let products: [Product]
 }
 
-struct Product: Codable {
-    let id: String
-    let name: String
-    let image: String
-    let price: Double
-}
+////struct Product: Codable {
+//    let id: String
+//    let name: String
+//    let image: String
+//    let price: Double
+//}//
 
 // For handling products specifically
 struct ProductLocalData: Codable {

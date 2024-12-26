@@ -3,7 +3,7 @@
         {
             "id": "1",
             "userName": "Alice",
-            "productId": "product1",  // Added productId to link review to a specific product
+            "productId": "product1",
             "text": "Great product!",
             "rating": 5,
             "timestamp": "2024-12-19T17:37:05Z"
@@ -11,7 +11,7 @@
         {
             "id": "2",
             "userName": "Bob",
-            "productId": "product2",  // Added productId to link review to a specific product
+            "productId": "product2",
             "text": "Could be better.",
             "rating": 3,
             "timestamp": "2024-12-19T17:45:10Z"
@@ -32,7 +32,7 @@
                     "stock": 50,
                     "description": "Eco-friendly toothbrush",
                     "category": "Oral Care",
-                    "image": "bamboo_toothbrush.png"  // Image filename linked to the product
+                    "image": "bamboo_toothbrush.png"
                 },
                 {
                     "id": "product2",
@@ -41,10 +41,20 @@
                     "stock": 30,
                     "description": "Stainless steel bottle",
                     "category": "Drinkware",
-                    "image": "reusable_bottle.png"  // Image filename linked to the product
+                    "image": "reusable_bottle.png"
                 }
-            ]
-        },
+            ],
+        }
+        "cartItems": [
+           {
+             "productId": "product1",
+             "quantity": 2
+           },
+           {
+             "productId": "product2",
+             "quantity": 1
+           }
+         ],
         {
             "id": "shop2",
             "name": "Green Goods",
@@ -59,7 +69,7 @@
                     "stock": 100,
                     "description": "100% organic cotton t-shirt",
                     "category": "Clothing",
-                    "image": "organic_tshirt.png"  // Image filename linked to the product
+                    "image": "organic_tshirt.png"
                 },
                 {
                     "id": "product4",
@@ -68,7 +78,7 @@
                     "stock": 20,
                     "description": "Sustainable wooden desk organizer",
                     "category": "Office Supplies",
-                    "image": "wooden_desk_organizer.png"  // Image filename linked to the product
+                    "image": "wooden_desk_organizer.png"
                 }
             ]
         }
@@ -92,11 +102,11 @@
     "orders": [
         {
             "id": "order1",
-            "userId": "user1",  // Links to a specific user
-            "shopId": "shop1",   // Links to a specific shop
+            "userId": "user1",
+            "shopId": "shop1",
             "products": [
                 {
-                    "productId": "product1",  // Links to a specific product
+                    "productId": "product1",
                     "quantity": 2,
                     "price": 3.99
                 }
@@ -107,11 +117,11 @@
         },
         {
             "id": "order2",
-            "userId": "user2",  // Links to a specific user
-            "shopId": "shop2",   // Links to a specific shop
+            "userId": "user2",
+            "shopId": "shop2",
             "products": [
                 {
-                    "productId": "product3",  // Links to a specific product
+                    "productId": "product3",
                     "quantity": 1,
                     "price": 15.99
                 }

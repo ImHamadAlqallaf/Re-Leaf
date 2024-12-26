@@ -1,82 +1,99 @@
 {
     "reviews": [
+      {
+        "storeId": "1",
+        "content": "Great store!",
+        "rating": 5
+      },
+      {
+        "storeId": "1",
+        "content": "Not bad, could be better.",
+        "rating": 3
+      }
+    ],
+    "stores": [
         {
             "id": "1",
-            "userName": "Alice",
-            "productId": "product1",  // Added productId to link review to a specific product
-            "text": "Great product!",
-            "rating": 5,
-            "timestamp": "2024-12-19T17:37:05Z"
+            "storeName": "Store 1",
+            "storeEmail": "store1@example.com",
+            "storePassword": "password123",
+            "storePhoneNumber": "123-456-7890",
+            "storeDescription": "A description of store 1.",
+            "storeOwner": "Owner 1",
+            "storeImage": "store1.jpeg",
+            "products": [
+                {
+                    "id": "101",
+                    "name": "Product 1",
+                    "price": 19.99,
+                    "stock": 100,
+                    "description": "Description of Product 1",
+                    "category": "Category 1",
+                    "image": "product1.png"
+                },
+                {
+                    "id": "102",
+                    "name": "Product 2",
+                    "price": 29.99,
+                    "stock": 50,
+                    "description": "Description of Product 2",
+                    "category": "Category 2",
+                    "image": "product2.jpeg"
+                }
+            ]
         },
         {
             "id": "2",
-            "userName": "Bob",
-            "productId": "product2",  // Added productId to link review to a specific product
-            "text": "Could be better.",
-            "rating": 3,
-            "timestamp": "2024-12-19T17:45:10Z"
+            "storeName": "Store 2",
+            "storeEmail": "store2@example.com",
+            "storePassword": "password456",
+            "storePhoneNumber": "987-654-3210",
+            "storeDescription": "A description of store 2.",
+            "storeOwner": "Owner 2",
+            "storeImage": "store2.jpeg",
+            "products": [
+                {
+                    "id": "201",
+                    "name": "Product A",
+                    "price": 39.99,
+                    "stock": 200,
+                    "description": "Description of Product A",
+                    "category": "Category 1",
+                    "image": "productA.jpg"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "storeName": "Green Goods",
+            "storeEmail": "info@greengoods.com",
+            "storePassword": "hashed_password_456",
+            "storePhoneNumber": "987-654-3210",
+            "storeDescription": "Green Goods offers a variety of eco-conscious products that support a sustainable lifestyle.",
+            "storeOwner": "Jane Smith",
+            "storeImage": "store3.jpeg",
+            "products": [
+                {
+                    "id": "product3",
+                    "name": "Organic Cotton T-Shirt",
+                    "price": 15.99,
+                    "stock": 100,
+                    "description": "100% organic cotton t-shirt",
+                    "category": "Clothing",
+                    "image": "organic_tshirt.png"
+                },
+                {
+                    "id": "product4",
+                    "name": "Wooden Desk Organizer",
+                    "price": 29.99,
+                    "stock": 20,
+                    "description": "Sustainable wooden desk organizer",
+                    "category": "Office Supplies",
+                    "image": "wooden_desk_organizer.png"
+                }
+            ]
         }
     ],
-    "stores": [
-            {
-                "id": "store1",
-                "storeName": "EcoMart",
-                "storeEmail": "contact@ecomart.com",  // Store email
-                "storePassword": "hashed_password_123",  // Store password (hashed)
-                "storePhoneNumber": "123-456-7890",  // Store phone number
-                "storeDescription": "EcoMart is your one-stop-shop for sustainable and eco-friendly products.",  // Store description
-                "storeOwner": "John Doe",  // Store owner name
-                "products": [
-                    {
-                        "id": "product1",
-                        "name": "Bamboo Toothbrush",
-                        "price": 3.99,
-                        "stock": 50,
-                        "description": "Eco-friendly toothbrush",
-                        "category": "Oral Care",
-                        "image": "bamboo_toothbrush.png"
-                    },
-                    {
-                        "id": "product2",
-                        "name": "Reusable Water Bottle",
-                        "price": 10.99,
-                        "stock": 30,
-                        "description": "Stainless steel bottle",
-                        "category": "Drinkware",
-                        "image": "reusable_bottle.png"
-                    }
-                ]
-            },
-            {
-                "id": "store2",
-                "storeName": "Green Goods",
-                "storeEmail": "info@greengoods.com",  // Store email
-                "storePassword": "hashed_password_456",  // Store password (hashed)
-                "storePhoneNumber": "987-654-3210",  // Store phone number
-                "storeDescription": "Green Goods offers a variety of eco-conscious products that support a sustainable lifestyle.",  // Store description
-                "storeOwner": "Jane Smith",  // Store owner name
-                "products": [
-                    {
-                        "id": "product3",
-                        "name": "Organic Cotton T-Shirt",
-                        "price": 15.99,
-                        "stock": 100,
-                        "description": "100% organic cotton t-shirt",
-                        "category": "Clothing",
-                        "image": "organic_tshirt.png"
-                    },
-                    {
-                        "id": "product4",
-                        "name": "Wooden Desk Organizer",
-                        "price": 29.99,
-                        "stock": 20,
-                        "description": "Sustainable wooden desk organizer",
-                        "category": "Office Supplies",
-                        "image": "wooden_desk_organizer.png"
-                    }
-                ]
-            }
-        ],
     "users": [
         {
             "id": "user1",
@@ -84,7 +101,7 @@
             "email": "alice@example.com",
             "password": "hashed_password_123",
             "role": "customer",
-            "image": "alice_profile_image.png"  // User profile image
+            "image": "alice_profile_image.png"
         },
         {
             "id": "user2",
@@ -92,17 +109,17 @@
             "email": "bob@example.com",
             "password": "hashed_password_456",
             "role": "customer",
-            "image": "bob_profile_image.png"  // User profile image
+            "image": "bob_profile_image.png"
         }
     ],
     "orders": [
         {
             "id": "order1",
-            "userId": "user1",  // Links to a specific user
-            "shopId": "shop1",   // Links to a specific shop
+            "userId": "user1",
+            "shopId": "1",
             "products": [
                 {
-                    "productId": "product1",  // Links to a specific product
+                    "productId": "101",
                     "quantity": 2,
                     "price": 3.99
                 }
@@ -113,11 +130,11 @@
         },
         {
             "id": "order2",
-            "userId": "user2",  // Links to a specific user
-            "shopId": "shop2",   // Links to a specific shop
+            "userId": "user2",
+            "shopId": "2",
             "products": [
                 {
-                    "productId": "product3",  // Links to a specific product
+                    "productId": "product3",
                     "quantity": 1,
                     "price": 15.99
                 }

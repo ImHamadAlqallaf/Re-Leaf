@@ -18,6 +18,14 @@
 		AC24F3AC2D1AC327002C711A /* ProductImpactTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F3AB2D1AC327002C711A /* ProductImpactTrackerViewController.swift */; };
 		AC24F3AE2D1AE414002C711A /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F3AD2D1AE414002C711A /* ProductCollectionViewCell.swift */; };
 		AC24F3B02D1AECC7002C711A /* localData.json in Resources */ = {isa = PBXBuildFile; fileRef = AC24F3AF2D1AECC7002C711A /* localData.json */; };
+		ACA118022D1D586800BEC009 /* ReviewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA118012D1D586800BEC009 /* ReviewDetails.swift */; };
+		ACA118042D1D59EA00BEC009 /* Wrapper struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA118032D1D59EA00BEC009 /* Wrapper struct.swift */; };
+		ACAA6C302D1DAB5B00053DCD /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA6C2F2D1DAB5B00053DCD /* UserDetails.swift */; };
+		ACAA6C322D1DAB8200053DCD /* OrderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA6C312D1DAB8200053DCD /* OrderDetails.swift */; };
+		ACAA6C342D1DAB9A00053DCD /* OrderProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA6C332D1DAB9A00053DCD /* OrderProduct.swift */; };
+		ACAA6C362D1DABBA00053DCD /* MetricsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA6C352D1DABBA00053DCD /* MetricsDetails.swift */; };
+		ACAA6C382D1DABD800053DCD /* ImpactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA6C372D1DABD800053DCD /* ImpactDetails.swift */; };
+		ACAA6C3A2D1DB59500053DCD /* ExperimentalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA6C392D1DB59500053DCD /* ExperimentalDetails.swift */; };
 		ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */; };
 		ACF3BF6A2D1C24F5005783CF /* AddProductExternallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3BF692D1C24F5005783CF /* AddProductExternallyViewController.swift */; };
 		ACF3BF6C2D1C3DAC005783CF /* StoresListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3BF6B2D1C3DAC005783CF /* StoresListTableViewController.swift */; };
@@ -70,6 +78,14 @@
 		AC24F3AB2D1AC327002C711A /* ProductImpactTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImpactTrackerViewController.swift; sourceTree = "<group>"; };
 		AC24F3AD2D1AE414002C711A /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC24F3AF2D1AECC7002C711A /* localData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localData.json; sourceTree = "<group>"; };
+		ACA118012D1D586800BEC009 /* ReviewDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetails.swift; sourceTree = "<group>"; };
+		ACA118032D1D59EA00BEC009 /* Wrapper struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wrapper struct.swift"; sourceTree = "<group>"; };
+		ACAA6C2F2D1DAB5B00053DCD /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		ACAA6C312D1DAB8200053DCD /* OrderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetails.swift; sourceTree = "<group>"; };
+		ACAA6C332D1DAB9A00053DCD /* OrderProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProduct.swift; sourceTree = "<group>"; };
+		ACAA6C352D1DABBA00053DCD /* MetricsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsDetails.swift; sourceTree = "<group>"; };
+		ACAA6C372D1DABD800053DCD /* ImpactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactDetails.swift; sourceTree = "<group>"; };
+		ACAA6C392D1DB59500053DCD /* ExperimentalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentalDetails.swift; sourceTree = "<group>"; };
 		ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Impact Tracker.storyboard"; sourceTree = "<group>"; };
 		ACF3BF692D1C24F5005783CF /* AddProductExternallyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductExternallyViewController.swift; sourceTree = "<group>"; };
 		ACF3BF6B2D1C3DAC005783CF /* StoresListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresListTableViewController.swift; sourceTree = "<group>"; };
@@ -166,14 +182,22 @@
 				AC24F3AD2D1AE414002C711A /* ProductCollectionViewCell.swift */,
 				AC24F3AB2D1AC327002C711A /* ProductImpactTrackerViewController.swift */,
 				8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */,
+				ACAA6C392D1DB59500053DCD /* ExperimentalDetails.swift */,
 				ACF3BF712D1C5264005783CF /* StoresListTableViewCell.swift */,
 				ACF3BF6F2D1C440B005783CF /* StoreDetails.swift */,
 				ACF3BF732D1C69B7005783CF /* ProductDetails.swift */,
 				ACF3BF6D2D1C3E0B005783CF /* AddingStoreTableViewController.swift */,
 				ACF3BF6B2D1C3DAC005783CF /* StoresListTableViewController.swift */,
+				ACA118032D1D59EA00BEC009 /* Wrapper struct.swift */,
 				D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */,
 				D5165D4B2D0DB1BB00CC2BF7 /* StoreManager.storyboard */,
 				AC24F3AF2D1AECC7002C711A /* localData.json */,
+				ACA118012D1D586800BEC009 /* ReviewDetails.swift */,
+				ACAA6C2F2D1DAB5B00053DCD /* UserDetails.swift */,
+				ACAA6C312D1DAB8200053DCD /* OrderDetails.swift */,
+				ACAA6C332D1DAB9A00053DCD /* OrderProduct.swift */,
+				ACAA6C352D1DABBA00053DCD /* MetricsDetails.swift */,
+				ACAA6C372D1DABD800053DCD /* ImpactDetails.swift */,
 				F233683A2CF4854200A988FC /* Info.plist */,
 			);
 			path = ReLeaf;
@@ -346,11 +370,19 @@
 				ACF3BF722D1C5264005783CF /* StoresListTableViewCell.swift in Sources */,
 				ACF3BF6A2D1C24F5005783CF /* AddProductExternallyViewController.swift in Sources */,
 				ACF3BF6E2D1C3E0B005783CF /* AddingStoreTableViewController.swift in Sources */,
+				ACA118042D1D59EA00BEC009 /* Wrapper struct.swift in Sources */,
 				F23368312CF4854000A988FC /* ViewController.swift in Sources */,
 				AC24F3AC2D1AC327002C711A /* ProductImpactTrackerViewController.swift in Sources */,
+				ACAA6C3A2D1DB59500053DCD /* ExperimentalDetails.swift in Sources */,
+				ACA118022D1D586800BEC009 /* ReviewDetails.swift in Sources */,
 				ACF3BF742D1C69B7005783CF /* ProductDetails.swift in Sources */,
 				AC24F3AE2D1AE414002C711A /* ProductCollectionViewCell.swift in Sources */,
+				ACAA6C362D1DABBA00053DCD /* MetricsDetails.swift in Sources */,
+				ACAA6C342D1DAB9A00053DCD /* OrderProduct.swift in Sources */,
+				ACAA6C322D1DAB8200053DCD /* OrderDetails.swift in Sources */,
 				F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */,
+				ACAA6C382D1DABD800053DCD /* ImpactDetails.swift in Sources */,
+				ACAA6C302D1DAB5B00053DCD /* UserDetails.swift in Sources */,
 				ACF3BF702D1C440B005783CF /* StoreDetails.swift in Sources */,
 				F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */,
 			);

@@ -108,14 +108,19 @@ class WriteReviewViewController: UIViewController {
 
       // MARK: - Submit Review Logic (After Confirmation)
       private func submitReview() {
+          
+          guard let userName = UserManager.shared.currentUser?.userName else {
+                  showAlert(message: "User not logged in.")
+                  return
+              }
           // Create a new Review object
           let newReview = Review(
               id: UUID().uuidString,
-              userName: "Test User",
+              userName: userName,
               productID: productID!, // Use the passed productID here
               text: reviewTextView.text ?? "",
               rating: selectedRating,
-              timestamp: ""
+              timestamp: Date()
           )
 
           // Add review locally and notify delegate

@@ -217,6 +217,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="c5I-AC-fib">
+                                <rect key="frame" x="23" y="123" width="122" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="iWY-Oa-VmO"/>
+                                    <constraint firstAttribute="width" constant="122" id="mkO-4x-B29"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEE-sw-tE3">
                                 <rect key="frame" x="163" y="157" width="198" height="106"/>
                                 <constraints>
@@ -227,13 +234,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write your Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiV-YH-Hcn">
-                                <rect key="frame" x="16" y="313" width="203.33333333333334" height="30"/>
+                                <rect key="frame" x="16" y="288" width="203.33333333333334" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9cb-f3-2la">
-                                <rect key="frame" x="5" y="362" width="378" height="200"/>
+                                <rect key="frame" x="5" y="337" width="378" height="200"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="2CN-c1-ZeI"/>
@@ -242,23 +249,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDv-V1-zIB">
-                                <rect key="frame" x="82" y="778.66666666666663" width="229" height="34.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Submit Review"/>
-                                <connections>
-                                    <action selector="submitReviewTapped:" destination="j2n-Dv-X1s" eventType="touchUpInside" id="NLl-ia-32x"/>
-                                    <action selector="submitReviewTapped:" destination="adG-nK-Sc7" eventType="touchUpInside" id="xDs-8A-F7n"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much would you rate this product?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCD-tq-KPt">
-                                <rect key="frame" x="55" y="581.66666666666663" width="283" height="60"/>
+                                <rect key="frame" x="55" y="552" width="283" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="iYD-YD-Bz9">
-                                <rect key="frame" x="87.666666666666686" y="711.66666666666663" width="218" height="22"/>
+                                <rect key="frame" x="87.666666666666686" y="706.66666666666663" width="218" height="22"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9c-Lq-ncg">
                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
@@ -312,13 +310,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="c5I-AC-fib">
-                                <rect key="frame" x="23" y="123" width="122" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="iWY-Oa-VmO"/>
-                                    <constraint firstAttribute="width" constant="122" id="mkO-4x-B29"/>
-                                </constraints>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDv-V1-zIB">
+                                <rect key="frame" x="82" y="773.66666666666663" width="229" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Submit Review"/>
+                                <connections>
+                                    <action selector="submitReviewTapped:" destination="j2n-Dv-X1s" eventType="touchUpInside" id="NLl-ia-32x"/>
+                                    <action selector="submitReviewTapped:" destination="adG-nK-Sc7" eventType="touchUpInside" id="xDs-8A-F7n"/>
+                                </connections>
+                            </button>
                             <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zXX-rs-ZFt">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -376,7 +376,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Evo-IP-scR" firstAttribute="leading" secondItem="Qyt-F0-CHb" secondAttribute="leading" constant="25" id="1bp-ds-718"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="BDv-V1-zIB" secondAttribute="bottom" constant="5" id="4yh-9x-qq4"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="BDv-V1-zIB" secondAttribute="bottom" constant="10" id="4yh-9x-qq4"/>
                             <constraint firstItem="yaY-yd-N6J" firstAttribute="leading" secondItem="c5I-AC-fib" secondAttribute="trailing" constant="18.333333333333371" id="69U-3a-mHG"/>
                             <constraint firstItem="c5I-AC-fib" firstAttribute="top" secondItem="Qyt-F0-CHb" secondAttribute="top" constant="20" id="E2k-qy-2DU"/>
                             <constraint firstItem="Qyt-F0-CHb" firstAttribute="trailing" secondItem="Evo-IP-scR" secondAttribute="trailing" constant="26" id="HkT-qb-oGy"/>
@@ -394,12 +394,12 @@
                             <constraint firstItem="Qyt-F0-CHb" firstAttribute="trailing" secondItem="9cb-f3-2la" secondAttribute="trailing" constant="10" id="S9U-tu-sIM"/>
                             <constraint firstItem="Qyt-F0-CHb" firstAttribute="trailing" secondItem="yEE-sw-tE3" secondAttribute="trailing" constant="32" id="b7y-Jj-9cq"/>
                             <constraint firstItem="rCD-tq-KPt" firstAttribute="centerX" secondItem="gHP-Ug-mCA" secondAttribute="centerX" id="beR-bw-n4y"/>
-                            <constraint firstItem="rCD-tq-KPt" firstAttribute="top" secondItem="9cb-f3-2la" secondAttribute="bottom" constant="19.666666666666629" id="e1e-Ls-Pvp"/>
+                            <constraint firstItem="rCD-tq-KPt" firstAttribute="top" secondItem="9cb-f3-2la" secondAttribute="bottom" constant="15" id="e1e-Ls-Pvp"/>
                             <constraint firstItem="yEE-sw-tE3" firstAttribute="leading" secondItem="c5I-AC-fib" secondAttribute="trailing" constant="18" id="fGc-lB-JqV"/>
                             <constraint firstItem="9cb-f3-2la" firstAttribute="top" secondItem="MiV-YH-Hcn" secondAttribute="bottom" constant="19" id="frL-Rl-Nan"/>
                             <constraint firstItem="Qyt-F0-CHb" firstAttribute="bottom" secondItem="Evo-IP-scR" secondAttribute="bottom" constant="200" id="gbk-A7-CYv"/>
                             <constraint firstItem="Evo-IP-scR" firstAttribute="top" secondItem="Qyt-F0-CHb" secondAttribute="top" constant="110" id="gcd-16-Jug"/>
-                            <constraint firstItem="MiV-YH-Hcn" firstAttribute="top" secondItem="c5I-AC-fib" secondAttribute="bottom" constant="40" id="xHb-az-CBH"/>
+                            <constraint firstItem="MiV-YH-Hcn" firstAttribute="top" secondItem="c5I-AC-fib" secondAttribute="bottom" constant="15" id="xHb-az-CBH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Write a Review" style="editor" id="Ge8-2N-jg2"/>
@@ -418,6 +418,21 @@
                 <exit id="j2n-Dv-X1s" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1275.5725190839694" y="-158.45070422535213"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FVD-bb-oGR">
+            <objects>
+                <viewController id="grP-cZ-bAB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gf6-2e-SfM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="syN-Jv-7M8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rbp-UU-83O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2104" y="-162"/>
         </scene>
     </scenes>
     <resources>

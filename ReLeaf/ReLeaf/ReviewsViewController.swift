@@ -53,6 +53,7 @@ class ReviewsViewController: UIViewController,  UITableViewDataSource, UITableVi
             self.reviews = allReviews
         }
         
+        updateAverageRating()
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
@@ -61,22 +62,24 @@ class ReviewsViewController: UIViewController,  UITableViewDataSource, UITableVi
     
        
        // MARK: - Update Average Rating
-       func updateAverageRating() {
-           let averageRating = ReviewLocalDataService.shared.calculateAverageRating()
-           averageRatingLabel.text = String(format: "%.1f", averageRating)
-           updateStars(for: averageRating)
-       }
+    func updateAverageRating() {
+        let totalRating = reviews.reduce(0) { $0 + $1.rating }
+        let averageRating = reviews.isEmpty ? 0 : Double(totalRating) / Double(reviews.count)
+        averageRatingLabel.text = String(format: "%.1f", averageRating)
+        updateStars(for: averageRating)
+    }
        
        func updateStars(for rating: Double) {
            let starImageViews = averageStarsStackView.arrangedSubviews.compactMap { $0 as? UIImageView }
            for (index, imageView) in starImageViews.enumerated() {
                if Double(index + 1) <= rating {
-                   imageView.image = UIImage(systemName: "star.fill")
+                   imageView.image = UIImage(systemName: "star.fill")?.withRenderingMode(.alwaysTemplate)
                } else if Double(index) < rating {
-                   imageView.image = UIImage(systemName: "star.lefthalf.fill")
+                   imageView.image = UIImage(systemName: "star.lefthalf.fill")?.withRenderingMode(.alwaysTemplate)
                } else {
-                   imageView.image = UIImage(systemName: "star")
+                   imageView.image = UIImage(systemName: "star")?.withRenderingMode(.alwaysTemplate)
                }
+               imageView.tintColor = .systemYellow // Set the color to gold
            }
        }
        

@@ -13,7 +13,7 @@ struct Review: Codable {
     let productID: String?
     let text: String
     let rating: Int  // Rating from 1 to 5
-    let timestamp: String
+    let timestamp: Date
     
 }
 

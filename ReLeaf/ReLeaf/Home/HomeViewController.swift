@@ -39,13 +39,29 @@ class HomeViewController: UIViewController {
         
     }
     
+//    private func setupCollectionViews() {
+//            recommendedCollectionView.delegate = self
+//            recommendedCollectionView.dataSource = self
+//            
+//            forYouCollectionView.delegate = self
+//            forYouCollectionView.dataSource = self
+//            
+//            previousPurchasesCollectionView.delegate = self
+//            previousPurchasesCollectionView.dataSource = self
+//        }
+    
     private func setupCollectionViews() {
+            let customLayout = CustomFlowLayout()
+            
+            recommendedCollectionView.collectionViewLayout = customLayout
             recommendedCollectionView.delegate = self
             recommendedCollectionView.dataSource = self
             
+            forYouCollectionView.collectionViewLayout = customLayout
             forYouCollectionView.delegate = self
             forYouCollectionView.dataSource = self
             
+            previousPurchasesCollectionView.collectionViewLayout = customLayout
             previousPurchasesCollectionView.delegate = self
             previousPurchasesCollectionView.dataSource = self
         }

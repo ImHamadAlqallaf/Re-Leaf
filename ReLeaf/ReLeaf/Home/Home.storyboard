@@ -40,9 +40,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RECOMMENDED (4⭐️)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27y-y7-HLp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RECOMMENDED (4⭐️)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27y-y7-HLp">
                                 <rect key="frame" x="13" y="151" width="159" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -103,15 +102,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FOR YOU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnK-qy-YN9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOR YOU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnK-qy-YN9">
                                 <rect key="frame" x="13" y="316" width="75" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nmg-aQ-G4D">
-                                <rect key="frame" x="16" y="338" width="359" height="150"/>
+                                <rect key="frame" x="16" y="362" width="359" height="126"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gCc-A7-Zv5">
                                     <size key="itemSize" width="128" height="128"/>
@@ -120,8 +118,8 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="ehc-Kd-5II" customClass="ProductCollectionViewCell" customModule="ReLeaf">
-                                        <rect key="frame" x="138" y="11" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="ProductCell" id="ehc-Kd-5II" customClass="ProductCollectionViewCell" customModule="ReLeaf">
+                                        <rect key="frame" x="0.0" y="-1" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="K3V-Wm-gEp">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -150,7 +148,7 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mdo-v9-wXe">
-                                        <rect key="frame" x="0.0" y="11" width="128" height="128"/>
+                                        <rect key="frame" x="138" y="-1" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gdd-Hh-I6A">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -158,7 +156,7 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iB4-Kh-ujV">
-                                        <rect key="frame" x="276" y="11" width="128" height="128"/>
+                                        <rect key="frame" x="276" y="-1" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R1p-iD-MYF">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -167,13 +165,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Previous Purchases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mon-ew-MST">
-                                <rect key="frame" x="13" y="533" width="161" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="c5l-1f-3gC">
                                 <rect key="frame" x="16" y="548" width="361" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -215,18 +206,31 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Previous Purchases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mon-ew-MST">
+                                <rect key="frame" x="13" y="519" width="161" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="c5l-1f-3gC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="8Bq-02-sja"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Nmg-aQ-G4D" secondAttribute="trailing" constant="18" id="Q7H-eB-cLB"/>
-                            <constraint firstItem="c5l-1f-3gC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="445" id="bpU-DY-QLq"/>
-                            <constraint firstItem="Nmg-aQ-G4D" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="235" id="c4v-sV-JOO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="27y-y7-HLp" secondAttribute="trailing" constant="221" id="Qjz-Dn-0jd"/>
+                            <constraint firstItem="qnK-qy-YN9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="213" id="Rke-NU-WqO"/>
+                            <constraint firstItem="27y-y7-HLp" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="48" id="Yrx-uI-ANw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qnK-qy-YN9" secondAttribute="trailing" constant="305" id="ZMM-9L-ftl"/>
+                            <constraint firstItem="Nmg-aQ-G4D" firstAttribute="top" secondItem="qnK-qy-YN9" secondAttribute="bottom" constant="25" id="aaC-7J-tgi"/>
                             <constraint firstItem="Nmg-aQ-G4D" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="gHs-Aa-f3i"/>
+                            <constraint firstItem="c5l-1f-3gC" firstAttribute="top" secondItem="Nmg-aQ-G4D" secondAttribute="bottom" constant="60" id="hCv-FI-eUH"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="c5l-1f-3gC" secondAttribute="bottom" constant="120" id="kLN-Kg-Wyk"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Nmg-aQ-G4D" secondAttribute="bottom" constant="330" id="mu6-sf-Rsb"/>
+                            <constraint firstItem="qnK-qy-YN9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="13" id="vsh-Ql-v4X"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="c5l-1f-3gC" secondAttribute="trailing" constant="16" id="xPc-ia-Cpq"/>
+                            <constraint firstItem="27y-y7-HLp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="13" id="zRP-45-kfh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="zvb-Vx-kCi"/>

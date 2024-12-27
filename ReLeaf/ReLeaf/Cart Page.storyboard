@@ -107,7 +107,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c7g-VP-sCQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="DW2-rA-L1u" firstAttribute="top" secondItem="Ghl-sF-jnk" secondAttribute="bottom" constant="15" id="05c-EU-Ov4"/>
                             <constraint firstItem="Ghl-sF-jnk" firstAttribute="leading" secondItem="c7g-VP-sCQ" secondAttribute="leading" constant="79" id="4iQ-RA-iGz"/>
@@ -283,7 +283,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nr4-9x-EUW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="pMn-3H-T3H" firstAttribute="top" secondItem="voc-99-Goa" secondAttribute="bottom" constant="23" id="0Wq-mA-CmN"/>
                             <constraint firstItem="FyT-9j-KVh" firstAttribute="leading" secondItem="Nr4-9x-EUW" secondAttribute="leading" constant="36" id="133-jz-KUD"/>
@@ -399,7 +399,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="keh-3e-OAx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="LQE-j8-xT2" firstAttribute="top" secondItem="BAA-fe-5Fg" secondAttribute="bottom" constant="8" id="1L4-s6-WBs"/>
                             <constraint firstItem="Hqd-B7-aQC" firstAttribute="top" secondItem="u0t-gN-DIV" secondAttribute="bottom" constant="8" id="5yb-24-tgW"/>
@@ -569,7 +569,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rs9-Q2-OWo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="rs9-Q2-OWo" firstAttribute="trailing" secondItem="Wtz-fw-8dq" secondAttribute="trailing" constant="16" id="03R-1S-orY"/>
                             <constraint firstItem="Izf-vh-N3S" firstAttribute="top" secondItem="doA-oN-tdt" secondAttribute="bottom" constant="8" id="E2g-BV-nEg"/>
@@ -709,7 +709,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EaU-px-Rqv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="KPW-1w-Cex" firstAttribute="top" secondItem="Sfx-xS-rQ1" secondAttribute="top" id="26p-de-nHl"/>
                             <constraint firstItem="Sfx-xS-rQ1" firstAttribute="top" secondItem="EaU-px-Rqv" secondAttribute="top" constant="188" id="BHa-yo-MiI"/>
@@ -772,7 +772,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cNa-Fl-LWe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="cNa-Fl-LWe" firstAttribute="bottom" secondItem="1up-E3-zHY" secondAttribute="bottom" constant="28" id="CLY-0O-5mP"/>
                             <constraint firstItem="cNa-Fl-LWe" firstAttribute="trailing" secondItem="xej-P0-iRM" secondAttribute="trailing" constant="126" id="EJw-sc-WgN"/>
@@ -810,6 +810,7 @@
             <point key="canvasLocation" x="3545.801526717557" y="9.1549295774647899"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="0.98039215686274506" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="Clock" width="48" height="48"/>
         <image name="Delivery" width="170" height="175"/>

@@ -1,13 +1,3 @@
-//
-//  ExperimentalDetails.swift
-//  ReLeaf
-//
-//  Created by Guest User on 26/12/2024.
-//
-
-import Foundation
-
-
 import Foundation
 
 // Store Model
@@ -52,18 +42,18 @@ struct Store: Codable {
     }
 }
 
-
 // Wrapper Model
 struct Wrapper: Codable {
     var stores: [Store]
     var reviews: [Review]?
+    var metrics: Metrics?
     
     enum CodingKeys: String, CodingKey {
         case stores
         case reviews
+        case metrics
     }
 }
-
 
 // Review Model
 struct Review: Codable {
@@ -80,11 +70,23 @@ struct Review: Codable {
     }
 }
 
-
 // Product Model (assuming it's used for products within a store)
 struct Product: Codable {
     var id: String
     var name: String
     var description: String
     var price: Double
+}
+
+// Metrics Model
+struct Metrics: Codable {
+    var impact: [Metric]
+}
+
+// Metric Model
+struct Metric: Codable {
+    var id: String
+    var name: String
+    var value: Int
+    var timestamp: String
 }

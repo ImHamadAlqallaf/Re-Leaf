@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JXd-sc-snT">
-                                <rect key="frame" x="77" y="435.00000000000006" width="240" height="246.33333333333331"/>
+                                <rect key="frame" x="77" y="435.00000000000011" width="240" height="246.33333333333337"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JZr-QI-U6h">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -107,9 +106,18 @@
                                     <segue destination="r0B-bh-lsE" kind="show" id="gz0-SR-g6U"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUs-Fz-Nem">
+                                <rect key="frame" x="210" y="329" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="paN-W9-3vp" kind="presentation" modalPresentationStyle="fullScreen" id="uyF-W4-knd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oL3-pf-KIV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99630469079999995" green="0.98074525589999995" blue="0.94900423290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="oL3-pf-KIV" firstAttribute="bottom" secondItem="wz5-pw-6l8" secondAttribute="bottom" constant="306.66666666666669" id="2Gf-Xa-nJb"/>
                             <constraint firstItem="oL3-pf-KIV" firstAttribute="bottom" secondItem="JXd-sc-snT" secondAttribute="bottom" constant="136.66666666666663" id="7Ta-Sf-V0J"/>
@@ -228,7 +236,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="29O-oP-YVC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99630469079999995" green="0.98074525589999995" blue="0.94900423290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="GBG-cd-Wgh" firstAttribute="leading" secondItem="29O-oP-YVC" secondAttribute="leading" constant="16" id="0J0-Sw-vz6"/>
                             <constraint firstItem="29O-oP-YVC" firstAttribute="bottom" secondItem="Ops-J1-VGm" secondAttribute="bottom" constant="35" id="ADE-1R-dad"/>
@@ -253,13 +261,13 @@
         <!--ImpactMetricDashboard-->
         <scene sceneID="OpU-mK-EcV">
             <objects>
-                <viewController storyboardIdentifier="NextViewController" title="ImpactMetricDashboard" id="paN-W9-3vp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImpactMetricDashboard" title="ImpactMetricDashboard" id="paN-W9-3vp" customClass="ImpactMetricDashboardViewController" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GcW-OP-vLN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="2qI-dS-LBz">
-                                <rect key="frame" x="15" y="444.33333333333326" width="363" height="273.66666666666674"/>
+                                <rect key="frame" x="15" y="478.33333333333326" width="363" height="273.66666666666674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wEU-wN-ckJ">
                                         <rect key="frame" x="0.0" y="0.0" width="363" height="20.333333333333332"/>
@@ -279,7 +287,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyV-Iu-57u">
-                                        <rect key="frame" x="0.0" y="63.333333333333378" width="363" height="20.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="63.333333333333321" width="363" height="20.333333333333336"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Water Conserved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfn-KF-Ap3">
                                                 <rect key="frame" x="0.0" y="0.0" width="321.66666666666669" height="20.333333333333332"/>
@@ -353,10 +361,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Reload Data"/>
+                                <connections>
+                                    <action selector="reloadDataTapped:" destination="paN-W9-3vp" eventType="touchUpInside" id="Gqv-Wq-1cL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h9v-3N-f43"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99630469079999995" green="0.98074525589999995" blue="0.94900423290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="h9v-3N-f43" firstAttribute="bottom" secondItem="2qI-dS-LBz" secondAttribute="bottom" constant="100" id="2Qd-lw-M4z"/>
                             <constraint firstItem="h9v-3N-f43" firstAttribute="trailing" secondItem="2qI-dS-LBz" secondAttribute="trailing" constant="15" id="JYE-OS-s9Q"/>
@@ -364,6 +375,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Impact Metric Dashboard" id="H5Y-bF-k0I"/>
+                    <connections>
+                        <outlet property="btnReloadData" destination="Ze7-Zp-93k" id="soO-d7-EoV"/>
+                        <outlet property="lblCO2EmissionSaved" destination="gW4-wr-rcr" id="JIX-Lr-maL"/>
+                        <outlet property="lblPlasticWasteReduced" destination="QJS-vW-XGB" id="EhH-Ew-kvY"/>
+                        <outlet property="lblStaticCO2EmissionSaved" destination="RkF-pg-Zok" id="6SX-hw-Ch5"/>
+                        <outlet property="lblStaticPlasticWasteReduced" destination="Eat-ww-2ka" id="JpC-HS-m3b"/>
+                        <outlet property="lblStaticTreesSaved" destination="dqG-UF-89N" id="cAe-n6-bw5"/>
+                        <outlet property="lblStaticWasteReduced" destination="rx6-SM-Cmr" id="1gg-dI-BGD"/>
+                        <outlet property="lblStaticWaterConserved" destination="Pfn-KF-Ap3" id="tA5-Jl-06J"/>
+                        <outlet property="lblTreesSaved" destination="boJ-PZ-bnx" id="8hj-MW-eaI"/>
+                        <outlet property="lblWasteReduced" destination="5A5-qs-vgK" id="G9x-YD-4Ey"/>
+                        <outlet property="lblWaterConserved" destination="MYt-Rd-GKP" id="ffn-fY-bev"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALE-b0-a29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -388,9 +412,7 @@
             <point key="canvasLocation" x="185.49618320610685" y="716.90140845070425"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uyF-W4-knd"/>
+    </inferredMetricsTieBreakers>
 </document>

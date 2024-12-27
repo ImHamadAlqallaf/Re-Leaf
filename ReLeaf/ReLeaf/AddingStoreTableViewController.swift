@@ -19,16 +19,41 @@ class AddingStoreTableViewController: UITableViewController {
     @IBOutlet weak var lblStoreOwner: UILabel!
     @IBOutlet weak var txtStoreOwner: UITextField!
     
+    // MARK: - Properties
+    var storeToEdit: Store? // Optional property to hold the store data for editing
+    
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Setup initial UI elements
-        imgStorePhoto.contentMode = .scaleAspectFit
-        imgStorePhoto.image = UIImage(systemName: "person.circle") // Default image
+        // If we're editing an existing store, populate the fields
+        if let store = storeToEdit {
+            txtStoreName.text = store.storeName
+            txtStoreEmail.text = store.storeEmail
+            txtStorePhoneNumber.text = store.storePhoneNumber
+            txtStoreDescription.text = store.storeDescription
+            txtStoreOwner.text = store.storeOwner
+            if let image = store.decodedStoreImage() {
+                imgStorePhoto.image = image
+            }
+            
+            // Change the button text to "Update Store" and "Update Photo"
+            btnAddStore.title = "Update Store"
+            btnAddPhoto.setTitle("Update Photo", for: .normal)
+            
+            // Set the navigation title to "Updating Store"
+            self.title = "Updating Store"
+        } else {
+            // If no store to edit, show default values
+            btnAddStore.title = "Add Store"
+            btnAddPhoto.setTitle("Add Photo", for: .normal)
+            
+            // Set the navigation title to "Adding Store"
+            self.title = "Adding Store"
+        }
     }
     
-    // MARK: - Add Store Action
+    // MARK: - Add/Update Store Action
     @IBAction func addStoreTapped(_ sender: UIBarButtonItem) {
         // MARK: - Validation
         guard let storeName = txtStoreName.text, !storeName.isEmpty else {
@@ -56,15 +81,27 @@ class AddingStoreTableViewController: UITableViewController {
             return
         }
 
+        guard let password = txtStorePassword.text, !password.isEmpty else {
+            showAlert(message: "Please enter a password.")
+            return
+        }
+
+        guard !password.contains(" ") else {
+            showAlert(message: "Password must not contain spaces.")
+            return
+        }
+
         // MARK: - Prepare Store Object
-        let newStoreId = UUID().uuidString // Unique ID
-        let storeImageBase64: String? = imgStorePhoto.image?.pngData()?.base64EncodedString()
+        let storeImageBase64 = imgStorePhoto.image?.pngData()?.base64EncodedString()
+
+        // Use existing store ID if editing, else generate a new one
+        let newStoreId = storeToEdit?.id ?? UUID().uuidString
 
         let newStore = Store(
             id: newStoreId,
             storeName: storeName,
             storeEmail: email,
-            storePassword: txtStorePassword.text ?? "",
+            storePassword: password,
             storePhoneNumber: phone,
             storeDescription: description,
             storeOwner: owner,
@@ -75,7 +112,7 @@ class AddingStoreTableViewController: UITableViewController {
         // MARK: - Load Existing Data and Save
         loadFromJSON { [weak self] result in
             guard let self = self else { return }
-            
+
             var wrapper = Wrapper(stores: [], reviews: nil) // Default wrapper if file doesn't exist
 
             switch result {
@@ -85,65 +122,36 @@ class AddingStoreTableViewController: UITableViewController {
                 print("No existing data found, creating new data file.")
             }
 
-            // Append the new store and save
-            wrapper.stores.append(newStore)
+            // Update or append the store
+            if let storeIndex = wrapper.stores.firstIndex(where: { $0.id == newStore.id }) {
+                // Update the existing store
+                wrapper.stores[storeIndex] = newStore
+            } else {
+                // Add the new store
+                wrapper.stores.append(newStore)
+            }
+
             self.saveToJSON(wrapper: wrapper) { success in
                 DispatchQueue.main.async {
                     if success {
-                        print("Store added successfully!")
+                        print("Store updated successfully!")
                         
                         // Pop the current view controller (returning to the stores list view)
                         self.navigationController?.popViewController(animated: true)
                         
                         // Notify the previous view controller (StoresListTableViewController) to reload
                         if let storesListVC = self.navigationController?.viewControllers.first(where: { $0 is StoresListTableViewController }) as? StoresListTableViewController {
-                            storesListVC.loadStoresData()
+                            storesListVC.loadStoresData() // Reload the stores list
                         }
                     } else {
-                        self.showAlert(message: "Failed to save store.")
+                        self.showAlert(message: "Failed to update store.")
                     }
                 }
             }
         }
     }
-
-
 
     // MARK: - Helper Functions
-    
-    func getNextStoreId() -> String {
-        var highestId = 0
-        
-        if let url = getDocumentsDirectory()?.appendingPathComponent("localData.json") {
-            do {
-                let wrapper = try loadData(from: url)
-                
-                for store in wrapper.stores {
-                    if let id = Int(store.id) {
-                        highestId = max(highestId, id)
-                    }
-                }
-            } catch {
-                print("Error reading JSON: \(error)")
-            }
-        }
-        
-        return String(highestId + 1)
-    }
-    
-    func loadData(from url: URL) throws -> Wrapper {
-        let data = try Data(contentsOf: url)
-        let decoder = JSONDecoder()
-        let wrapper = try decoder.decode(Wrapper.self, from: data)
-        return wrapper
-    }
-    
-    func saveData(_ wrapper: Wrapper, to url: URL) throws {
-        let encoder = JSONEncoder()
-        encoder.outputFormatting = .prettyPrinted
-        let encodedData = try encoder.encode(wrapper)
-        try encodedData.write(to: url)
-    }
     
     func isValidPhoneNumber(_ phoneNumber: String) -> Bool {
         let phoneRegex = "^[0-9]{8}$"
@@ -156,9 +164,7 @@ class AddingStoreTableViewController: UITableViewController {
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
-    
-    typealias JSONCompletionHandler = (Result<Wrapper, Error>) -> Void
-    
+
     func saveToJSON(wrapper: Wrapper, completion: @escaping (Bool) -> Void) {
         do {
             let encoder = JSONEncoder()
@@ -175,6 +181,13 @@ class AddingStoreTableViewController: UITableViewController {
             completion(false)
         }
     }
+    
+    func getDocumentsDirectory() -> URL? {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths.first
+    }
+
+    typealias JSONCompletionHandler = (Result<Wrapper, Error>) -> Void
 
     func loadFromJSON(completion: @escaping JSONCompletionHandler) {
         do {
@@ -190,11 +203,4 @@ class AddingStoreTableViewController: UITableViewController {
             completion(.failure(error))
         }
     }
-
-    func getDocumentsDirectory() -> URL? {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths.first
-    }
-    
-
 }

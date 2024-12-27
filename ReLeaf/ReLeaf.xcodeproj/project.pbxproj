@@ -36,6 +36,7 @@
 		D096691F2D0DB377003DA933 /* Cart Page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D096691E2D0DB377003DA933 /* Cart Page.storyboard */; };
 		D09669212D0DB38F003DA933 /* Order page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669202D0DB38F003DA933 /* Order page.storyboard */; };
 		D09669252D0DB3DE003DA933 /* Product Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669242D0DB3DE003DA933 /* Product Info.storyboard */; };
+		D107AD3A2D1F1080002622D0 /* ImpactMetricDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107AD392D1F1080002622D0 /* ImpactMetricDashboardViewController.swift */; };
 		D5165D4A2D0DB1B100CC2BF7 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */; };
 		D5165D4C2D0DB1BB00CC2BF7 /* StoreManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5165D4B2D0DB1BB00CC2BF7 /* StoreManager.storyboard */; };
 		F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233682C2CF4854000A988FC /* AppDelegate.swift */; };
@@ -96,6 +97,7 @@
 		D096691E2D0DB377003DA933 /* Cart Page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Cart Page.storyboard"; sourceTree = "<group>"; };
 		D09669202D0DB38F003DA933 /* Order page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Order page.storyboard"; sourceTree = "<group>"; };
 		D09669242D0DB3DE003DA933 /* Product Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Info.storyboard"; sourceTree = "<group>"; };
+		D107AD392D1F1080002622D0 /* ImpactMetricDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactMetricDashboardViewController.swift; sourceTree = "<group>"; };
 		D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		D5165D4B2D0DB1BB00CC2BF7 /* StoreManager.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreManager.storyboard; sourceTree = "<group>"; };
 		F23368292CF4854000A988FC /* ReLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +143,6 @@
 		F23368202CF4854000A988FC = {
 			isa = PBXGroup;
 			children = (
-				ACF3BF692D1C24F5005783CF /* AddProductExternallyViewController.swift */,
 				F233682B2CF4854000A988FC /* ReLeaf */,
 				F23368422CF4854300A988FC /* ReLeafTests */,
 				F233684C2CF4854300A988FC /* ReLeafUITests */,
@@ -179,6 +180,8 @@
 				83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */,
 				83F9ECA92D0DB9E600816FC8 /* loginPage.storyboard */,
 				ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */,
+				D107AD392D1F1080002622D0 /* ImpactMetricDashboardViewController.swift */,
+				ACF3BF692D1C24F5005783CF /* AddProductExternallyViewController.swift */,
 				AC24F3AD2D1AE414002C711A /* ProductCollectionViewCell.swift */,
 				AC24F3AB2D1AC327002C711A /* ProductImpactTrackerViewController.swift */,
 				8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */,
@@ -379,6 +382,7 @@
 				AC24F3AE2D1AE414002C711A /* ProductCollectionViewCell.swift in Sources */,
 				ACAA6C362D1DABBA00053DCD /* MetricsDetails.swift in Sources */,
 				ACAA6C342D1DAB9A00053DCD /* OrderProduct.swift in Sources */,
+				D107AD3A2D1F1080002622D0 /* ImpactMetricDashboardViewController.swift in Sources */,
 				ACAA6C322D1DAB8200053DCD /* OrderDetails.swift in Sources */,
 				F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */,
 				ACAA6C382D1DABD800053DCD /* ImpactDetails.swift in Sources */,

@@ -12,17 +12,6 @@ struct CartItem: Codable {
     var quantity: Int
 }
 
-//struct Shop: Codable {
-//    let id: String
-//    let name: String
-//    let products: [Product]
-//    var cartItems: [CartItem]
-//}
-//
-//struct LocalData: Codable {
-//    let shops: [Shop]
-//    var cartItems: [CartItem]
-//}
 
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -33,7 +22,7 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Ensure tableView outlet is connected
+
         guard tableView != nil else {
             fatalError("TableView outlet is not connected")
         }
@@ -41,17 +30,17 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         
-        // Initialize localData to avoid nil
+
         loadLocalData()
         
-        // Ensure localData is not nil
+
         guard localData != nil else {
             fatalError("localData is not initialized")
         }
     }
 
     func loadLocalData() {
-        // Sample data for testing
+   
         let sampleProducts = [
             Product(id: "product1", name: "Bamboo Toothbrush", price: 3.99, image: "bamboo_toothbrush.png"),
             Product(id: "product2", name: "Reusable Water Bottle", price: 10.99, image: "reusable_bottle.png")
@@ -68,7 +57,7 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         localData = LocalData(shops: sampleShops, cartItems: sampleCartItems)
         
-        // Reload table view data
+   
         tableView.reloadData()
     }
     

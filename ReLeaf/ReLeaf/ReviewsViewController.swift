@@ -15,21 +15,50 @@ class ReviewsViewController: UIViewController,  UITableViewDataSource, UITableVi
     @IBOutlet weak var tableView: UITableView!
     
     var reviews: [Review] = []
+    var productID: String?
+
        
        override func viewDidLoad() {
            super.viewDidLoad()
            tableView.delegate = self
            tableView.dataSource = self
+           print("🛠️ Loaded ReviewsViewController with ProductID: \(productID ?? "No ProductID")")
            loadReviews()
        }
+    
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            // Ensure the productID is still available here
+            print("🛠️ ReviewsViewController viewWillAppear with ProductID: \(productID ?? "No ProductID")")
+        }
        
        // MARK: - Load Reviews
-       func loadReviews() {
-           reviews = ReviewLocalDataService.shared.getReviews()
-               print("📊 Reviews Loaded: \(reviews.count)")  // Check if the reviews are loaded correctly
-               updateAverageRating()
-               tableView.reloadData()
-       }
+//       func loadReviews() {
+//           reviews = ReviewLocalDataService.shared.getReviews()
+//               print("📊 Reviews Loaded: \(reviews.count)")  // Check if the reviews are loaded correctly
+//               updateAverageRating()
+//               tableView.reloadData()
+//       }
+    
+    func loadReviews() {
+        let allReviews = ReviewLocalDataService.shared.getReviews()
+        
+        if let productID = productID {
+            // Filter reviews for the specific product
+            let filteredReviews = allReviews.filter { $0.productID == productID }
+            self.reviews = filteredReviews
+            print("✅ Filtered Reviews Count: \(filteredReviews.count)")
+        } else {
+            print("❌ No ProductID provided. Showing all reviews.")
+            self.reviews = allReviews
+        }
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
+    
        
        // MARK: - Update Average Rating
        func updateAverageRating() {
@@ -67,6 +96,8 @@ class ReviewsViewController: UIViewController,  UITableViewDataSource, UITableVi
         if segue.identifier == "WriteReviewSegue" {
             if let writeReviewVC = segue.destination as? WriteReviewViewController {
                 writeReviewVC.delegate = self
+                // Pass the productID to the WriteReviewViewController
+                writeReviewVC.productID = self.productID
                 print("🟢 Delegate set to ReviewsViewController in prepare(for:sender:)")
             }
         }

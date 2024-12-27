@@ -10,9 +10,9 @@ import Foundation
 struct Review: Codable {
     let id: String
     let userName: String
-    let productID: String
+    let productID: String?
     let text: String
-    let rating: Int // Rating from 1 to 5
+    let rating: Int  // Rating from 1 to 5
     let timestamp: Date
 }
 
@@ -107,7 +107,7 @@ class ReviewLocalDataService {
         print("📊 Fetching reviews, current count: \(data.reviews.count)")
         return data.reviews.sorted { $0.timestamp > $1.timestamp }
     }
-    
+
     func addReview(_ review: Review) {
         data.reviews.append(review)
         saveDataToDisk()

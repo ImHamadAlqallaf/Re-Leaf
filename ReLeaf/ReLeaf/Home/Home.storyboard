@@ -111,7 +111,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nmg-aQ-G4D">
-                                <rect key="frame" x="16" y="345" width="359" height="128"/>
+                                <rect key="frame" x="16" y="338" width="359" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gCc-A7-Zv5">
                                     <size key="itemSize" width="128" height="128"/>
@@ -121,7 +121,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="ehc-Kd-5II" customClass="ProductCollectionViewCell" customModule="ReLeaf">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="138" y="11" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="K3V-Wm-gEp">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -150,7 +150,7 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mdo-v9-wXe">
-                                        <rect key="frame" x="138" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="11" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gdd-Hh-I6A">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -158,7 +158,7 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iB4-Kh-ujV">
-                                        <rect key="frame" x="276" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="276" y="11" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R1p-iD-MYF">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -175,7 +175,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="c5l-1f-3gC">
-                                <rect key="frame" x="16" y="562" width="361" height="128"/>
+                                <rect key="frame" x="16" y="548" width="361" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z2L-WX-el7">
                                     <size key="itemSize" width="128" height="128"/>
@@ -185,7 +185,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="Olg-0f-gzr" customClass="ProductCollectionViewCell" customModule="ReLeaf">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="11" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iA6-D6-rrb">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -221,15 +221,15 @@
                         <constraints>
                             <constraint firstItem="c5l-1f-3gC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="8Bq-02-sja"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Nmg-aQ-G4D" secondAttribute="trailing" constant="18" id="Q7H-eB-cLB"/>
-                            <constraint firstItem="c5l-1f-3gC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="459" id="bpU-DY-QLq"/>
-                            <constraint firstItem="Nmg-aQ-G4D" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="242" id="c4v-sV-JOO"/>
+                            <constraint firstItem="c5l-1f-3gC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="445" id="bpU-DY-QLq"/>
+                            <constraint firstItem="Nmg-aQ-G4D" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="235" id="c4v-sV-JOO"/>
                             <constraint firstItem="Nmg-aQ-G4D" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="gHs-Aa-f3i"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="c5l-1f-3gC" secondAttribute="bottom" constant="128" id="kLN-Kg-Wyk"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Nmg-aQ-G4D" secondAttribute="bottom" constant="345" id="mu6-sf-Rsb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="c5l-1f-3gC" secondAttribute="bottom" constant="120" id="kLN-Kg-Wyk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Nmg-aQ-G4D" secondAttribute="bottom" constant="330" id="mu6-sf-Rsb"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="c5l-1f-3gC" secondAttribute="trailing" constant="16" id="xPc-ia-Cpq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zvb-Vx-kCi"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="zvb-Vx-kCi"/>
                     <connections>
                         <outlet property="forYouCollectionView" destination="Nmg-aQ-G4D" id="X7d-mC-HAL"/>
                         <outlet property="previousPurchasesCollectionView" destination="c5l-1f-3gC" id="cF9-nr-Ss8"/>

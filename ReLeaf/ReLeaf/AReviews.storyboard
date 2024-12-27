@@ -28,7 +28,7 @@
         <!--Reviews-->
         <scene sceneID="IiN-KX-laC">
             <objects>
-                <viewController id="F3l-ba-IPr" customClass="ReviewsViewController" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReviewsViewController" id="F3l-ba-IPr" customClass="ReviewsViewController" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a8O-X9-QxP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

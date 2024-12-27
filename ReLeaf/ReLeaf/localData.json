@@ -3,10 +3,18 @@
         {
             "id": "22C70F2A-AE88-4A4A-A041-9E5A68A6D962",
             "userName": "Test User",
-            "productID": "",
+            "productID": "product2",
             "text": "Great product!",
             "rating": 4,
             "timestamp": "2024-12-19T17:37:05Z"
+        },
+        {
+            "id": "22C70F2A-AE88-4A4A-A041-9E5A68A6D960",
+            "userName": "User",
+            "productID": "product2",
+            "text": "Amazing product!",
+            "rating": 3,
+            "timestamp": "2024-11-19T17:37:05Z"
         }
     ],
     "shops": [

@@ -27,7 +27,11 @@ class ProductinfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("🛠️ Loaded ProductInfoViewController with product: \(selectedProduct?.name ?? "No Product")")
+        guard let selectedProduct = selectedProduct else {
+            print("❌ No product data passed!")
+            return
+        }
+        print("🛠️ Loaded ProductInfoViewController with product: \(selectedProduct.name), ProductID: \(selectedProduct.id)")
         updateUI()
         }
     
@@ -92,6 +96,23 @@ class ProductinfoViewController: UIViewController {
             navigationController?.pushViewController(viewMoreInfoVC, animated: true)
         }
 
+    @IBAction func viewReviewsTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "AReviews", bundle: nil)
+           guard let reviewsVC = storyboard.instantiateViewController(withIdentifier: "ReviewsViewController") as? ReviewsViewController else {
+               print("❌ Failed to instantiate ReviewsViewController.")
+               return
+           }
+           
+           // Pass the productID to ReviewsViewController
+           if let productID = selectedProduct?.id {
+               reviewsVC.productID = productID
+               print("✅ Passing ProductID to ReviewsViewController: \(productID)")
+           } else {
+               print("❌ No productID available to pass.")
+           }
+           
+           navigationController?.pushViewController(reviewsVC, animated: true)
+       }
 
 }
 

@@ -27,6 +27,9 @@ class WriteReviewViewController: UIViewController {
     weak var delegate: WriteReviewDelegate?
     var selectedRating: Int = 0
     
+    // Add the productID property
+    var productID: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         opaqueView.isHidden = true
@@ -75,6 +78,12 @@ class WriteReviewViewController: UIViewController {
     // MARK: - Submit Review
     @IBAction func submitReviewTapped(_ sender: UIButton) {
         
+        // Ensure that productID is available
+            guard let productID = self.productID else {
+                showAlert(message: "Product ID is missing.")
+                return
+            }
+        
         // Validate Text Review
           guard let text = reviewTextView.text, !text.isEmpty else {
               showAlert(message: "Please enter your review.")
@@ -103,7 +112,7 @@ class WriteReviewViewController: UIViewController {
           let newReview = Review(
               id: UUID().uuidString,
               userName: "Test User",
-              productID: "",
+              productID: productID, // Use the passed productID here
               text: reviewTextView.text ?? "",
               rating: selectedRating,
               timestamp: Date()

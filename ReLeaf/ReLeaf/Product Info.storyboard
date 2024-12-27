@@ -176,7 +176,7 @@
                                             </attributedString>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="8p9-UX-Be0" kind="presentation" identifier="ReviewsSegue" id="DKk-gO-gpF"/>
+                                            <action selector="viewReviewsTapped:" destination="JZe-M9-MTg" eventType="touchUpInside" id="nQr-sk-ysS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sz-gn-qd7">
@@ -284,7 +284,7 @@
         <!--AReviews-->
         <scene sceneID="s66-mX-pDE">
             <objects>
-                <viewControllerPlaceholder storyboardName="AReviews" id="8p9-UX-Be0" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="ReviewsViewController" storyboardName="AReviews" id="8p9-UX-Be0" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zFN-gF-yuZ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wh7-PJ-rde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

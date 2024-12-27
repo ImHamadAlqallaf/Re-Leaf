@@ -1,20 +1,12 @@
 {
     "reviews": [
         {
-            "id": "1",
-            "userName": "Alice",
-            "productID": "product1",
+            "id": "22C70F2A-AE88-4A4A-A041-9E5A68A6D962",
+            "userName": "Test User",
+            "productID": "",
             "text": "Great product!",
-            "rating": 5,
-            "timestamp": "2024-12-19T17:37:05Z"
-        },
-        {
-            "id": "2",
-            "userName": "Bob",
-            "productID": "product1",
-            "text": "Could be better.",
             "rating": 4,
-            "timestamp": "2024-12-19T17:45:10Z"
+            "timestamp": "2024-12-19T17:37:05Z"
         }
     ],
     "shops": [

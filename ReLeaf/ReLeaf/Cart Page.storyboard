@@ -138,7 +138,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lc0-rZ-qKt">
-                                <rect key="frame" x="36" y="388" width="79.666666666666686" height="26.333333333333314"/>
+                                <rect key="frame" x="36.000000000000007" y="387.66666666666669" width="79.666666666666686" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -321,10 +321,10 @@
             </objects>
             <point key="canvasLocation" x="5552.3076923076924" y="7.8199052132701414"/>
         </scene>
-        <!--View Controller-->
+        <!--Adress Cart View Controller-->
         <scene sceneID="n7X-Fc-TbI">
             <objects>
-                <viewController id="eI1-Og-czV" sceneMemberID="viewController">
+                <viewController id="eI1-Og-czV" customClass="adressCartViewController" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GBr-Nf-2P2">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -422,15 +422,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qig-vS-43z"/>
+                    <connections>
+                        <outlet property="aptNumberTextField" destination="LQE-j8-xT2" id="Wux-6n-Ua3"/>
+                        <outlet property="blockNumberTextField" destination="Hqd-B7-aQC" id="9jE-wt-a24"/>
+                        <outlet property="proceedButton" destination="r9f-Ee-JWL" id="am0-dP-FRF"/>
+                        <outlet property="streetAddressTextField" destination="lFu-z5-CiJ" id="fmE-gY-Puf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDG-Qc-zGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6379.3893129770986" y="8.4507042253521139"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment Cart View Controller-->
         <scene sceneID="Gsk-0i-IMA">
             <objects>
-                <viewController id="sSq-TH-iHW" sceneMemberID="viewController">
+                <viewController id="sSq-TH-iHW" customClass="paymentCartViewController" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3B1-LL-tMd">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -501,6 +507,7 @@
                                     <color key="baseBackgroundColor" red="0.54197465239999998" green="0.71485731340000003" blue="0.12664336640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="checkoutButtonTapped:" destination="sSq-TH-iHW" eventType="touchUpInside" id="7aw-Ur-smF"/>
                                     <segue destination="RdR-m0-2s1" kind="show" id="9F6-Uw-d7d"/>
                                 </connections>
                             </button>
@@ -532,6 +539,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onlinePaymentButtonTapped:" destination="sSq-TH-iHW" eventType="touchUpInside" id="jrO-mx-XBq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-fw-8dq">
                                 <rect key="frame" x="208" y="186" width="166" height="141"/>
@@ -549,6 +559,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="cashOnDeliveryButtonTapped:" destination="sSq-TH-iHW" eventType="touchUpInside" id="RGy-M1-JmC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rs9-Q2-OWo"/>
@@ -587,6 +600,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5xy-pm-fbb"/>
+                    <connections>
+                        <outlet property="cardNameTextField" destination="Izf-vh-N3S" id="2e3-OI-EUr"/>
+                        <outlet property="cardNumberTextField" destination="hBW-h6-4l2" id="iHB-zJ-zpc"/>
+                        <outlet property="cashOnDeliveryButton" destination="Wtz-fw-8dq" id="vum-8y-0U6"/>
+                        <outlet property="checkoutButton" destination="4Of-Ow-Cch" id="Jdf-6a-2xd"/>
+                        <outlet property="cvvTextField" destination="iqT-e9-8As" id="CSz-9V-rBT"/>
+                        <outlet property="expiryDateTextField" destination="jei-y5-fdu" id="0hK-HO-dm4"/>
+                        <outlet property="onlinePaymentButton" destination="LZM-fp-bEo" id="j4x-KK-FVK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6U-Sj-nJx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -797,7 +819,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="underPageBackgroundColor">
             <color red="0.70980392156862748" green="0.71764705882352942" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

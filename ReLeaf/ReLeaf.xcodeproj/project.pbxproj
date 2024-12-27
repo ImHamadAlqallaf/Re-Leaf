@@ -17,6 +17,8 @@
 		83F9ECA82D0DB8A700816FC8 /* Bader set coupons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */; };
 		83F9ECAA2D0DB9E600816FC8 /* loginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA92D0DB9E600816FC8 /* loginPage.storyboard */; };
 		ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */; };
+		C353F1202D1EDCD100D584CB /* paymentCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C353F11F2D1EDCD100D584CB /* paymentCartViewController.swift */; };
+		C3961DAE2D1ED98D00FF0294 /* adressCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3961DAD2D1ED98D00FF0294 /* adressCartViewController.swift */; };
 		D096691F2D0DB377003DA933 /* Cart Page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D096691E2D0DB377003DA933 /* Cart Page.storyboard */; };
 		D09669212D0DB38F003DA933 /* Order page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669202D0DB38F003DA933 /* Order page.storyboard */; };
 		D09669252D0DB3DE003DA933 /* Product Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669242D0DB3DE003DA933 /* Product Info.storyboard */; };
@@ -73,6 +75,8 @@
 		83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bader set coupons.storyboard"; sourceTree = "<group>"; };
 		83F9ECA92D0DB9E600816FC8 /* loginPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = loginPage.storyboard; sourceTree = "<group>"; };
 		ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Impact Tracker.storyboard"; sourceTree = "<group>"; };
+		C353F11F2D1EDCD100D584CB /* paymentCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentCartViewController.swift; sourceTree = "<group>"; };
+		C3961DAD2D1ED98D00FF0294 /* adressCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adressCartViewController.swift; sourceTree = "<group>"; };
 		D096691E2D0DB377003DA933 /* Cart Page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Cart Page.storyboard"; sourceTree = "<group>"; };
 		D09669202D0DB38F003DA933 /* Order page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Order page.storyboard"; sourceTree = "<group>"; };
 		D09669242D0DB3DE003DA933 /* Product Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Info.storyboard"; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				D5F480C52D1C7D84008113A2 /* ProductCollectionViewCell.swift */,
 				D09669202D0DB38F003DA933 /* Order page.storyboard */,
 				D096691E2D0DB377003DA933 /* Cart Page.storyboard */,
+				C3961DAD2D1ED98D00FF0294 /* adressCartViewController.swift */,
+				C353F11F2D1EDCD100D584CB /* paymentCartViewController.swift */,
 				6C6F16472D1C36AC00B214B3 /* CartViewController.swift */,
 				F23368322CF4854000A988FC /* Main.storyboard */,
 				F23368352CF4854200A988FC /* Assets.xcassets */,
@@ -375,9 +381,11 @@
 				D5F480D52D1C7E98008113A2 /* LocalData.swift in Sources */,
 				6C6F16482D1C36AC00B214B3 /* CartViewController.swift in Sources */,
 				F23368312CF4854000A988FC /* ViewController.swift in Sources */,
+				C353F1202D1EDCD100D584CB /* paymentCartViewController.swift in Sources */,
 				D5F480C62D1C7D84008113A2 /* ProductCollectionViewCell.swift in Sources */,
 				D5F480D32D1C7E98008113A2 /* OrderProduct.swift in Sources */,
 				D5F480D12D1C7E98008113A2 /* Order.swift in Sources */,
+				C3961DAE2D1ED98D00FF0294 /* adressCartViewController.swift in Sources */,
 				D5F480D42D1C7E98008113A2 /* Review.swift in Sources */,
 				F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */,
 				F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */,

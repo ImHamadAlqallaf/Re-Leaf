@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y2Q-pi-J4a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y2Q-pi-J4a">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -217,7 +217,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="c5I-AC-fib">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c5I-AC-fib" userLabel="ProductImageView">
                                 <rect key="frame" x="23" y="123" width="122" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="iWY-Oa-VmO"/>
@@ -256,7 +256,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="iYD-YD-Bz9">
-                                <rect key="frame" x="87.666666666666686" y="706.66666666666663" width="218" height="22"/>
+                                <rect key="frame" x="87.666666666666686" y="702.66666666666663" width="218" height="22"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9c-Lq-ncg">
                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
@@ -311,7 +311,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDv-V1-zIB">
-                                <rect key="frame" x="82" y="773.66666666666663" width="229" height="34.333333333333371"/>
+                                <rect key="frame" x="82" y="769.66666666666663" width="229" height="38.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Submit Review"/>
                                 <connections>
@@ -346,7 +346,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bO-Fm-jAf">
-                                        <rect key="frame" x="125" y="333" width="92.666666666666686" height="34.333333333333314"/>
+                                        <rect key="frame" x="125" y="333" width="92.666666666666686" height="38.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Continue"/>
                                         <connections>
@@ -405,6 +405,9 @@
                     <navigationItem key="navigationItem" title="Write a Review" style="editor" id="Ge8-2N-jg2"/>
                     <connections>
                         <outlet property="opaqueView" destination="zXX-rs-ZFt" id="UJ8-y7-ucz"/>
+                        <outlet property="productDescriptionLabel" destination="yEE-sw-tE3" id="dYx-66-11V"/>
+                        <outlet property="productImageview" destination="c5I-AC-fib" id="MEH-S3-Ecv"/>
+                        <outlet property="productNameLabel" destination="yaY-yd-N6J" id="M5S-Ki-TUO"/>
                         <outlet property="reviewTextView" destination="9cb-f3-2la" id="bJi-rF-Hqz"/>
                         <outlet property="star1" destination="p9c-Lq-ncg" id="i52-70-hij"/>
                         <outlet property="star2" destination="vD5-ms-kLQ" id="0hD-li-siB"/>
@@ -437,7 +440,6 @@
     </scenes>
     <resources>
         <image name="Feedback" width="1378" height="882"/>
-        <image name="hand" width="1466" height="1466"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>

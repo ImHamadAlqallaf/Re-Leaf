@@ -110,6 +110,8 @@ class ProductinfoViewController: UIViewController {
            } else {
                print("❌ No productID available to pass.")
            }
+        // Pass the product information to WriteReviewViewController
+            reviewsVC.product = selectedProduct
            
            navigationController?.pushViewController(reviewsVC, animated: true)
        }

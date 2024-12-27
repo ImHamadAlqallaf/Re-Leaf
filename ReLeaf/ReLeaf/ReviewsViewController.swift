@@ -16,6 +16,7 @@ class ReviewsViewController: UIViewController,  UITableViewDataSource, UITableVi
     
     var reviews: [Review] = []
     var productID: String?
+    var product: Product?
 
        
        override func viewDidLoad() {
@@ -101,6 +102,8 @@ class ReviewsViewController: UIViewController,  UITableViewDataSource, UITableVi
                 writeReviewVC.delegate = self
                 // Pass the productID to the WriteReviewViewController
                 writeReviewVC.productID = self.productID
+                // Pass the product information
+                writeReviewVC.product = self.product
                 print("🟢 Delegate set to ReviewsViewController in prepare(for:sender:)")
             }
         }

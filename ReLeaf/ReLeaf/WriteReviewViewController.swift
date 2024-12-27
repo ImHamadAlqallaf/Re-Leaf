@@ -24,11 +24,16 @@ class WriteReviewViewController: UIViewController {
     @IBOutlet weak var thankYouPopupView: UIView!
     
     
+    @IBOutlet weak var productImageview: UIImageView!
+    @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var productDescriptionLabel: UILabel!
+    
     weak var delegate: WriteReviewDelegate?
     var selectedRating: Int = 0
     
     // Add the productID property
     var productID: String?
+    var product: Product?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +41,13 @@ class WriteReviewViewController: UIViewController {
         thankYouPopupView.isHidden = true
         
         // Do any additional setup after loading the view.
+        
+        // Display product information
+        if let product = product {
+            productImageview.image = UIImage(named: product.image)
+            productNameLabel.text = product.name
+            productDescriptionLabel.text = product.description
+        }
     }
     
     
@@ -65,10 +77,11 @@ class WriteReviewViewController: UIViewController {
         
         for (index, button) in starButtons.enumerated() {
             if index < rating {
-                button?.setImage(UIImage(systemName: "star.fill"), for: .normal) //Filled Star
+                button?.setImage(UIImage(systemName: "star.fill")?.withRenderingMode(.alwaysTemplate), for: .normal) //Filled Star
             } else {
-                button?.setImage(UIImage(systemName: "star"), for: .normal)
+                button?.setImage(UIImage(systemName: "star")?.withRenderingMode(.alwaysTemplate), for: .normal)
             }
+            button?.tintColor = .systemYellow // Set the color to gold
         }
         
     }

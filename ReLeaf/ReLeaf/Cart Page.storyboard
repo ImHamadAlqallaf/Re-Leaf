@@ -706,6 +706,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Back to home">
                                     <color key="baseBackgroundColor" red="0.54197465239999998" green="0.71485731340000003" blue="0.12664336640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ZQJ-bs-EDB" kind="show" id="8bw-VB-63k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EaU-px-Rqv"/>
@@ -732,6 +735,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66Z-ES-jwY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8241.538461538461" y="7.1090047393364921"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="es9-IL-8jJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="ZQJ-bs-EDB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uaz-Fw-27Q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFK-O9-EqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8276" y="468"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oII-TL-djI">
@@ -769,6 +782,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Back to home">
                                     <color key="baseBackgroundColor" red="0.54197465239999998" green="0.71485731340000003" blue="0.12664336640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ZQJ-bs-EDB" kind="show" id="UU2-gT-Gg6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cNa-Fl-LWe"/>
@@ -810,7 +826,10 @@
             <point key="canvasLocation" x="3545.801526717557" y="9.1549295774647899"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="1" green="0.98039215686274506" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <inferredMetricsTieBreakers>
+        <segue reference="UU2-gT-Gg6"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" systemColor="tintColor"/>
     <resources>
         <image name="Clock" width="48" height="48"/>
         <image name="Delivery" width="170" height="175"/>
@@ -825,6 +844,9 @@
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="underPageBackgroundColor">
             <color red="0.70980392156862748" green="0.71764705882352942" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

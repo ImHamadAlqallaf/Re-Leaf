@@ -17,9 +17,9 @@ class adressCartViewController: UIViewController {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            // Disable the proceed button initially
+           
             proceedButton.isEnabled = false
-            // Add target to check for text field changes
+          
             [streetAddressTextField, blockNumberTextField, aptNumberTextField].forEach {
                 $0?.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
             }
@@ -33,17 +33,16 @@ class adressCartViewController: UIViewController {
         @IBAction func proceedButtonTapped(_ sender: UIButton) {
             
             guard !streetAddressTextField.text!.isEmpty, !blockNumberTextField.text!.isEmpty, !aptNumberTextField.text!.isEmpty else {
-                // Show alert if any field is missing
+               
                 showAlert(message: "Please fill in all fields.")
                 return
             }
             
-            // All fields are filled, move to the next screen (performSegue or navigation)
-            // For example: performSegue(withIdentifier: "nextScreenSegue", sender: self)
+            
             print("Proceeding to the next screen...")
         }
         
-        // Helper function to show alert
+        
         func showAlert(message: String) {
             let alert = UIAlertController(title: "Incomplete Form", message: message, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

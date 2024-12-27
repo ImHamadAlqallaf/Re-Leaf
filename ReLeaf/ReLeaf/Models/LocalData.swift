@@ -7,11 +7,17 @@
 
 import Foundation
 
-struct LocalData: Codable {
-    var reviews: [Review]
-    let shops: [Shop]
-    let users: [User]
-    let orders: [Order]
-}
+//struct LocalData: Codable {
+//    var reviews: [Review]
+//    let shops: [Shop]
+//    let users: [User]
+//    let orders: [Order]
+//    var cartItems: [CartItem]
+//
+//}
 
+struct LocalData: Codable {
+    let shops: [Shop]
+    var cartItems: [CartItem]
+}
 

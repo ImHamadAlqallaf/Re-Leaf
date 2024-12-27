@@ -1,151 +1,144 @@
 {
-    "reviews": [
-        {
-            "id": "1",
-            "userName": "Alice",
-            "productId": "product1",
-            "text": "Great product!",
-            "rating": 5,
-            "timestamp": "2024-12-19T17:37:05Z"
-        },
-        {
-            "id": "2",
-            "userName": "Bob",
-            "productId": "product2",
-            "text": "Could be better.",
-            "rating": 3,
-            "timestamp": "2024-12-19T17:45:10Z"
-        }
-    ],
-    "shops": [
-        {
-            "id": "shop1",
-            "name": "EcoMart",
-            "location": "123 Green Street",
-            "owner": "John Doe",
-            "contact": "123-456-7890",
-            "products": [
-                {
-                    "id": "product1",
-                    "name": "Bamboo Toothbrush",
-                    "price": 3.99,
-                    "stock": 50,
-                    "description": "Eco-friendly toothbrush",
-                    "category": "Oral Care",
-                    "image": "bamboo_toothbrush.png"
-                },
-                {
-                    "id": "product2",
-                    "name": "Reusable Water Bottle",
-                    "price": 10.99,
-                    "stock": 30,
-                    "description": "Stainless steel bottle",
-                    "category": "Drinkware",
-                    "image": "reusable_bottle.png"
-                }
-            ],
-        }
-        "cartItems": [
-           {
-             "productId": "product1",
-             "quantity": 2
-           },
-           {
-             "productId": "product2",
-             "quantity": 1
-           }
-         ],
-        {
-            "id": "shop2",
-            "name": "Green Goods",
-            "location": "456 Eco Road",
-            "owner": "Jane Smith",
-            "contact": "987-654-3210",
-            "products": [
-                {
-                    "id": "product3",
-                    "name": "Organic Cotton T-Shirt",
-                    "price": 15.99,
-                    "stock": 100,
-                    "description": "100% organic cotton t-shirt",
-                    "category": "Clothing",
-                    "image": "organic_tshirt.png"
-                },
-                {
-                    "id": "product4",
-                    "name": "Wooden Desk Organizer",
-                    "price": 29.99,
-                    "stock": 20,
-                    "description": "Sustainable wooden desk organizer",
-                    "category": "Office Supplies",
-                    "image": "wooden_desk_organizer.png"
-                }
-            ]
-        }
-    ],
-    "users": [
-        {
-            "id": "user1",
-            "userName": "Alice",
-            "email": "alice@example.com",
-            "password": "hashed_password_123",
-            "role": "customer"
-        },
-        {
-            "id": "user2",
-            "userName": "Bob",
-            "email": "bob@example.com",
-            "password": "hashed_password_456",
-            "role": "customer"
-        }
-    ],
-    "orders": [
-        {
-            "id": "order1",
-            "userId": "user1",
-            "shopId": "shop1",
-            "products": [
-                {
-                    "productId": "product1",
-                    "quantity": 2,
-                    "price": 3.99
-                }
-            ],
-            "total": 7.98,
-            "orderDate": "2024-12-19T18:00:00Z",
-            "status": "shipped"
-        },
-        {
-            "id": "order2",
-            "userId": "user2",
-            "shopId": "shop2",
-            "products": [
-                {
-                    "productId": "product3",
-                    "quantity": 1,
-                    "price": 15.99
-                }
-            ],
-            "total": 15.99,
-            "orderDate": "2024-12-19T18:30:00Z",
-            "status": "processing"
-        }
-    ],
-    "metrics": {
-        "impact": [
-            {
-                "id": "metric1",
-                "name": "Total Sales",
-                "value": 5000,
-                "timestamp": "2024-12-19T18:00:00Z"
-            },
-            {
-                "id": "metric2",
-                "name": "Carbon Footprint Reduced",
-                "value": 1000,
-                "timestamp": "2024-12-19T18:00:00Z"
-            }
-        ]
+  "reviews": [
+    {
+      "id": "1",
+      "userName": "Alice",
+      "productId": "product1",
+      "text": "Great product!",
+      "rating": 5,
+      "timestamp": "2024-12-19T17:37:05Z"
+    },
+    {
+      "id": "2",
+      "userName": "Bob",
+      "productId": "product2",
+      "text": "Could be better.",
+      "rating": 3,
+      "timestamp": "2024-12-19T17:45:10Z"
     }
+  ],
+  "shops": [
+    {
+      "id": "shop1",
+      "name": "EcoMart",
+      "products": [
+        {
+          "id": "product1",
+          "name": "Bamboo Toothbrush",
+          "price": 3.99,
+          "stock": 50,
+          "description": "Eco-friendly toothbrush",
+          "category": "Oral Care",
+          "image": "bamboo_toothbrush.png"
+        },
+        {
+          "id": "product2",
+          "name": "Reusable Water Bottle",
+          "price": 10.99,
+          "stock": 30,
+          "description": "Stainless steel bottle",
+          "category": "Drinkware",
+          "image": "reusable_bottle.png"
+        }
+      ],
+      "cartItems": [
+        {
+          "productId": "product1",
+          "quantity": 2
+        },
+        {
+          "productId": "product2",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "shop2",
+      "name": "Green Goods",
+      "products": [
+        {
+          "id": "product3",
+          "name": "Organic Cotton T-Shirt",
+          "price": 15.99,
+          "stock": 100,
+          "description": "100% organic cotton t-shirt",
+          "category": "Clothing",
+          "image": "organic_tshirt.png"
+        },
+        {
+          "id": "product4",
+          "name": "Wooden Desk Organizer",
+          "price": 29.99,
+          "stock": 20,
+          "description": "Sustainable wooden desk organizer",
+          "category": "Office Supplies",
+          "image": "wooden_desk_organizer.png"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "user1",
+      "userName": "Alice",
+      "email": "alice@example.com",
+      "password": "hashed_password_123",
+      "role": "customer"
+    },
+    {
+      "id": "user2",
+      "userName": "Bob",
+      "email": "bob@example.com",
+      "password": "hashed_password_456",
+      "role": "customer"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order1",
+      "userId": "user1",
+      "shopId": "shop1",
+      "products": [
+        {
+          "productId": "product1",
+          "quantity": 2,
+          "price": 3.99
+        }
+      ],
+      "total": 7.98,
+      "orderDate": "2024-12-19T18:00:00Z",
+      "status": "shipped"
+    },
+    {
+      "id": "order2",
+      "userId": "user2",
+      "shopId": "shop2",
+      "products": [
+        {
+          "productId": "product3",
+          "quantity": 1,
+          "price": 15.99
+        }
+      ],
+      "total": 15.99,
+      "orderDate": "2024-12-19T18:30:00Z",
+      "status": "processing"
+    }
+  ],
+  "metrics": {
+    "impact": [
+      {
+        "id": "metric1",
+        "name": "Total Sales",
+        "value": 5000,
+        "timestamp": "2024-12-19T18:00:00Z"
+      },
+      {
+        "id": "metric2",
+        "name": "Carbon Footprint Reduced",
+        "value": 1000,
+        "timestamp": "2024-12-19T18:00:00Z"
+      }
+    ]
+  }
 }
-

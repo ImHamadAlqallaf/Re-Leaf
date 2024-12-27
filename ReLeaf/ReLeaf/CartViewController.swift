@@ -1,110 +1,110 @@
-//
-//  CartViewController.swift
-//  ReLeaf
-//
-//  Created by Ismail Bushehri on 25/12/2024.
-//
-
 import UIKit
 
 struct Product: Codable {
     let id: String
     let name: String
     let price: Double
-    let stock: Int
-    let description: String
-    let category: String
     let image: String
 }
 
 struct CartItem: Codable {
-    let product: Product
+    let productId: String
     var quantity: Int
 }
 
-struct CartData: Codable {
-    let products: [Product]
-    let cartItems: [CartDataItem]
-}
+//struct Shop: Codable {
+//    let id: String
+//    let name: String
+//    let products: [Product]
+//    var cartItems: [CartItem]
+//}
+//
+//struct LocalData: Codable {
+//    let shops: [Shop]
+//    var cartItems: [CartItem]
+//}
 
-struct CartDataItem: Codable {
-    let productId: String
-    let quantity: Int
-}
-
-class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var tableViewCart: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var subtotalViewCartLabel: UILabel!
+    var localData: LocalData!
     
-    var products: [Product] = [] 
-        var cartItems: [CartItem] = []
-
-        override func viewDidLoad() {
-            super.viewDidLoad()
-
-       
-            loadLocalData()
-
-           
-            tableViewCart.delegate = self
-            tableViewCart.dataSource = self
-
-            
-            updateTotal()
-        }
-
-        func loadLocalData() {
-            if let path = Bundle.main.path(forResource: "products", ofType: "json") {
-                do {
-                    let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                    let decoder = JSONDecoder()
-                    let decodedData = try decoder.decode(CartData.self, from: data)
-                    
-                
-                    self.products = decodedData.products
-                    self.cartItems = decodedData.cartItems.compactMap { dataItem in
-                        if let product = products.first(where: { $0.id == dataItem.productId }) {
-                            return CartItem(product: product, quantity: dataItem.quantity)
-                        }
-                        return nil
-                    }
-                    
-                    tableViewCart.reloadData()
-                } catch {
-                    print("Error loading local data: \(error)")
-                }
-            }
-        }
-
-       
-        func updateTotal() {
-            let total = cartItems.reduce(0) { $0 + ($1.product.price * Double($1.quantity)) }
-            subtotalViewCartLabel.text = "BHD \(String(format: "%.2f", total))"
-        }
-
-
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return cartItems.count
-        }
-
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CartItemCell", for: indexPath)
-            let cartItem = cartItems[indexPath.row]
-            
-            cell.textLabel?.text = cartItem.product.name
-            cell.detailTextLabel?.text = "BHD \(cartItem.product.price) x \(cartItem.quantity)"
-            
-            return cell
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Ensure tableView outlet is connected
+        guard tableView != nil else {
+            fatalError("TableView outlet is not connected")
         }
         
-        func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-            if editingStyle == .delete {
-                cartItems.remove(at: indexPath.row)
-                tableView.deleteRows(at: [indexPath], with: .automatic)
-                updateTotal()
-            }
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        // Initialize localData to avoid nil
+        loadLocalData()
+        
+        // Ensure localData is not nil
+        guard localData != nil else {
+            fatalError("localData is not initialized")
         }
     }
 
+    func loadLocalData() {
+        // Sample data for testing
+        let sampleProducts = [
+            Product(id: "product1", name: "Bamboo Toothbrush", price: 3.99, image: "bamboo_toothbrush.png"),
+            Product(id: "product2", name: "Reusable Water Bottle", price: 10.99, image: "reusable_bottle.png")
+        ]
+        
+        let sampleCartItems = [
+            CartItem(productId: "product1", quantity: 2),
+            CartItem(productId: "product2", quantity: 1)
+        ]
+        
+        let sampleShops = [
+            Shop(id: "shop1", name: "EcoMart", products: sampleProducts, cartItems: sampleCartItems)
+        ]
+        
+        localData = LocalData(shops: sampleShops, cartItems: sampleCartItems)
+        
+        // Reload table view data
+        tableView.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return localData.cartItems.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CartItemCell", for: indexPath)
+        
+        let cartItem = localData.cartItems[indexPath.row]
+        let product = getProductById(cartItem.productId)
+        
+        cell.textLabel?.text = product.name
+        cell.detailTextLabel?.text = "Price: \(product.price) x \(cartItem.quantity)"
+        
+        return cell
+    }
+    
+    func getProductById(_ id: String) -> Product {
+        for shop in localData.shops {
+            if let product = shop.products.first(where: { $0.id == id }) {
+                return product
+            }
+        }
+        return Product(id: "", name: "Unknown", price: 0.0, image: "")
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            localData.cartItems.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+}

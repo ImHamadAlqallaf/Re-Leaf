@@ -70,8 +70,7 @@ class SearchPage: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SearchPageTableViewCell
         
         let product = filterData[indexPath.row]
-        
-        cell.ProductImage.image = UIImage(named: product.image)
+                cell.ProductImage.image = UIImage(named: product.image)
         cell.Label1.text = product.name
         cell.Label2.text = "\(product.price) BD"
         

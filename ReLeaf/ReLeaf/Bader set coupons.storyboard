@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="iPad13_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Discount Cards-->
         <scene sceneID="KDK-gH-adA">
             <objects>
-                <viewController id="16p-nU-1ZJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiscountCards" id="16p-nU-1ZJ" customClass="DiscountCards" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ra7-c1-Y2v">
-                        <rect key="frame" x="0.0" y="0.0" width="1032" height="1376"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discound cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwg-AG-zMw">
-                                <rect key="frame" x="40" y="94" width="168" height="30"/>
+                                <rect key="frame" x="40" y="79" width="168" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DGY-2O-8xm">
-                                <rect key="frame" x="0.0" y="162" width="1032" height="1144"/>
+                                <rect key="frame" x="0.0" y="147" width="393" height="622"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="184" id="GvT-fy-lu0">
-                                        <rect key="frame" x="0.0" y="50" width="1032" height="184"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cardcell" rowHeight="184" id="GvT-fy-lu0" customClass="DiscountTableCell" customModule="ReLeaf" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="184"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GvT-fy-lu0" id="7fF-Mn-26t">
-                                            <rect key="frame" x="0.0" y="0.0" width="1032" height="184"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="184"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSy-bo-9qX">
-                                                    <rect key="frame" x="2" y="2" width="1028" height="180"/>
+                                                    <rect key="frame" x="2" y="2" width="389" height="180"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJx-AU-sDN">
-                                                            <rect key="frame" x="500" y="45" width="48" height="24"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJx-AU-sDN">
+                                                            <rect key="frame" x="167" y="45" width="78" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BS4-9D-Y6n">
-                                                            <rect key="frame" x="500" y="113" width="48" height="24"/>
+                                                            <rect key="frame" x="167" y="113" width="48" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M37-12-0Fs">
-                                                            <rect key="frame" x="912" y="73" width="74" height="35"/>
+                                                            <rect key="frame" x="281.66666666666669" y="73" width="74" height="35"/>
                                                             <color key="backgroundColor" red="1" green="0.89662225719999999" blue="0.2531224909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="35" id="39T-Xb-cPt"/>
@@ -58,9 +58,12 @@
                                                             <color key="tintColor" systemColor="systemRedColor"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="tinted" title="Delete"/>
+                                                            <connections>
+                                                                <action selector="deleteButtonTapped:" destination="GvT-fy-lu0" eventType="touchUpInside" id="Pqe-Ku-X6o"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x41-Bw-CDw">
-                                                            <rect key="frame" x="150" y="73" width="62" height="36"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x41-Bw-CDw">
+                                                            <rect key="frame" x="20" y="73" width="64.666666666666671" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -102,9 +105,28 @@
                                                 <constraint firstAttribute="bottom" secondItem="TSy-bo-9qX" secondAttribute="bottom" constant="2" id="ghr-UX-7Hw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="codeLabel" destination="x41-Bw-CDw" id="NOA-Mm-bCl"/>
+                                            <outlet property="discountLabel" destination="bJx-AU-sDN" id="AYn-cF-s6f"/>
+                                            <outlet property="expiryLabel" destination="BS4-9D-Y6n" id="6dy-Z2-wSz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="16p-nU-1ZJ" id="owq-SG-GP3"/>
+                                    <outlet property="delegate" destination="16p-nU-1ZJ" id="zoW-mQ-HhX"/>
+                                </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yv-VR-JfM">
+                                <rect key="frame" x="310" y="148" width="59" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ADD"/>
+                                <connections>
+                                    <segue destination="Y6W-OH-hqX" kind="show" identifier="showAddDiscount" id="XLV-Pl-TLU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d3n-Ra-ef9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,77 +140,78 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="u2e-J1-LHX">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wHb-wc-vii">
-                            <connections>
-                                <segue destination="Y6W-OH-hqX" kind="show" id="C1e-2H-ywB"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="u2e-J1-LHX"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="DGY-2O-8xm" id="Iwp-xO-lbB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SwI-oa-Wfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543.60465116279067" y="-8.2848837209302317"/>
+            <point key="canvasLocation" x="542.74809160305347" y="-8.4507042253521139"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Discount-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="AddDiscount" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="1032" height="1376"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Geo-65-qLy">
-                                <rect key="frame" x="24" y="145" width="62" height="29"/>
+                                <rect key="frame" x="24" y="130" width="62" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEQ-6g-oEd">
-                                <rect key="frame" x="20" y="191" width="972" height="34"/>
+                                <rect key="frame" x="20" y="176" width="333" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zbf-YQ-loS">
-                                <rect key="frame" x="20" y="314" width="972" height="34"/>
+                                <rect key="frame" x="20" y="299" width="333" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2H-S0-kDw">
-                                <rect key="frame" x="24" y="266" width="98" height="29"/>
+                                <rect key="frame" x="24" y="251" width="98" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iX6-Jr-5Ek">
-                                <rect key="frame" x="24" y="-91" width="954" height="34"/>
+                                <rect key="frame" x="20" y="-91" width="323" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Discount Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="6ly-uO-Pb7">
-                                <rect key="frame" x="421" y="99" width="211" height="32"/>
+                                <rect key="frame" x="95.666666666666686" y="99" width="211" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiry date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sg-lg-80n">
-                                <rect key="frame" x="20" y="387" width="121" height="29"/>
+                                <rect key="frame" x="20" y="372" width="121" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HE-dO-UYl">
-                                <rect key="frame" x="300" y="771" width="432" height="35"/>
+                                <rect key="frame" x="66" y="625" width="260" height="35"/>
                                 <color key="tintColor" red="0.50426006295815096" green="0.78039215689999997" blue="0.39603146216086577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add Coupon"/>
+                                <connections>
+                                    <action selector="addCouponTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SUd-31-N2p"/>
+                                    <segue destination="16p-nU-1ZJ" kind="show" identifier="addDiscountSegue" id="AJ1-YI-9xa"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WtV-gN-jAC">
-                                <rect key="frame" x="20" y="444" width="972" height="34"/>
+                                <rect key="frame" x="20" y="429" width="333" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -231,10 +254,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qqj-bg-kvm"/>
+                    <connections>
+                        <outlet property="code" destination="cEQ-6g-oEd" id="aYI-IP-Rfz"/>
+                        <outlet property="discount" destination="Zbf-YQ-loS" id="NMN-U0-NOm"/>
+                        <outlet property="expiry" destination="WtV-gN-jAC" id="joO-tR-66a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1431.2977099236641" y="-7.746478873239437"/>
+            <point key="canvasLocation" x="1453" y="-8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BM0-lp-48p">
@@ -242,7 +270,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xkd-EG-HGu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GyD-zb-Fhj">
-                        <rect key="frame" x="0.0" y="24" width="1032" height="50"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -255,7 +283,14 @@
             <point key="canvasLocation" x="-309.16030534351142" y="-8.4507042253521139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XLV-Pl-TLU"/>
+        <segue reference="AJ1-YI-9xa"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

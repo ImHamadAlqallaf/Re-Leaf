@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="KQQ-7q-BsO" kind="show" id="al7-nI-FjZ"/>
+                                    <segue destination="KQQ-7q-BsO" kind="show" id="MEW-la-D8v"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,12 +32,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="StA-Ml-pOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3663" y="-649"/>
+            <point key="canvasLocation" x="-3663.3587786259541" y="-649.29577464788736"/>
+        </scene>
+        <!--Discountpage-->
+        <scene sceneID="wgZ-cS-f2v">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bader discount page" referencedIdentifier="Discountpage" id="2xV-4E-FKf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aVx-RH-gcK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8x-8m-SUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2819" y="-1012"/>
         </scene>
         <!--SearchPage-->
+        <scene sceneID="HZ7-OV-4Vj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="bader's search and filter page" referencedIdentifier="SearchPage" id="Ye6-tb-Hwz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VZW-ZO-c8c"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDu-nk-sMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2930" y="-835"/>
+        </scene>
+        <!--DiscountCards-->
         <scene sceneID="L80-Ue-0Hf">
             <objects>
-                <viewControllerPlaceholder storyboardName="bader's search and filter page" referencedIdentifier="SearchPage" id="KQQ-7q-BsO" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Bader set coupons" referencedIdentifier="DiscountCards" id="KQQ-7q-BsO" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="pZL-xN-uKA"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pX5-bd-dIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

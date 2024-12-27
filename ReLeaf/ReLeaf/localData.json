@@ -32,7 +32,12 @@
                     "stock": 50,
                     "description": "Eco-friendly toothbrush",
                     "category": "Oral Care",
-                    "image": "bamboo_toothbrush.jpeg"
+                    "image": "bamboo_toothbrush.jpeg",
+                    "badge": "Eco-friendly",
+                    "materials": "Stainless Steel",
+                    "co2Emission": "1.2 kg",
+                    "waterUsage": "500 ml",
+                    "plasticUsage": "0 g"
                 },
                 {
                     "id": "product2",
@@ -41,7 +46,12 @@
                     "stock": 30,
                     "description": "Stainless steel bottle",
                     "category": "Drinkware",
-                    "image": "reusable_bottle.jpeg"
+                    "image": "reusable_bottle.jpeg",
+                    "badge": "Eco-boom",
+                    "materials": "Plastic",
+                    "co2Emission": "1 kg",
+                    "waterUsage": "250 ml",
+                    "plasticUsage": "5 g"
                 }
             ]
         },
@@ -59,7 +69,12 @@
                     "stock": 100,
                     "description": "100% organic cotton t-shirt",
                     "category": "Clothing",
-                    "image": "organic_tshirt.png"
+                    "image": "organic_tshirt.png",
+                    "badge": "No-Plastics",
+                    "materials": "Cotton",
+                    "co2Emission": "2 kg",
+                    "waterUsage": "0ml",
+                    "plasticUsage": "100 g"
                 },
                 {
                     "id": "product4",
@@ -68,7 +83,12 @@
                     "stock": 20,
                     "description": "Sustainable wooden desk organizer",
                     "category": "Office Supplies",
-                    "image": "wooden_desk_organizer.png"
+                    "image": "wooden_desk_organizer.png",
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
                 }
             ]
         }

@@ -18,6 +18,11 @@ struct Product: Codable {
     let description: String
     let category: String
     let image: String
+    let badge: String // For `ProductBadgetxt`
+    let materials: String // For `Materialstxt`
+    let co2Emission: String // For `CO2txt`
+    let waterUsage: String // For `Watertxt`
+    let plasticUsage: String // For `Plastictxt`
 }
 
 // Shop Model

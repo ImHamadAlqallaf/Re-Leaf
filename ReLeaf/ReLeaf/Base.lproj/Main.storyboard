@@ -21,9 +21,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="U1o-cU-LNr" kind="show" id="RH4-AZ-zIM"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YPh-5N-ZIX"/>
@@ -33,16 +30,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QVD-sl-hpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2065" y="-305"/>
-        </scene>
-        <!--StoreManager-->
-        <scene sceneID="lt7-WA-wiG">
-            <objects>
-                <viewControllerPlaceholder storyboardName="StoreManager" id="U1o-cU-LNr" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="WyY-r8-aeh"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ewS-1B-60G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1527" y="-436"/>
         </scene>
         <!--Login-->
         <scene sceneID="Uzr-od-5Sn">

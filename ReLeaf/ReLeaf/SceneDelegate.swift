@@ -18,13 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        if let windowScene = scene as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            let tabBarController = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
-            window.rootViewController = tabBarController
-            self.window = window
-            window.makeKeyAndVisible()
-        }
+        // Load the Login View Controller from its storyboard
+                let storyboard = UIStoryboard(name: "LoginSignup", bundle: nil)
+                let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                
+                // Set the Login View Controller as the root view controller
+                window?.rootViewController = loginViewController
+                window?.makeKeyAndVisible()
 
     }
 

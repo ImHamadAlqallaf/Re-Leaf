@@ -9,9 +9,10 @@ import Foundation
 
 struct LocalData: Codable {
     var reviews: [Review]
-    let shops: [Shop]
-    let users: [User]
-    let orders: [Order]
+    var shops: [Shop]
+    var users: [User]
+    var orders: [Order]
+    var metrics: Metrics
 }
 
 

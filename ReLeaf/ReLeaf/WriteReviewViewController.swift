@@ -112,10 +112,10 @@ class WriteReviewViewController: UIViewController {
           let newReview = Review(
               id: UUID().uuidString,
               userName: "Test User",
-              productID: productID, // Use the passed productID here
+              productID: productID!, // Use the passed productID here
               text: reviewTextView.text ?? "",
               rating: selectedRating,
-              timestamp: Date()
+              timestamp: ""
           )
 
           // Add review locally and notify delegate

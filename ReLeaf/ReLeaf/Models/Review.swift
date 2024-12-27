@@ -13,7 +13,8 @@ struct Review: Codable {
     let productID: String?
     let text: String
     let rating: Int  // Rating from 1 to 5
-    let timestamp: Date
+    let timestamp: String
+    
 }
 
 struct ReviewLocalData: Codable {
@@ -30,31 +31,31 @@ class ReviewLocalDataService {
         loadDataFromDisk()
         print("✅ ReviewLocalDataService Initialized Successfully")
     }
-
+    
     
     private func getFileURL() -> URL {
-//        print("📂 JSON File Path: \(getFileURL().path)")
+        //        print("📂 JSON File Path: \(getFileURL().path)")
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return documentDirectory.appendingPathComponent(fileName)
         
-
+        
     }
     
-//    private func ensureDataFileExists() {
-//        let fileURL = getFileURL()
-//        let fileManager = FileManager.default
-//        
-//        if !fileManager.fileExists(atPath: fileURL.path) {
-//            if let bundleURL = Bundle.main.url(forResource: fileName, withExtension: nil) {
-//                do {
-//                    try fileManager.copyItem(at: bundleURL, to: fileURL)
-//                    print("📦 Copied initial review data to document directory.")
-//                } catch {
-//                    print("❌ Failed to copy review data: \(error.localizedDescription)")
-//                }
-//            }
-//        }
-//    }
+    //    private func ensureDataFileExists() {
+    //        let fileURL = getFileURL()
+    //        let fileManager = FileManager.default
+    //
+    //        if !fileManager.fileExists(atPath: fileURL.path) {
+    //            if let bundleURL = Bundle.main.url(forResource: fileName, withExtension: nil) {
+    //                do {
+    //                    try fileManager.copyItem(at: bundleURL, to: fileURL)
+    //                    print("📦 Copied initial review data to document directory.")
+    //                } catch {
+    //                    print("❌ Failed to copy review data: \(error.localizedDescription)")
+    //                }
+    //            }
+    //        }
+    //    }
     
     private func ensureDataFileExists() {
         let fileURL = getFileURL()
@@ -72,24 +73,24 @@ class ReviewLocalDataService {
         }
     }
     
-//    private func loadDataFromDisk() {
-//        let fileURL = getFileURL()
-//        
-//        do {
-//            let jsonData = try Data(contentsOf: fileURL)
-//            let decoder = JSONDecoder()
-//            decoder.dateDecodingStrategy = .iso8601
-//            self.data = try decoder.decode(ReviewLocalData.self, from: jsonData)
-//            print("✅ Successfully loaded review data from disk")
-//        } catch {
-//            print("❌ Failed to load review data: \(error.localizedDescription)")
-//        }
-//    }
+    //    private func loadDataFromDisk() {
+    //        let fileURL = getFileURL()
+    //
+    //        do {
+    //            let jsonData = try Data(contentsOf: fileURL)
+    //            let decoder = JSONDecoder()
+    //            decoder.dateDecodingStrategy = .iso8601
+    //            self.data = try decoder.decode(ReviewLocalData.self, from: jsonData)
+    //            print("✅ Successfully loaded review data from disk")
+    //        } catch {
+    //            print("❌ Failed to load review data: \(error.localizedDescription)")
+    //        }
+    //    }
     
     private func loadDataFromDisk() {
         let fileURL = getFileURL()
         print("📥 Loading JSON from path: \(fileURL.path)")
-
+        
         do {
             let jsonData = try Data(contentsOf: fileURL)
             let decoder = JSONDecoder()
@@ -100,14 +101,14 @@ class ReviewLocalDataService {
             print("❌ Failed to load review data: \(error.localizedDescription)")
         }
     }
-
-
+    
+    
     
     func getReviews() -> [Review] {
         print("📊 Fetching reviews, current count: \(data.reviews.count)")
         return data.reviews.sorted { $0.timestamp > $1.timestamp }
     }
-
+    
     func addReview(_ review: Review) {
         data.reviews.append(review)
         saveDataToDisk()
@@ -120,16 +121,16 @@ class ReviewLocalDataService {
         return Double(totalRating) / Double(data.reviews.count)
     }
     
-//    private func saveDataToDisk() {
-//        let fileURL = getFileURL()
-//        do {
-//            let jsonData = try JSONEncoder().encode(self.data)
-//            try jsonData.write(to: fileURL, options: .atomicWrite)
-//            print("✅ Successfully saved review data to disk.")
-//        } catch {
-//            print("❌ Failed to save review data: \(error.localizedDescription)")
-//        }
-//    }
+    //    private func saveDataToDisk() {
+    //        let fileURL = getFileURL()
+    //        do {
+    //            let jsonData = try JSONEncoder().encode(self.data)
+    //            try jsonData.write(to: fileURL, options: .atomicWrite)
+    //            print("✅ Successfully saved review data to disk.")
+    //        } catch {
+    //            print("❌ Failed to save review data: \(error.localizedDescription)")
+    //        }
+    //    }
     
     private func saveDataToDisk() {
         let fileURL = getFileURL()
@@ -146,6 +147,6 @@ class ReviewLocalDataService {
             print("❌ Failed to save review data: \(error.localizedDescription)")
         }
     }
-
+    
 }
 

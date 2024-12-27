@@ -19,15 +19,15 @@ struct Shop: Codable {
 struct Product: Codable {
     let id: String
     let name: String
-    let price: Double
-    let stock: Int
+    var price: Double // Prices might change
+    var stock: Int // Stock levels change often
     let description: String
     let category: String
     let image: String
-    let co2EmissionSaved: Double
-    let waterConserved: Int
-    let wasteReduced: Int
-    let materialsUsed: String
+    var co2EmissionSaved: Double
+    var waterConserved: Double
+    var wasteReduced: Double
+    var materialsUsed: String
     let certificateImage: String
 }
 

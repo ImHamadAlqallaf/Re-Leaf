@@ -24,8 +24,16 @@
 		83F9ECA62D0DB8A700816FC8 /* bader's search and filter page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */; };
 		83F9ECA72D0DB8A700816FC8 /* Bader discount page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA32D0DB8A700816FC8 /* Bader discount page.storyboard */; };
 		83F9ECA82D0DB8A700816FC8 /* Bader set coupons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */; };
-		83F9ECAA2D0DB9E600816FC8 /* loginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA92D0DB9E600816FC8 /* loginPage.storyboard */; };
+		83F9ECAA2D0DB9E600816FC8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA92D0DB9E600816FC8 /* Profile.storyboard */; };
 		ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */; };
+		C3919EB32D1EE06A007EFB0B /* LoginSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3919EB22D1EE06A007EFB0B /* LoginSignup.storyboard */; };
+		C3919EBA2D1EE08A007EFB0B /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3919EB42D1EE089007EFB0B /* signUpViewController.swift */; };
+		C3919EBB2D1EE08A007EFB0B /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3919EB52D1EE089007EFB0B /* LocalDataManager.swift */; };
+		C3919EBD2D1EE08A007EFB0B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3919EB72D1EE08A007EFB0B /* LoginViewController.swift */; };
+		C3919EBE2D1EE08A007EFB0B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3919EB82D1EE08A007EFB0B /* ProfileViewController.swift */; };
+		C3919EBF2D1EE08A007EFB0B /* signUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3919EB92D1EE08A007EFB0B /* signUpModel.swift */; };
+		C3919EC32D1EF7A0007EFB0B /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3919EC22D1EF7A0007EFB0B /* Metrics.swift */; };
+		C3919EC52D1F0AAA007EFB0B /* Impact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3919EC42D1F0AAA007EFB0B /* Impact.swift */; };
 		D096691F2D0DB377003DA933 /* Cart Page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D096691E2D0DB377003DA933 /* Cart Page.storyboard */; };
 		D09669212D0DB38F003DA933 /* Order page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669202D0DB38F003DA933 /* Order page.storyboard */; };
 		D09669252D0DB3DE003DA933 /* Product Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669242D0DB3DE003DA933 /* Product Info.storyboard */; };
@@ -87,8 +95,16 @@
 		83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "bader's search and filter page.storyboard"; sourceTree = "<group>"; };
 		83F9ECA32D0DB8A700816FC8 /* Bader discount page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bader discount page.storyboard"; sourceTree = "<group>"; };
 		83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bader set coupons.storyboard"; sourceTree = "<group>"; };
-		83F9ECA92D0DB9E600816FC8 /* loginPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = loginPage.storyboard; sourceTree = "<group>"; };
+		83F9ECA92D0DB9E600816FC8 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Impact Tracker.storyboard"; sourceTree = "<group>"; };
+		C3919EB22D1EE06A007EFB0B /* LoginSignup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSignup.storyboard; sourceTree = "<group>"; };
+		C3919EB42D1EE089007EFB0B /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		C3919EB52D1EE089007EFB0B /* LocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		C3919EB72D1EE08A007EFB0B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C3919EB82D1EE08A007EFB0B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C3919EB92D1EE08A007EFB0B /* signUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpModel.swift; sourceTree = "<group>"; };
+		C3919EC22D1EF7A0007EFB0B /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		C3919EC42D1F0AAA007EFB0B /* Impact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Impact.swift; sourceTree = "<group>"; };
 		D096691E2D0DB377003DA933 /* Cart Page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Cart Page.storyboard"; sourceTree = "<group>"; };
 		D09669202D0DB38F003DA933 /* Order page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Order page.storyboard"; sourceTree = "<group>"; };
 		D09669242D0DB3DE003DA933 /* Product Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Info.storyboard"; sourceTree = "<group>"; };
@@ -153,6 +169,8 @@
 				3F5542772D1C1F8600FBE75C /* Order.swift */,
 				3F55427B2D1C270900FBE75C /* OrderProduct.swift */,
 				3F5542792D1C262900FBE75C /* LocalData.swift */,
+				C3919EC22D1EF7A0007EFB0B /* Metrics.swift */,
+				C3919EC42D1F0AAA007EFB0B /* Impact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,7 +243,13 @@
 				83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */,
 				83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */,
 				83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */,
-				83F9ECA92D0DB9E600816FC8 /* loginPage.storyboard */,
+				83F9ECA92D0DB9E600816FC8 /* Profile.storyboard */,
+				C3919EB22D1EE06A007EFB0B /* LoginSignup.storyboard */,
+				C3919EB52D1EE089007EFB0B /* LocalDataManager.swift */,
+				C3919EB72D1EE08A007EFB0B /* LoginViewController.swift */,
+				C3919EB82D1EE08A007EFB0B /* ProfileViewController.swift */,
+				C3919EB92D1EE08A007EFB0B /* signUpModel.swift */,
+				C3919EB42D1EE089007EFB0B /* signUpViewController.swift */,
 				ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */,
 				8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */,
 				D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */,
@@ -358,7 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0BA1CCA2D1B4780009F63B9 /* TabBar.storyboard in Resources */,
-				83F9ECAA2D0DB9E600816FC8 /* loginPage.storyboard in Resources */,
+				83F9ECAA2D0DB9E600816FC8 /* Profile.storyboard in Resources */,
 				F23368392CF4854200A988FC /* LaunchScreen.storyboard in Resources */,
 				D5165D4A2D0DB1B100CC2BF7 /* Notifications.storyboard in Resources */,
 				8398BCD62D07137A00DD8CFD /* AdminDashboard.storyboard in Resources */,
@@ -373,6 +397,7 @@
 				D096691F2D0DB377003DA933 /* Cart Page.storyboard in Resources */,
 				83F9ECA72D0DB8A700816FC8 /* Bader discount page.storyboard in Resources */,
 				F23368342CF4854000A988FC /* Main.storyboard in Resources */,
+				C3919EB32D1EE06A007EFB0B /* LoginSignup.storyboard in Resources */,
 				D5165D4C2D0DB1BB00CC2BF7 /* StoreManager.storyboard in Resources */,
 				D538B0A92D1AFFAA009F6E74 /* Home.storyboard in Resources */,
 				83F9ECA62D0DB8A700816FC8 /* bader's search and filter page.storyboard in Resources */,
@@ -410,16 +435,23 @@
 				3F55427C2D1C270900FBE75C /* OrderProduct.swift in Sources */,
 				3F5542742D1C1F5200FBE75C /* Shop.swift in Sources */,
 				D57E31FB2D1D788300813FCE /* ViewMoreInfoViewController.swift in Sources */,
+				C3919EC52D1F0AAA007EFB0B /* Impact.swift in Sources */,
+				C3919EC32D1EF7A0007EFB0B /* Metrics.swift in Sources */,
 				3FEEDC032D1C816B00C6BCB6 /* ProductinfoViewController.swift in Sources */,
 				3F94C8B42D0DC25400CEA70D /* ProdCompViewController.swift in Sources */,
+				C3919EBD2D1EE08A007EFB0B /* LoginViewController.swift in Sources */,
 				3F55427E2D1C2D4B00FBE75C /* ProductCollectionViewCell.swift in Sources */,
 				D538B09D2D1AD073009F6E74 /* ReviewsViewController.swift in Sources */,
 				3F5542782D1C1F8600FBE75C /* Order.swift in Sources */,
 				3F5542712D1C1CFF00FBE75C /* HomeViewController.swift in Sources */,
+				C3919EBE2D1EE08A007EFB0B /* ProfileViewController.swift in Sources */,
+				C3919EBB2D1EE08A007EFB0B /* LocalDataManager.swift in Sources */,
 				F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */,
 				3FEEDC052D1C817800C6BCB6 /* CartViewController.swift in Sources */,
+				C3919EBF2D1EE08A007EFB0B /* signUpModel.swift in Sources */,
 				D538B0A32D1AD0B8009F6E74 /* WriteReviewViewController.swift in Sources */,
 				D538B09B2D1AD066009F6E74 /* ReviewsTableViewCell.swift in Sources */,
+				C3919EBA2D1EE08A007EFB0B /* signUpViewController.swift in Sources */,
 				3F5542762D1C1F7700FBE75C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

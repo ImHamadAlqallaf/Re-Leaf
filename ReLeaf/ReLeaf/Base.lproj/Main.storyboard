@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a7f-hy-SD8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -8,72 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="2Zt-ys-tfc">
-            <objects>
-                <viewController id="a7f-hy-SD8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="U4x-6G-G1b">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ob-eN-9FM">
-                                <rect key="frame" x="159" y="377" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="KQQ-7q-BsO" kind="show" id="ynz-zS-6R5"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ecZ-l9-cb6"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="StA-Ml-pOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3876" y="-637"/>
-        </scene>
-        <!--Discountpage-->
-        <scene sceneID="wgZ-cS-f2v">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Bader discount page" referencedIdentifier="Discountpage" id="2xV-4E-FKf" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="aVx-RH-gcK"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P8x-8m-SUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2819" y="-1012"/>
-        </scene>
-        <!--SearchPage-->
-        <scene sceneID="HZ7-OV-4Vj">
-            <objects>
-                <viewControllerPlaceholder storyboardName="bader's search and filter page" referencedIdentifier="SearchPage" id="Ye6-tb-Hwz" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="VZW-ZO-c8c"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vDu-nk-sMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2930" y="-835"/>
-        </scene>
-        <!--DiscountCards-->
-        <scene sceneID="L80-Ue-0Hf">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Bader Discountcards" referencedIdentifier="DiscountCards" id="KQQ-7q-BsO" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="pZL-xN-uKA"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pX5-bd-dIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2953" y="-658"/>
-        </scene>
-        <!--SpecialViewController-->
-        <scene sceneID="urd-oG-7q4">
-            <objects>
-                <viewControllerPlaceholder storyboardName="bader special offer" referencedIdentifier="SpecialViewController" id="7GF-i0-SOJ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="NDn-Bx-Ny4"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FR5-NW-Lw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3035" y="-539"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="cTi-kC-pce">
             <objects>
@@ -119,24 +53,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qn-C2-tvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2241" y="-727"/>
-        </scene>
-        <!--disViewController-->
-        <scene sceneID="He5-G6-9t3">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Bader discount page" referencedIdentifier="disViewController" id="ST1-zF-U8g" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="n3A-fl-Z3R"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WWL-Ow-sSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3302" y="-903"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="4gB-G6-mcy">
-            <objects>
-                <viewControllerPlaceholder id="g0k-NJ-3rE" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PoN-3y-HZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3367" y="-564"/>
         </scene>
     </scenes>
     <resources>

@@ -16,6 +16,7 @@ struct CartItem: Codable {
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var subtotalLabel: UILabel!
     
     
     var localData: LocalData!
@@ -35,6 +36,8 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
             guard localData != nil else {
                 fatalError("localData is not initialized")
             }
+            
+            updateSubtotal()
         }
 
         func loadLocalData() {
@@ -91,6 +94,16 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
             if editingStyle == .delete {
                 localData.cartItems.remove(at: indexPath.row)
                 tableView.deleteRows(at: [indexPath], with: .automatic)
+                updateSubtotal()
             }
+        }
+        
+        func updateSubtotal() {
+            var subtotal: Double = 0.0
+            for cartItem in localData.cartItems {
+                let product = getProductById(cartItem.productId)
+                subtotal += product.price * Double(cartItem.quantity)
+            }
+            subtotalLabel.text = String(format: "Subtotal: $%.2f", subtotal)
         }
     }

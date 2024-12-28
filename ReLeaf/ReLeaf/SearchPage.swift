@@ -44,7 +44,7 @@ class SearchPage: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
    
     func loadData() {
-        // Define products for each shop
+       
         let shop1Products = [
             Product(id: "product1", name: "Bamboo Toothbrush", price: 3.99, stock: 50, description: "Eco-friendly toothbrush", category: "Oral Care", image: "bamboo_toothbrush.png"),
             Product(id: "product2", name: "Reusable Water Bottle", price: 10.99, stock: 30, description: "Stainless steel bottle", category: "Drinkware", image: "reusable_bottle.png"),
@@ -69,11 +69,11 @@ class SearchPage: UIViewController, UITableViewDelegate, UITableViewDataSource, 
             Product(id: "product12", name: "Coconut Oil", price: 12.99, stock: 80, description: "Pure organic coconut oil", category: "Health & Beauty", image: "coconut_oil.png")
         ]
         
-        // Combine all products from each shop
+        
         products = shop1Products + shop2Products + shop3Products + shop4Products
         filterData = products
 
-        // Reload the table view with the updated data
+        
         searchtableview.reloadData()
     }
 

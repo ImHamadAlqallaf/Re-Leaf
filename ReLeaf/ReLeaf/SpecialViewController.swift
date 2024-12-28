@@ -6,7 +6,6 @@
 //
 
 import UIKit
-// Product and Shop Structs
 
 class SpecialViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
@@ -27,7 +26,7 @@ class SpecialViewController: UIViewController,UITableViewDelegate, UITableViewDa
                         for shop in shops {
                             if let products = shop["products"] as? [[String: Any]] {
                                 for product in products {
-                                    // Extract and store data
+                                    
                                     productNames.append(product["name"] as? String ?? "Unknown")
                                     productPrices.append(product["price"] as? Double ?? 0.0)
                                     productImages.append(product["image"] as? String ?? "")
@@ -41,13 +40,13 @@ class SpecialViewController: UIViewController,UITableViewDelegate, UITableViewDa
             }
         tableView.delegate = self
         tableView.dataSource = self
-            // Reload the table view to display the loaded data
+           
             tableView.reloadData()
     }
 
 
 
-        // MARK: - TableView DataSource Methods
+        
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return productNames.count
         }
@@ -55,7 +54,7 @@ class SpecialViewController: UIViewController,UITableViewDelegate, UITableViewDa
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SpecialTableViewCell
 
-                // Assign values to labels and image view
+                
                 cell.productNameLabel.text = productNames[indexPath.row]
                 cell.productPriceLabel.text = "BHD \(productPrices[indexPath.row])"
                 cell.productImageView.image = UIImage(named: productImages[indexPath.row])
@@ -67,7 +66,7 @@ class SpecialViewController: UIViewController,UITableViewDelegate, UITableViewDa
         if segue.identifier == "ShowProductDetail" {
             if let detailVC = segue.destination as? ProductDetailViewController,
                let indexPath = tableView.indexPathForSelectedRow {
-                // Pass the selected product data
+                
                 detailVC.productName = productNames[indexPath.row]
                 detailVC.productPrice = productPrices[indexPath.row]
                 detailVC.productImage = productImages[indexPath.row]

@@ -42,6 +42,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Co2 Emission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yef-cL-vZN">
+                                <rect key="frame" x="20" y="361" width="117.33333333333331" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4OM-Aj-aQG">
                                 <rect key="frame" x="227.33333333333334" y="325" width="58.666666666666657" height="77"/>
                                 <subviews>
@@ -132,18 +138,13 @@
                                     <action selector="goToProductTapped:" destination="PvD-D8-bqz" eventType="touchUpInside" id="Jvf-Zv-4VQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Co2 Emission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yef-cL-vZN">
-                                <rect key="frame" x="19.999999999999993" y="361.33333333333337" width="117.33333333333331" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gPi-jN-Z68"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gPi-jN-Z68" firstAttribute="trailing" secondItem="Mga-p5-uOW" secondAttribute="trailing" constant="16" id="1Jr-E5-Y0x"/>
-                            <constraint firstItem="4OM-Aj-aQG" firstAttribute="top" secondItem="WAs-a2-lZk" secondAttribute="bottom" constant="25" id="2Z8-tF-a5s"/>
+                            <constraint firstItem="4OM-Aj-aQG" firstAttribute="top" secondItem="WAs-a2-lZk" secondAttribute="bottom" constant="50" id="2Z8-tF-a5s"/>
+                            <constraint firstAttribute="trailing" secondItem="Mga-p5-uOW" secondAttribute="trailing" constant="16" id="2v1-dt-7Do"/>
                             <constraint firstItem="Mga-p5-uOW" firstAttribute="leading" secondItem="gPi-jN-Z68" secondAttribute="leading" constant="16" id="59C-SO-mGD"/>
                             <constraint firstItem="gPi-jN-Z68" firstAttribute="trailing" secondItem="WAs-a2-lZk" secondAttribute="trailing" constant="86.5" id="ATv-hC-WxJ"/>
                             <constraint firstItem="Kpu-W4-zLt" firstAttribute="top" secondItem="Mga-p5-uOW" secondAttribute="bottom" constant="35" id="Bkp-9z-Q9m"/>
@@ -153,19 +154,22 @@
                             <constraint firstItem="E77-lU-mQp" firstAttribute="leading" secondItem="gPi-jN-Z68" secondAttribute="leading" constant="20" id="JwT-L5-4pF"/>
                             <constraint firstItem="Mga-p5-uOW" firstAttribute="top" secondItem="4OM-Aj-aQG" secondAttribute="bottom" constant="30" id="LS9-si-MBm"/>
                             <constraint firstItem="HCp-29-wvP" firstAttribute="leading" secondItem="4OM-Aj-aQG" secondAttribute="trailing" constant="5" id="P6G-w5-JUu"/>
-                            <constraint firstItem="E77-lU-mQp" firstAttribute="top" secondItem="WAs-a2-lZk" secondAttribute="bottom" constant="40" id="bCw-N6-qPT"/>
+                            <constraint firstItem="Kpu-W4-zLt" firstAttribute="top" secondItem="Mga-p5-uOW" secondAttribute="bottom" constant="35" id="aBz-gY-jZG"/>
+                            <constraint firstItem="Mga-p5-uOW" firstAttribute="top" secondItem="4OM-Aj-aQG" secondAttribute="bottom" constant="30" id="ae7-Eb-B76"/>
+                            <constraint firstItem="E77-lU-mQp" firstAttribute="top" secondItem="WAs-a2-lZk" secondAttribute="bottom" constant="80" id="bCw-N6-qPT"/>
                             <constraint firstItem="4OM-Aj-aQG" firstAttribute="leading" secondItem="yef-cL-vZN" secondAttribute="trailing" constant="90" id="bHA-oJ-pHy"/>
                             <constraint firstItem="Mga-p5-uOW" firstAttribute="top" secondItem="yef-cL-vZN" secondAttribute="bottom" constant="50" id="boN-2j-GQg"/>
                             <constraint firstItem="Mga-p5-uOW" firstAttribute="top" secondItem="HCp-29-wvP" secondAttribute="bottom" constant="30" id="i26-NO-8ji"/>
-                            <constraint firstItem="yef-cL-vZN" firstAttribute="top" secondItem="E77-lU-mQp" secondAttribute="bottom" constant="1" id="jYG-mo-PYk"/>
+                            <constraint firstItem="yef-cL-vZN" firstAttribute="top" secondItem="E77-lU-mQp" secondAttribute="bottom" constant="10" id="jYG-mo-PYk"/>
                             <constraint firstItem="HCp-29-wvP" firstAttribute="leading" secondItem="4OM-Aj-aQG" secondAttribute="trailing" constant="5" id="kMB-bC-ain"/>
                             <constraint firstItem="yef-cL-vZN" firstAttribute="leading" secondItem="gPi-jN-Z68" secondAttribute="leading" constant="20" id="oq3-4k-Ipo"/>
                             <constraint firstItem="WAs-a2-lZk" firstAttribute="top" secondItem="gPi-jN-Z68" secondAttribute="top" constant="5" id="qUy-ua-hbI"/>
-                            <constraint firstItem="yef-cL-vZN" firstAttribute="top" secondItem="E77-lU-mQp" secondAttribute="bottom" constant="1" id="rl3-rU-cjf"/>
+                            <constraint firstItem="yef-cL-vZN" firstAttribute="top" secondItem="E77-lU-mQp" secondAttribute="bottom" constant="10" id="rl3-rU-cjf"/>
+                            <constraint firstItem="Mga-p5-uOW" firstAttribute="leading" secondItem="di8-oc-Muk" secondAttribute="leading" constant="16" id="ru1-AT-lUz"/>
                             <constraint firstItem="Mga-p5-uOW" firstAttribute="top" secondItem="4OM-Aj-aQG" secondAttribute="bottom" constant="30" id="swG-yW-9Y2"/>
                             <constraint firstItem="gPi-jN-Z68" firstAttribute="trailing" secondItem="HCp-29-wvP" secondAttribute="trailing" constant="20" id="t4Y-ml-aAO"/>
                             <constraint firstItem="WAs-a2-lZk" firstAttribute="leading" secondItem="gPi-jN-Z68" secondAttribute="leading" constant="86.5" id="wQP-nJ-0p2"/>
-                            <constraint firstItem="HCp-29-wvP" firstAttribute="top" secondItem="WAs-a2-lZk" secondAttribute="bottom" constant="25" id="yYl-XR-a0G"/>
+                            <constraint firstItem="HCp-29-wvP" firstAttribute="top" secondItem="WAs-a2-lZk" secondAttribute="bottom" constant="50" id="yYl-XR-a0G"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j8K-IV-Qx6"/>
@@ -180,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIo-e6-3P9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="571.75572519083971" y="24.647887323943664"/>
+            <point key="canvasLocation" x="569" y="18"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7ze-mj-wd4">

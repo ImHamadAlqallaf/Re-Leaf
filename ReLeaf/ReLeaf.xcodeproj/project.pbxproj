@@ -27,6 +27,9 @@
 		D09669252D0DB3DE003DA933 /* Product Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09669242D0DB3DE003DA933 /* Product Info.storyboard */; };
 		D5165D4A2D0DB1B100CC2BF7 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */; };
 		D5165D4C2D0DB1BB00CC2BF7 /* StoreManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5165D4B2D0DB1BB00CC2BF7 /* StoreManager.storyboard */; };
+		E68B480E2D1FE2A500F9C31C /* Notifs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B480D2D1FE2A500F9C31C /* Notifs.swift */; };
+		E68B48102D1FE32800F9C31C /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B480F2D1FE32800F9C31C /* NotificationsTableViewController.swift */; };
+		E68B48122D1FE57D00F9C31C /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B48112D1FE57D00F9C31C /* NotificationTableViewCell.swift */; };
 		F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233682C2CF4854000A988FC /* AppDelegate.swift */; };
 		F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233682E2CF4854000A988FC /* SceneDelegate.swift */; };
 		F23368312CF4854000A988FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23368302CF4854000A988FC /* ViewController.swift */; };
@@ -76,6 +79,9 @@
 		D09669242D0DB3DE003DA933 /* Product Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Info.storyboard"; sourceTree = "<group>"; };
 		D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		D5165D4B2D0DB1BB00CC2BF7 /* StoreManager.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreManager.storyboard; sourceTree = "<group>"; };
+		E68B480D2D1FE2A500F9C31C /* Notifs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifs.swift; sourceTree = "<group>"; };
+		E68B480F2D1FE32800F9C31C /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
+		E68B48112D1FE57D00F9C31C /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		F23368292CF4854000A988FC /* ReLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F233682C2CF4854000A988FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F233682E2CF4854000A988FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +164,9 @@
 				ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */,
 				8398BCD52D07137A00DD8CFD /* AdminDashboard.storyboard */,
 				D5165D492D0DB1B100CC2BF7 /* Notifications.storyboard */,
+				E68B48112D1FE57D00F9C31C /* NotificationTableViewCell.swift */,
+				E68B480F2D1FE32800F9C31C /* NotificationsTableViewController.swift */,
+				E68B480D2D1FE2A500F9C31C /* Notifs.swift */,
 				D5165D4B2D0DB1BB00CC2BF7 /* StoreManager.storyboard */,
 				D088814B2D1DCCED00B096FF /* AddProductTableViewController.swift */,
 				D015CFB22D1C50BF0082D15A /* Shop.swift */,
@@ -335,12 +344,15 @@
 			files = (
 				F23368312CF4854000A988FC /* ViewController.swift in Sources */,
 				D015CFB52D1C51EB0082D15A /* DataService.swift in Sources */,
+				E68B48102D1FE32800F9C31C /* NotificationsTableViewController.swift in Sources */,
 				D015CFB12D1C35CE0082D15A /* CustomTableViewCell.swift in Sources */,
 				F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */,
 				D015CFB32D1C50BF0082D15A /* Shop.swift in Sources */,
+				E68B480E2D1FE2A500F9C31C /* Notifs.swift in Sources */,
 				F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */,
 				D015CFAF2D1C25A30082D15A /* ShopTableViewController.swift in Sources */,
 				D088814C2D1DCCED00B096FF /* AddProductTableViewController.swift in Sources */,
+				E68B48122D1FE57D00F9C31C /* NotificationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

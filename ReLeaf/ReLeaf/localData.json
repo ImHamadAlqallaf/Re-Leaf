@@ -156,6 +156,22 @@
                 "timestamp": "2024-12-19T18:00:00Z"
             }
         ]
-    }
+    },
+    "notifications": [
+            {
+                "id": "notification1",
+                "type": "order2",
+                "message": "EcoMart order being delivered.",
+                "productId": "product1",
+                "timestamp": "2024-12-28"
+            },
+            {
+                "id": "notification2",
+                "type": "order3",
+                "message": "EcoMart order is almost at your location ",
+                "productId": "product1",
+                "timestamp": "2024-12-28"
+            }
+        ]
 }
 

@@ -69,11 +69,16 @@ class signUpViewController: UIViewController {
               
               // Save the updated data back to JSON
               saveUpdatedData(localData)
+           
+            // Set the current user in UserManager
+            UserManager.shared.currentUser = newUser
               
               print("Welcome, \(newUser.userName)! Role: \(newUser.role), id: \(newUser.id)")
               
-              /// Navigate to the Tab Bar Controller
-           navigateToTabBarController()
+           // Perform segue to the home page
+                   self.performSegue(withIdentifier: "signUpGoToHomePage", sender: self)
+//              /// Navigate to the Tab Bar Controller
+//           navigateToTabBarController()
        }
     
     

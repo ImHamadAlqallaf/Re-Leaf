@@ -129,5 +129,8 @@ class ProductinfoViewController: UIViewController {
         
         navigationController?.pushViewController(prodCompVC, animated: true)
     }
-}
+        }
+        
+        
+    
 

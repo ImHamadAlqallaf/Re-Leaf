@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GQv-sg-jHX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -18,7 +18,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Ywy-ph-Met" kind="relationship" relationship="rootViewController" id="LxM-yl-yjf"/>
+                        <segue destination="Ywy-ph-Met" kind="relationship" relationship="rootViewController" destinationCreationSelector="toProductImpactTracker" id="LxM-yl-yjf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GzU-XV-fZX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -258,10 +258,10 @@
             </objects>
             <point key="canvasLocation" x="1833" y="21"/>
         </scene>
-        <!--ImpactMetricDashboard-->
+        <!--Impact Metric Dashboard-->
         <scene sceneID="Hjq-qd-Wb2">
             <objects>
-                <viewController storyboardIdentifier="ImpactMetricDashboard" title="ImpactMetricDashboard" id="On4-ac-kTN" customClass="ImpactMetricDashboardViewController" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImapctMetricDashboard" id="On4-ac-kTN" customClass="ImpactMetricDashboardViewController" customModule="ReLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uHW-5S-EEH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

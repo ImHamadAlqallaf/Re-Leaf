@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Prb-Sj-c9h">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -157,7 +157,7 @@
                                             </attributedString>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="viewAlternativesTapped:" destination="o67-U5-h6t" eventType="touchUpInside" id="sPg-aI-fih"/>
+                                            <action selector="viewAlternativesTapped:" destination="o67-U5-h6t" eventType="touchUpInside" id="JH6-kt-chZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrQ-lB-ZMt">
@@ -556,7 +556,7 @@
         <!--Navigation Controller-->
         <scene sceneID="mGQ-L0-aLA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Prb-Sj-c9h" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Prb-Sj-c9h" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DnC-5X-2zo">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>

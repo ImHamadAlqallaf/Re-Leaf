@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zTK-As-TYa">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -71,7 +71,7 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="c86-0g-OJC" id="twp-nO-Rv3"/>
                                             <outlet property="priceLabel" destination="wh8-4t-hkh" id="fha-US-boZ"/>
-                                            <outlet property="productimageView" destination="z8n-wB-oUK" id="6nP-A8-EBG"/>
+                                            <outlet property="productImageView" destination="z8n-wB-oUK" id="OdA-aK-2w6"/>
                                             <outlet property="quantityLabel" destination="hc5-Ck-V7r" id="3Mz-aL-H9o"/>
                                         </connections>
                                     </tableViewCell>

@@ -78,50 +78,47 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
+    @IBAction func viewImpactTrackerTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Product Impact Tracker", bundle: nil)
+        guard let prodCompVC = storyboard.instantiateViewController(withIdentifier: "ImapctMetricDashboard") as? Product else {
+            print("❌ Failed to instantiate Impact Metric Tracker.")
+            return
+        }
+        
+        navigationController?.pushViewController(ProductImpactTrackerViewController(), animated: true)
+    }
+    
     // MARK: - TableView Delegate Methods
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        switch indexPath.row {
-        case 0:
-            self.performSegue(withIdentifier: "toAccountSettings", sender: self)
-        case 1:
-            self.performSegue(withIdentifier: "toProductImpactTracker", sender: self)
-        case 2:
-            self.performSegue(withIdentifier: "toImpactMetricDashboard", sender: self)
-        case 3:
-            self.performSegue(withIdentifier: "toNotification", sender: self)
-        case 4:
-            handleLogout()
-        default:
-            break
         }
     }
     
     // MARK: - Logout Logic
     
-    func handleLogout() {
-        let alert = UIAlertController(title: "Logout", message: "Are you sure you want to logout?", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "Log Out", style: .destructive, handler: { _ in
-            self.performLogout()
-        }))
-        present(alert, animated: true, completion: nil)
-    }
-    
-    func performLogout() {
-        print("Logged out successfully")
-        // Clear the session
-        SessionManager.shared.currentUser = nil
-        
-        // Load the LoginSignup.storyboard
-        let storyboard = UIStoryboard(name: "LoginSignup", bundle: nil)
-        if let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
-            if let window = UIApplication.shared.windows.first {
-                window.rootViewController = loginViewController
-                window.makeKeyAndVisible()
-            }
-        }
-    }
-}
+//    func handleLogout() {
+//        let alert = UIAlertController(title: "Logout", message: "Are you sure you want to logout?", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+//        alert.addAction(UIAlertAction(title: "Log Out", style: .destructive, handler: { _ in
+//            self.performLogout()
+//        }))
+//        present(alert, animated: true, completion: nil)
+//    }
+//    
+//    func performLogout() {
+//        print("Logged out successfully")
+//        // Clear the session
+//        SessionManager.shared.currentUser = nil
+//        
+//        // Load the LoginSignup.storyboard
+//        let storyboard = UIStoryboard(name: "LoginSignup", bundle: nil)
+//        if let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+//            if let window = UIApplication.shared.windows.first {
+//                window.rootViewController = loginViewController
+//                window.makeKeyAndVisible()
+//            }
+//        }
+//    }
+//}

@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         // Load the Login View Controller from its storyboard
-                let storyboard = UIStoryboard(name: "Login", bundle: nil)
+                let storyboard = UIStoryboard(name: "LoginSignup", bundle: nil)
                 let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                 
                 // Set the Login View Controller as the root view controller

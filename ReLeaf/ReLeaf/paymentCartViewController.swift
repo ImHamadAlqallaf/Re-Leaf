@@ -25,6 +25,7 @@ class paymentCartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         checkoutButton.isEnabled = false
         setTextFieldsEnabled(false)
         

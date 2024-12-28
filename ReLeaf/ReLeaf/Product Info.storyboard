@@ -157,7 +157,7 @@
                                             </attributedString>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="ead-fO-aYi" kind="show" identifier="AlternativesSegue" id="Xkk-wa-l2Q"/>
+                                            <action selector="viewAlternativesTapped:" destination="JZe-M9-MTg" eventType="touchUpInside" id="6KP-Nt-Hgb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp6-Tf-LQ2">
@@ -264,7 +264,7 @@
         <!--Alternatives-->
         <scene sceneID="srW-KW-CFk">
             <objects>
-                <viewControllerPlaceholder storyboardName="Alternatives" id="ead-fO-aYi" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="ProdCompViewController" storyboardName="Alternatives" id="ead-fO-aYi" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ian-sg-E7N"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7WG-OI-XxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -583,7 +583,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

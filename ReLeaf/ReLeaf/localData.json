@@ -82,7 +82,7 @@
                     "price": 29.99,
                     "stock": 20,
                     "description": "Sustainable wooden desk organizer",
-                    "category": "Office Suppliesx",
+                    "category": "Office Supplies",
                     "image": "bamboo_cutlery_set.png",
                     "co2EmissionSaved": 2,
                     "waterConserved": 10,
@@ -91,80 +91,176 @@
                     "certificateImage": "eco_cert.jpg"
                 }
             ]
-        }
-    ],
-    "users": [
-        {
-            "password": "hashed_password_123",
-            "email": "alice@example.com",
-            "role": "customer",
-            "id": "user1",
-            "userName": "Alice",
-            "number": "12345678"
         },
         {
-            "id": "user2",
-            "password": "hashed_password_456",
-            "role": "customer",
-            "email": "bob@example.com",
-            "userName": "Bob",
-            "number": "12345678"
-        },
-        {
-            "password": "Hussain2024",
-            "role": "admin",
-            "email": "hussain@example.com",
-            "id": "user3",
-            "userName": "Hussain",
-            "number": "12345678"
-        }
-    ],
-    "orders": [
-        {
-            "id": "order1",
-            "userId": "user1",
-            "shopId": "shop1",
+            "id": "shop3",
+            "name": "Sustainable Living",
+            "location": "789 Eco Lane",
+            "owner": "Emily Green",
+            "contact": "555-123-4567",
             "products": [
                 {
-                    "productId": "product1",
-                    "quantity": 2,
-                    "price": 3.99
+                    "id": "product7",
+                    "name": "Reusable Shopping Bag",
+                    "price": 1.99,
+                    "stock": 150,
+                    "description": "Durable and reusable shopping bag",
+                    "category": "Kitchen Items",
+                    "image": "reusable_bag.jpeg",
+                    "co2EmissionSaved": 0.5,
+                    "waterConserved": 20,
+                    "wasteReduced": 10,
+                    "materialsUsed": "Recycled plastic",
+                    "certificateImage": "eco_cert.jpg"
+                },
+                {
+                    "id": "product8",
+                    "name": "Solar Powered Lantern",
+                    "price": 15.99,
+                    "stock": 40,
+                    "description": "Lantern powered by solar energy",
+                    "category": "Outdoor",
+                    "image": "solar_lantern.jpeg",
+                    "co2EmissionSaved": 5.0,
+                    "waterConserved": 0,
+                    "wasteReduced": 0,
+                    "materialsUsed": "Plastic, Solar panel",
+                    "certificateImage": "eco_cert.jpg"
+                },
+                {
+                    "id": "product9",
+                    "name": "Bamboo Container",
+                    "price": 8.99,
+                    "stock": 60,
+                    "description": "Biodegradable and eco-friendly detergent",
+                    "category": "Kitchen Items",
+                    "image": "bamboo_container.jpeg",
+                    "co2EmissionSaved": 2.0,
+                    "waterConserved": 100,
+                    "wasteReduced": 50,
+                    "materialsUsed": "bamboo",
+                    "certificateImage": "eco_cert.jpg"
                 }
-            ],
-            "total": 7.98,
-            "orderDate": "2024-12-19T18:00:00Z",
-            "status": "shipped"
+            ]
         },
         {
-            "id": "order2",
-            "userId": "user2",
-            "shopId": "shop2",
+            "id": "shop4",
+            "name": "Eco Essentials",
+            "location": "101 Green Avenue",
+            "owner": "Michael Brown",
+            "contact": "321-654-9870",
             "products": [
                 {
-                    "productId": "product3",
-                    "quantity": 1,
-                    "price": 15.99
+                    "id": "product10",
+                    "name": "Gentle Gum Toothbrush",
+                    "price": 4.99,
+                    "stock": 80,
+                    "description": "Gum freindly, easy-to-use",
+                    "category": "Oral Care",
+                    "image": "toothbrush.jpeg",
+                    "co2EmissionSaved": 1.2,
+                    "waterConserved": 30,
+                    "wasteReduced": 20,
+                    "materialsUsed": "Gentle Plastic made for older ageed people",
+                    "certificateImage": "eco_cert.jpg"
+                },
+                {
+                    "id": "product11",
+                    "name": "Eco-friendly Shampoo",
+                    "price": 6.99,
+                    "stock": 70,
+                    "description": "Shampoo with natural ingredients",
+                    "category": "Personal Care",
+                    "image": "eco_shampoo.jpeg",
+                    "co2EmissionSaved": 1.8,
+                    "waterConserved": 40,
+                    "wasteReduced": 25,
+                    "materialsUsed": "Natural ingredients",
+                    "certificateImage": "eco_cert.jpg"
                 }
-            ],
-            "total": 15.99,
-            "orderDate": "2024-12-19T18:30:00Z",
-            "status": "processing"
-        }
-    ],
-    "metrics": {
-        "impact": [
-            {
-                "id": "metric1",
-                "name": "Total Sales",
-                "value": 5000,
-                "timestamp": "2024-12-19T18:00:00Z"
-            },
-            {
-                "id": "metric2",
-                "name": "Carbon Footprint Reduced",
-                "value": 1000,
-                "timestamp": "2024-12-19T18:00:00Z"
+                ]
             }
-        ]
-    }
-}
+            ],
+            "users": [
+                {
+                    "password": "hashed_password_123",
+                    "email": "alice@example.com",
+                    "role": "customer",
+                    "id": "user1",
+                    "userName": "Alice",
+                    "number": "12345678"
+                },
+                {
+                    "id": "user2",
+                    "password": "hashed_password_456",
+                    "role": "customer",
+                    "email": "bob@example.com",
+                    "userName": "Bob",
+                    "number": "12345678"
+                },
+                {
+                    "password": "Hussain2024",
+                    "role": "admin",
+                    "email": "hussain@example.com",
+                    "id": "user3",
+                    "userName": "Hussain",
+                    "number": "12345678"
+                },
+                {
+                    "password": "ab123",
+                    "role": "customer",
+                    "email": "ab@gmail.com",
+                    "id": "user4",
+                    "userName": "Abood",
+                    "number": "12345679"
+                }
+            ],
+            "orders": [
+                {
+                    "id": "order1",
+                    "userId": "user1",
+                    "shopId": "shop1",
+                    "products": [
+                        {
+                            "productId": "product1",
+                            "quantity": 2,
+                            "price": 3.99
+                        }
+                    ],
+                    "total": 7.98,
+                    "orderDate": "2024-12-19T18:00:00Z",
+                    "status": "shipped"
+                },
+                {
+                    "id": "order2",
+                    "userId": "user2",
+                    "shopId": "shop2",
+                    "products": [
+                        {
+                            "productId": "product3",
+                            "quantity": 1,
+                            "price": 15.99
+                        }
+                    ],
+                    "total": 15.99,
+                    "orderDate": "2024-12-19T18:30:00Z",
+                    "status": "processing"
+                }
+            ],
+            "metrics": {
+                "impact": [
+                    {
+                        "id": "metric1",
+                        "name": "Total Sales",
+                        "value": 5000,
+                        "timestamp": "2024-12-19T18:00:00Z"
+                    },
+                    {
+                        "id": "metric2",
+                        "name": "Carbon Footprint Reduced",
+                        "value": 1000,
+                        "timestamp": "2024-12-19T18:00:00Z"
+                    }
+                ]
+            }
+        }

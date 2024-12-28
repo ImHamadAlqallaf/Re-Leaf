@@ -116,5 +116,18 @@ class ProductinfoViewController: UIViewController {
            navigationController?.pushViewController(reviewsVC, animated: true)
        }
 
+    
+    @IBAction func viewAlternativesTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Alternatives", bundle: nil)
+        guard let prodCompVC = storyboard.instantiateViewController(withIdentifier: "ProdCompViewController") as? ProdCompViewController else {
+            print("❌ Failed to instantiate ProdCompViewController.")
+            return
+        }
+        
+        // Pass the selected product to ProdCompViewController
+        prodCompVC.originalProduct = selectedProduct
+        
+        navigationController?.pushViewController(prodCompVC, animated: true)
+    }
 }
 

@@ -25,6 +25,9 @@
 		E92AD4CF2D1D61550030F56E /* DiscountTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92AD4CE2D1D61550030F56E /* DiscountTableCell.swift */; };
 		E92AD4D12D1D6C400030F56E /* DiscountCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92AD4D02D1D6C400030F56E /* DiscountCards.swift */; };
 		E938CAD22D1C6BC000E850C1 /* localData 2.json in Resources */ = {isa = PBXBuildFile; fileRef = E938CAD12D1C6BC000E850C1 /* localData 2.json */; };
+		E969F4682D1FC0F3001BCD1C /* SpecialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F4672D1FC0F3001BCD1C /* SpecialTableViewCell.swift */; };
+		E969F46A2D1FC142001BCD1C /* SpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F4692D1FC142001BCD1C /* SpecialViewController.swift */; };
+		E969F46C2D1FC249001BCD1C /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969F46B2D1FC249001BCD1C /* ProductDetailViewController.swift */; };
 		E98507132D1ADF980006CE89 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98507122D1ADF980006CE89 /* SearchPage.swift */; };
 		E98507152D1B00180006CE89 /* SearchPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98507142D1B00180006CE89 /* SearchPageTableViewCell.swift */; };
 		E9C065DF2D1EE5480055759E /* dispagecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C065DE2D1EE5480055759E /* dispagecell.swift */; };
@@ -76,6 +79,9 @@
 		E92AD4CE2D1D61550030F56E /* DiscountTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTableCell.swift; sourceTree = "<group>"; };
 		E92AD4D02D1D6C400030F56E /* DiscountCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCards.swift; sourceTree = "<group>"; };
 		E938CAD12D1C6BC000E850C1 /* localData 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "localData 2.json"; sourceTree = "<group>"; };
+		E969F4672D1FC0F3001BCD1C /* SpecialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialTableViewCell.swift; sourceTree = "<group>"; };
+		E969F4692D1FC142001BCD1C /* SpecialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialViewController.swift; sourceTree = "<group>"; };
+		E969F46B2D1FC249001BCD1C /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		E98507122D1ADF980006CE89 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 		E98507142D1B00180006CE89 /* SearchPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageTableViewCell.swift; sourceTree = "<group>"; };
 		E9C065DE2D1EE5480055759E /* dispagecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dispagecell.swift; sourceTree = "<group>"; };
@@ -159,6 +165,9 @@
 				E9C065DE2D1EE5480055759E /* dispagecell.swift */,
 				83F9ECA42D0DB8A700816FC8 /* Bader Discountcards.storyboard */,
 				83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */,
+				E969F46B2D1FC249001BCD1C /* ProductDetailViewController.swift */,
+				E969F4672D1FC0F3001BCD1C /* SpecialTableViewCell.swift */,
+				E969F4692D1FC142001BCD1C /* SpecialViewController.swift */,
 				83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */,
 				83F9ECA92D0DB9E600816FC8 /* loginPage.storyboard */,
 				ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */,
@@ -339,8 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E969F4682D1FC0F3001BCD1C /* SpecialTableViewCell.swift in Sources */,
 				E92AD4CD2D1D60AC0030F56E /* AddDiscount.swift in Sources */,
+				E969F46A2D1FC142001BCD1C /* SpecialViewController.swift in Sources */,
 				E9C065E32D1EE5CA0055759E /* disViewController.swift in Sources */,
+				E969F46C2D1FC249001BCD1C /* ProductDetailViewController.swift in Sources */,
 				F23368312CF4854000A988FC /* ViewController.swift in Sources */,
 				E92AD4CF2D1D61550030F56E /* DiscountTableCell.swift in Sources */,
 				F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */,

@@ -44,23 +44,39 @@ class SearchPage: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
    
     func loadData() {
+        // Define products for each shop
         let shop1Products = [
             Product(id: "product1", name: "Bamboo Toothbrush", price: 3.99, stock: 50, description: "Eco-friendly toothbrush", category: "Oral Care", image: "bamboo_toothbrush.png"),
-            Product(id: "product2", name: "Reusable Water Bottle", price: 10.99, stock: 30, description: "Stainless steel bottle", category: "Drinkware", image: "reusable_bottle.png")
+            Product(id: "product2", name: "Reusable Water Bottle", price: 10.99, stock: 30, description: "Stainless steel bottle", category: "Drinkware", image: "reusable_bottle.png"),
+            Product(id: "product5", name: "Bamboo Sunglasses", price: 25.99, stock: 100, description: "Stylish bamboo sunglasses", category: "Accessories", image: "bamboo_sunglasses.png")
         ]
         
         let shop2Products = [
             Product(id: "product3", name: "Organic Cotton T-Shirt", price: 15.99, stock: 100, description: "100% organic cotton t-shirt", category: "Clothing", image: "organic_tshirt.png"),
-            Product(id: "product4", name: "Wooden Desk Organizer", price: 29.99, stock: 20, description: "Sustainable wooden desk organizer", category: "Office Supplies", image: "wooden_desk_organizer.png")
+            Product(id: "product4", name: "Wooden Desk Organizer", price: 29.99, stock: 20, description: "Sustainable wooden desk organizer", category: "Office Supplies", image: "wooden_desk_organizer.png"),
+            Product(id: "product6", name: "Denim Reusable Jacket", price: 39.99, stock: 50, description: "Eco-friendly denim jacket", category: "Clothing", image: "denim_reusable_jacket.png")
         ]
         
-        products = shop1Products + shop2Products
+        let shop3Products = [
+            Product(id: "product7", name: "Organic Soap Bar", price: 7.99, stock: 120, description: "100% organic soap bar", category: "Personal Care", image: "organic_soap_bar.png"),
+            Product(id: "product8", name: "Reusable Coffee Cup", price: 12.50, stock: 75, description: "Eco-friendly reusable coffee cup", category: "Drinkware", image: "reusable_coffee_cup.png"),
+            Product(id: "product9", name: "Organic Honey", price: 10.99, stock: 60, description: "Pure organic honey from local farms", category: "Food", image: "organic_honey.png")
+        ]
+        
+        let shop4Products = [
+            Product(id: "product10", name: "Solar Phone Charger", price: 25.99, stock: 50, description: "Portable solar phone charger", category: "Electronics", image: "solar_phone_charger.png"),
+            Product(id: "product11", name: "Solar Garden Light", price: 15.99, stock: 100, description: "Solar-powered garden light", category: "Outdoor", image: "solar_garden_light.png"),
+            Product(id: "product12", name: "Coconut Oil", price: 12.99, stock: 80, description: "Pure organic coconut oil", category: "Health & Beauty", image: "coconut_oil.png")
+        ]
+        
+        // Combine all products from each shop
+        products = shop1Products + shop2Products + shop3Products + shop4Products
         filterData = products
 
-       
+        // Reload the table view with the updated data
         searchtableview.reloadData()
     }
-    
+
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filterData.count

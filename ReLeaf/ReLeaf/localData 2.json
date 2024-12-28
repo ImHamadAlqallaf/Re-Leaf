@@ -42,6 +42,15 @@
                     "description": "Stainless steel bottle",
                     "category": "Drinkware",
                     "image": "reusable_bottle.png"
+                },
+                {
+                    "id": "product5",
+                    "name": "Bamboo Sunglasses",
+                    "price": 25.99,
+                    "stock": 100,
+                    "description": "Stylish bamboo sunglasses",
+                    "category": "Accessories",
+                    "image": "bamboo_sunglasses.png"
                 }
             ]
         },
@@ -69,6 +78,87 @@
                     "description": "Sustainable wooden desk organizer",
                     "category": "Office Supplies",
                     "image": "wooden_desk_organizer.png"
+                },
+                {
+                    "id": "product6",
+                    "name": "Denim Reusable Jacket",
+                    "price": 39.99,
+                    "stock": 50,
+                    "description": "Eco-friendly denim jacket",
+                    "category": "Clothing",
+                    "image": "denim_reusable_jacket.png"
+                }
+            ]
+        },
+        {
+            "id": "shop3",
+            "name": "Sustainable Living",
+            "location": "789 Greenway",
+            "owner": "Alice Brown",
+            "contact": "555-123-4567",
+            "products": [
+                {
+                    "id": "product7",
+                    "name": "Organic Soap Bar",
+                    "price": 7.99,
+                    "stock": 120,
+                    "description": "100% organic soap bar",
+                    "category": "Personal Care",
+                    "image": "organic_soap_bar.png"
+                },
+                {
+                    "id": "product8",
+                    "name": "Reusable Coffee Cup",
+                    "price": 12.50,
+                    "stock": 75,
+                    "description": "Eco-friendly reusable coffee cup",
+                    "category": "Drinkware",
+                    "image": "reusable_coffee_cup.png"
+                },
+                {
+                    "id": "product9",
+                    "name": "Organic Honey",
+                    "price": 10.99,
+                    "stock": 60,
+                    "description": "Pure organic honey from local farms",
+                    "category": "Food",
+                    "image": "organic_honey.png"
+                }
+            ]
+        },
+        {
+            "id": "shop4",
+            "name": "EcoTech Store",
+            "location": "987 Green Street",
+            "owner": "Michael Clark",
+            "contact": "555-987-6543",
+            "products": [
+                {
+                    "id": "product10",
+                    "name": "Solar Phone Charger",
+                    "price": 25.99,
+                    "stock": 50,
+                    "description": "Portable solar phone charger",
+                    "category": "Electronics",
+                    "image": "solar_phone_charger.png"
+                },
+                {
+                    "id": "product11",
+                    "name": "Solar Garden Light",
+                    "price": 15.99,
+                    "stock": 100,
+                    "description": "Solar-powered garden light",
+                    "category": "Outdoor",
+                    "image": "solar_garden_light.png"
+                },
+                {
+                    "id": "product12",
+                    "name": "Coconut Oil",
+                    "price": 12.99,
+                    "stock": 80,
+                    "description": "Pure organic coconut oil",
+                    "category": "Health & Beauty",
+                    "image": "coconut_oil.png"
                 }
             ]
         }

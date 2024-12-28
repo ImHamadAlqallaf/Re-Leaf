@@ -1,14 +1,25 @@
 //
 //  SpecialTableViewCell.swift
-//  ReLeaf
+//  prac
 //
-//  Created by Bader on 28/12/2024.
+//  Created by Mac on 28/12/2024.
 //
 
 import UIKit
 
+
 class SpecialTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var productImageView: UIImageView!
+    
+    
+    @IBOutlet weak var productNameLabel: UILabel!
+    
+    
+    @IBOutlet weak var productPriceLabel: UILabel!
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

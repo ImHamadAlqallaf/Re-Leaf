@@ -1,6 +1,6 @@
 import UIKit
 
-class AddingStoreTableViewController: UITableViewController {
+class AddingStoreTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // MARK: - IBOutlets
     @IBOutlet weak var btnAddStore: UIBarButtonItem!
@@ -149,6 +149,26 @@ class AddingStoreTableViewController: UITableViewController {
                 }
             }
         }
+    }
+
+    // MARK: - Add Photo Action
+    @IBAction func addPhotoTapped(_ sender: UIButton) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .photoLibrary
+        present(imagePickerController, animated: true, completion: nil)
+    }
+
+    // MARK: - UIImagePickerControllerDelegate Methods
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let selectedImage = info[.originalImage] as? UIImage {
+            imgStorePhoto.image = selectedImage
+        }
+        dismiss(animated: true, completion: nil)
+    }
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
     }
 
     // MARK: - Helper Functions

@@ -144,50 +144,36 @@
             "status": "processing"
         }
     ],
-    "metrics": {
-        "impact": [
-            {
-                "id": "metric1",
-                "name": "Total Sales",
-                "value": 5000,
-                "timestamp": "2024-12-19T18:00:00Z"
-            },
-            {
-                "id": "metric2",
-                "name": "Carbon Footprint Reduced",
-                "value": 1000,
-                "timestamp": "2024-12-19T18:00:00Z"
-            },
-            {
-                "id": "metric3",
-                "name": "CO2 Emission Saved",
-                "value": 1500,
-                "timestamp": "2024-12-19T18:00:00Z"
-            },
-            {
-                "id": "metric4",
-                "name": "Water Conserved",
-                "value": 2000,
-                "timestamp": "2024-12-19T18:00:00Z"
-            },
-            {
-                "id": "metric5",
-                "name": "Waste Reduced",
-                "value": 300,
-                "timestamp": "2024-12-19T18:00:00Z"
-            },
-            {
-                "id": "metric6",
-                "name": "Plastic Waste Reduced",
-                "value": 400,
-                "timestamp": "2024-12-19T18:00:00Z"
-            },
-            {
-                "id": "metric7",
-                "name": "Trees Saved",
-                "value": 50,
-                "timestamp": "2024-12-19T18:00:00Z"
-            }
-        ]
-    }
+    "metrics": [
+        {
+            "id": "metric1",
+            "name": "CO2 Emission Saved",
+            "value": 1500,
+            "timestamp": "2024-12-19T18:00:00Z"
+        },
+        {
+            "id": "metric2",
+            "name": "Water Conserved",
+            "value": 2000,
+            "timestamp": "2024-12-19T18:00:00Z"
+        },
+        {
+            "id": "metric3",
+            "name": "Waste Reduced",
+            "value": 300,
+            "timestamp": "2024-12-19T18:00:00Z"
+        },
+        {
+            "id": "metric4",
+            "name": "Plastic Waste Reduced",
+            "value": 400,
+            "timestamp": "2024-12-19T18:00:00Z"
+        },
+        {
+            "id": "metric5",
+            "name": "Trees Saved",
+            "value": 50,
+            "timestamp": "2024-12-19T18:00:00Z"
+        }
+    ]
 }

@@ -1,33 +1,28 @@
 import UIKit
 
-
-
 class ImpactMetricDashboardViewController: UIViewController {
-
-    @IBOutlet weak var btnReloadData: UIButton!
-    
-    @IBOutlet weak var lblStaticCO2EmissionSaved: UILabel!
-    @IBOutlet weak var lblStaticWaterConserved: UILabel!
-    @IBOutlet weak var lblStaticWasteReduced: UILabel!
-    @IBOutlet weak var lblStaticPlasticWasteReduced: UILabel!
-    @IBOutlet weak var lblStaticTreesSaved: UILabel!
     
     @IBOutlet weak var lblCO2EmissionSaved: UILabel!
     @IBOutlet weak var lblWaterConserved: UILabel!
     @IBOutlet weak var lblWasteReduced: UILabel!
     @IBOutlet weak var lblPlasticWasteReduced: UILabel!
     @IBOutlet weak var lblTreesSaved: UILabel!
+    @IBOutlet weak var btnReloadData: UIButton!
+    
+    var metrics: [Metric] = []
+    
+    @IBAction func reloadDataTapped(_ sender: UIButton) {
+        loadMetricsData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadMetricsData()
-
     }
     
-    
-    
-    @IBAction func reloadDataTapped(_ sender: UIButton) {
-        loadMetricsData()
+    func getDocumentsDirectory() -> URL? {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths.first
     }
     
     func loadMetricsData() {
@@ -40,47 +35,29 @@ class ImpactMetricDashboardViewController: UIViewController {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
             let wrapper = try decoder.decode(Wrapper.self, from: data)
-            
-            if let metrics = wrapper.metrics?.impact {
-                updateLabels(with: metrics)
-            } else {
-                createDefaultMetrics()
-            }
+            self.metrics = wrapper.metrics ?? []
+            updateUI()
         } catch {
             print("Error loading or decoding JSON: \(error)")
-            createDefaultMetrics()
         }
     }
     
-    func updateLabels(with metrics: [Metric]) {
+    func updateUI() {
         for metric in metrics {
             switch metric.name {
             case "CO2 Emission Saved":
-                lblCO2EmissionSaved.text = "\(metric.value) kg"
+                lblCO2EmissionSaved.text = "\(metric.value)"
             case "Water Conserved":
-                lblWaterConserved.text = "\(metric.value) liters"
+                lblWaterConserved.text = "\(metric.value)"
             case "Waste Reduced":
-                lblWasteReduced.text = "\(metric.value) kg"
+                lblWasteReduced.text = "\(metric.value)"
             case "Plastic Waste Reduced":
-                lblPlasticWasteReduced.text = "\(metric.value) kg"
+                lblPlasticWasteReduced.text = "\(metric.value)"
             case "Trees Saved":
                 lblTreesSaved.text = "\(metric.value)"
             default:
                 break
             }
         }
-    }
-    
-    func createDefaultMetrics() {
-        lblCO2EmissionSaved.text = "0 kg"
-        lblWaterConserved.text = "0 liters"
-        lblWasteReduced.text = "0 kg"
-        lblPlasticWasteReduced.text = "0 kg"
-        lblTreesSaved.text = "0"
-    }
-    
-    func getDocumentsDirectory() -> URL? {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths.first
     }
 }

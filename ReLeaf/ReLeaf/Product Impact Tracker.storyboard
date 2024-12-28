@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9C9-CJ-ILu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9C9-CJ-ILu">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JXd-sc-snT">
-                                <rect key="frame" x="77" y="435.00000000000011" width="240" height="246.33333333333337"/>
+                                <rect key="frame" x="77" y="435.00000000000006" width="240" height="246.33333333333331"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JZr-QI-U6h">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -99,7 +99,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi3-Pk-pOo">
-                                <rect key="frame" x="97.666666666666686" y="783" width="198" height="34.333333333333371"/>
+                                <rect key="frame" x="97.666666666666686" y="779" width="198" height="38.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add Product Externally"/>
                                 <connections>
@@ -158,7 +158,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ops-J1-VGm">
-                                <rect key="frame" x="137" y="748.66666666666663" width="119.33333333333331" height="34.333333333333371"/>
+                                <rect key="frame" x="137" y="744.66666666666663" width="119.33333333333331" height="38.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add Product"/>
                                 <connections>
@@ -362,7 +362,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Reload Data"/>
                                 <connections>
-                                    <action selector="reloadDataTapped:" destination="paN-W9-3vp" eventType="touchUpInside" id="Gqv-Wq-1cL"/>
+                                    <action selector="reloadDataTapped:" destination="paN-W9-3vp" eventType="touchUpInside" id="XU2-EK-HI1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -376,17 +376,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Impact Metric Dashboard" id="H5Y-bF-k0I"/>
                     <connections>
-                        <outlet property="btnReloadData" destination="Ze7-Zp-93k" id="soO-d7-EoV"/>
-                        <outlet property="lblCO2EmissionSaved" destination="gW4-wr-rcr" id="JIX-Lr-maL"/>
-                        <outlet property="lblPlasticWasteReduced" destination="QJS-vW-XGB" id="EhH-Ew-kvY"/>
-                        <outlet property="lblStaticCO2EmissionSaved" destination="RkF-pg-Zok" id="6SX-hw-Ch5"/>
-                        <outlet property="lblStaticPlasticWasteReduced" destination="Eat-ww-2ka" id="JpC-HS-m3b"/>
-                        <outlet property="lblStaticTreesSaved" destination="dqG-UF-89N" id="cAe-n6-bw5"/>
-                        <outlet property="lblStaticWasteReduced" destination="rx6-SM-Cmr" id="1gg-dI-BGD"/>
-                        <outlet property="lblStaticWaterConserved" destination="Pfn-KF-Ap3" id="tA5-Jl-06J"/>
-                        <outlet property="lblTreesSaved" destination="boJ-PZ-bnx" id="8hj-MW-eaI"/>
-                        <outlet property="lblWasteReduced" destination="5A5-qs-vgK" id="G9x-YD-4Ey"/>
-                        <outlet property="lblWaterConserved" destination="MYt-Rd-GKP" id="ffn-fY-bev"/>
+                        <outlet property="btnReloadData" destination="Ze7-Zp-93k" id="POp-e3-dwz"/>
+                        <outlet property="lblCO2EmissionSaved" destination="gW4-wr-rcr" id="vCB-rY-lKu"/>
+                        <outlet property="lblPlasticWasteReduced" destination="QJS-vW-XGB" id="SKe-8P-oBQ"/>
+                        <outlet property="lblTreesSaved" destination="boJ-PZ-bnx" id="pmB-oO-z9b"/>
+                        <outlet property="lblWasteReduced" destination="5A5-qs-vgK" id="8Y3-kr-Fld"/>
+                        <outlet property="lblWaterConserved" destination="MYt-Rd-GKP" id="h6Y-lX-WrX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALE-b0-a29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

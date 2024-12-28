@@ -46,7 +46,7 @@ struct Store: Codable {
 struct Wrapper: Codable {
     var stores: [Store]
     var reviews: [Review]?
-    var metrics: Metrics?
+    var metrics: [Metric]?
     
     enum CodingKeys: String, CodingKey {
         case stores
@@ -85,8 +85,8 @@ struct Metrics: Codable {
 
 // Metric Model
 struct Metric: Codable {
-    var id: String
-    var name: String
-    var value: Int
-    var timestamp: String
+    let id: String
+    let name: String
+    let value: Double
+    let timestamp: String
 }

@@ -10,6 +10,9 @@ class StoresListTableViewController: UITableViewController, StoresListTableViewC
     override func viewDidLoad() {
         super.viewDidLoad()
         loadStoresData()
+        
+        // Set the delegate
+        tableView.delegate = self
     }
     
     func getDocumentsDirectory() -> URL? {
@@ -35,7 +38,9 @@ class StoresListTableViewController: UITableViewController, StoresListTableViewC
             self.reviews = wrapper.reviews ?? []
             
             // Reload the table view
-            tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         } catch {
             print("Error loading or decoding JSON: \(error)")
         }
@@ -69,6 +74,11 @@ class StoresListTableViewController: UITableViewController, StoresListTableViewC
         cell.delegate = self
         
         return cell
+    }
+    
+    // Set the height for each row
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     // Action when the Add Store button is tapped

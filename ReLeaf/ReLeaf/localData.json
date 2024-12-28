@@ -17,13 +17,16 @@
             "timestamp": "2024-11-19T17:37:05Z"
         }
     ],
-    "shops": [
+    "stores": [
         {
-            "id": "shop1",
-            "name": "EcoMart",
-            "location": "123 Green Street",
-            "owner": "John Doe",
-            "contact": "123-456-7890",
+            "id": "1",
+            "storeName": "Store 1",
+            "storeEmail": "store1@example.com",
+            "storePassword": "password123",
+            "storePhoneNumber": "123-456-7890",
+            "storeDescription": "A description of store 1.",
+            "storeOwner": "Owner 1",
+            "storeImage": "store1.jpeg",
             "products": [
                 {
                     "id": "product1",
@@ -33,11 +36,11 @@
                     "description": "Eco-friendly toothbrush",
                     "category": "Oral Care",
                     "image": "bamboo_toothbrush.png",
-                    "co2EmissionSaved": 2.5,
-                    "waterConserved": 500,
-                    "wasteReduced": 100,
-                    "materialsUsed": "100% Bamboo, Recyclable Nylon",
-                    "certificateImage": "eco_cert.jpg"
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
                 },
                 {
                     "id": "product2",
@@ -47,20 +50,23 @@
                     "description": "Stainless steel bottle",
                     "category": "Drinkware",
                     "image": "reusable_bottle.png",
-                    "co2EmissionSaved": 4.5,
-                    "waterConserved": 100,
-                    "wasteReduced": 500,
-                    "materialsUsed": "Stainless Steel, Reusable lid, Anti-Carbon",
-                    "certificateImage": "eco_cert.jpg"
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
                 }
             ]
         },
         {
-            "id": "shop2",
-            "name": "Green Goods",
-            "location": "456 Eco Road",
-            "owner": "Jane Smith",
-            "contact": "987-654-3210",
+            "id": "2",
+            "storeName": "Store 2",
+            "storeEmail": "store2@example.com",
+            "storePassword": "password456",
+            "storePhoneNumber": "987-654-3210",
+            "storeDescription": "A description of store 2.",
+            "storeOwner": "Owner 2",
+            "storeImage": "store2.jpeg",
             "products": [
                 {
                     "id": "product3",
@@ -70,11 +76,11 @@
                     "description": "100% organic cotton t-shirt",
                     "category": "Clothing",
                     "image": "organic_tshirt.png",
-                    "co2EmissionSaved": 1,
-                    "waterConserved": 150,
-                    "wasteReduced": 500,
-                    "materialsUsed": "Made of organic cotton",
-                    "certificateImage": "eco_cert.jpg"
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
                 },
                 {
                     "id": "product4",
@@ -84,20 +90,23 @@
                     "description": "Sustainable wooden desk organizer",
                     "category": "Office Supplies",
                     "image": "bamboo_cutlery_set.png",
-                    "co2EmissionSaved": 2,
-                    "waterConserved": 10,
-                    "wasteReduced": 90,
-                    "materialsUsed": "hds",
-                    "certificateImage": "eco_cert.jpg"
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
                 }
             ]
         },
         {
-            "id": "shop3",
-            "name": "Sustainable Living",
-            "location": "789 Eco Lane",
-            "owner": "Emily Green",
-            "contact": "555-123-4567",
+            "id": "3",
+            "storeName": "Green Goods",
+            "storeEmail": "info@greengoods.com",
+            "storePassword": "hashed_password_456",
+            "storePhoneNumber": "987-654-3210",
+            "storeDescription": "Green Goods offers a variety of eco-conscious products that support a sustainable lifestyle.",
+            "storeOwner": "Jane Smith",
+            "storeImage": "store3.jpeg",
             "products": [
                 {
                     "id": "product7",
@@ -107,11 +116,11 @@
                     "description": "Durable and reusable shopping bag",
                     "category": "Kitchen Items",
                     "image": "reusable_bag.jpeg",
-                    "co2EmissionSaved": 0.5,
-                    "waterConserved": 20,
-                    "wasteReduced": 10,
-                    "materialsUsed": "Recycled plastic",
-                    "certificateImage": "eco_cert.jpg"
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
                 },
                 {
                     "id": "product8",
@@ -121,11 +130,11 @@
                     "description": "Lantern powered by solar energy",
                     "category": "Outdoor",
                     "image": "solar_lantern.jpeg",
-                    "co2EmissionSaved": 5.0,
-                    "waterConserved": 0,
-                    "wasteReduced": 0,
-                    "materialsUsed": "Plastic, Solar panel",
-                    "certificateImage": "eco_cert.jpg"
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
                 },
                 {
                     "id": "product9",
@@ -135,20 +144,23 @@
                     "description": "Biodegradable and eco-friendly detergent",
                     "category": "Kitchen Items",
                     "image": "bamboo_container.jpeg",
-                    "co2EmissionSaved": 2.0,
-                    "waterConserved": 100,
-                    "wasteReduced": 50,
-                    "materialsUsed": "bamboo",
-                    "certificateImage": "eco_cert.jpg"
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
                 }
             ]
         },
         {
-            "id": "shop4",
-            "name": "Eco Essentials",
-            "location": "101 Green Avenue",
-            "owner": "Michael Brown",
-            "contact": "321-654-9870",
+            "id": "4",
+            "storeName": "Green Planet",
+            "storeEmail": "info@greenplanet.com",
+            "storePassword": "hashed_password_456",
+            "storePhoneNumber": "987-654-3210",
+            "storeDescription": "Green Goods offers a variety of eco-conscious products that support a sustainable lifestyle.",
+            "storeOwner": "Jane Smith",
+            "storeImage": "store3.jpeg",
             "products": [
                 {
                     "id": "product10",
@@ -158,11 +170,11 @@
                     "description": "Gum freindly, easy-to-use",
                     "category": "Oral Care",
                     "image": "toothbrush.jpeg",
-                    "co2EmissionSaved": 1.2,
-                    "waterConserved": 30,
-                    "wasteReduced": 20,
-                    "materialsUsed": "Gentle Plastic made for older ageed people",
-                    "certificateImage": "eco_cert.jpg"
+                    "badge": "Eco-friendly",
+                    "materials": "Stainless Steel",
+                    "co2Emission": "1.2 kg",
+                    "waterUsage": "500 ml",
+                    "plasticUsage": "0 g"
                 },
                 {
                     "id": "product11",
@@ -172,47 +184,147 @@
                     "description": "Shampoo with natural ingredients",
                     "category": "Personal Care",
                     "image": "eco_shampoo.jpeg",
-                    "co2EmissionSaved": 1.8,
-                    "waterConserved": 40,
-                    "wasteReduced": 25,
-                    "materialsUsed": "Natural ingredients",
-                    "certificateImage": "eco_cert.jpg"
+                    "badge": "Eco-boom",
+                    "materials": "Plastic",
+                    "co2Emission": "1 kg",
+                    "waterUsage": "250 ml",
+                    "plasticUsage": "5 g"
+                }
+                ]
+            },
+        {
+            "id": "5",
+            "storeName": "Bluie ",
+            "storeEmail": "info@bluie.com",
+            "storePassword": "hashed_password_456",
+            "storePhoneNumber": "987-654-3210",
+            "storeDescription": "Green Goods offers a variety of eco-conscious products that support a sustainable lifestyle.",
+            "storeOwner": "Jane Smith",
+            "storeImage": "store3.jpeg",
+            "products": [
+                {
+                    "id": "product10",
+                    "name": "Solar Phone Charger",
+                    "price": 25.99,
+                    "stock": 50,
+                    "description": "Portable solar phone charger",
+                    "category": "Electronics",
+                    "image": "solar_phone_charger.png",
+                    "badge": "No-Plastics",
+                    "materials": "Cotton",
+                    "co2Emission": "2 kg",
+                    "waterUsage": "0ml",
+                    "plasticUsage": "100 g"
+                },
+                {
+                    "id": "product11",
+                    "name": "Solar Garden Light",
+                    "price": 15.99,
+                    "stock": 100,
+                    "description": "Solar-powered garden light",
+                    "category": "Outdoor",
+                    "image": "solar_garden_light.png",
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
+                },
+                {
+                    "id": "product12",
+                    "name": "Coconut Oil",
+                    "price": 12.99,
+                    "stock": 80,
+                    "description": "Pure organic coconut oil",
+                    "category": "Health & Beauty",
+                    "image": "coconut_oil.png",
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
+                }
+            ]
+            },
+        {
+            "id": "6",
+            "storeName": "Rainbow ",
+            "storeEmail": "info@rainbow.com",
+            "storePassword": "hashed_password_456",
+            "storePhoneNumber": "987-654-3210",
+            "storeDescription": "Green Goods offers a variety of eco-conscious products that support a sustainable lifestyle.",
+            "storeOwner": "Jane Smith",
+            "storeImage": "store3.jpeg",
+            "products": [
+                {
+                    "id": "product15",
+                    "name": "Organic Honey",
+                    "price": 10.99,
+                    "stock": 60,
+                    "description": "Pure organic honey from local farms",
+                    "category": "Food",
+                    "image": "organic_honey.png",
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
+                },
+                {
+                    "id": "product19",
+                    "name": "Bamboo Sunglasses",
+                    "price": 25.99,
+                    "stock": 100,
+                    "description": "Stylish bamboo sunglasses",
+                    "category": "Accessories",
+                    "image": "bamboo_sunglasses.png",
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
+                },
+                {
+                    "id": "product20",
+                    "name": "Denim Reusable Jacket",
+                    "price": 39.99,
+                    "stock": 50,
+                    "description": "Eco-friendly denim jacket",
+                    "category": "Clothing",
+                    "image": "denim_reusable_jacket.png",
+                    "badge": "IKea",
+                    "materials": "Wood",
+                    "co2Emission": "10 kg",
+                    "waterUsage": "0.5 ml",
+                    "plasticUsage": "10 g"
                 }
                 ]
             }
             ],
             "users": [
                 {
-                    "password": "hashed_password_123",
-                    "email": "alice@example.com",
-                    "role": "customer",
-                    "id": "user1",
-                    "userName": "Alice",
-                    "number": "12345678"
-                },
+                        "id": "user1",
+                        "userName": "hind",
+                        "number": "12345678",
+                        "email": "hu@@gmail.com",
+                        "password": "123456",
+                        "role": "customer"
+                    },
                 {
                     "id": "user2",
-                    "password": "hashed_password_456",
-                    "role": "customer",
-                    "email": "bob@example.com",
-                    "userName": "Bob",
-                    "number": "12345678"
-                },
-                {
-                    "password": "Hussain2024",
+                    "password": "123456",
                     "role": "admin",
-                    "email": "hussain@example.com",
-                    "id": "user3",
-                    "userName": "Hussain",
-                    "number": "12345678"
+                    "email": "hu@admin.releaf.com",
+                    "userName": "hussain",
+                    "number": "36065333"
                 },
                 {
-                    "password": "ab123",
-                    "role": "customer",
-                    "email": "ab@gmail.com",
-                    "id": "user4",
-                    "userName": "Abood",
-                    "number": "12345679"
+                    "id": "user3",
+                    "password": "123456",
+                    "role": "store-manager",
+                    "email": "hu@store.releaf.com",
+                    "userName": "tota",
+                    "number": "33857463"
                 }
             ],
             "orders": [
@@ -262,5 +374,49 @@
                         "timestamp": "2024-12-19T18:00:00Z"
                     }
                 ]
-            }
-        }
+            },
+            "Coupon": [
+                {
+                    "code": "SAVE10",
+                    "discount": "10%",
+                    "expiryDate": "2024-12-31"
+                },
+                {
+                    "code": "GREEN20",
+                    "discount": "20%",
+                    "expiryDate": "2025-01-31"
+                },
+                {
+                    "code": "FREESHIP",
+                    "discount": "Free Shipping",
+                    "expiryDate": "2025-02-28"
+                }
+        ],
+            "notifications": [
+                    {
+                        "id": "notification1",
+                        "type": "order2",
+                        "message": "EcoMart order being delivered.",
+                        "productId": "product1",
+                        "timestamp": "2024-12-28"
+                    },
+                    {
+                        "id": "notification2",
+                        "type": "order3",
+                        "message": "EcoMart order is almost at your location ",
+                        "productId": "product1",
+                        "timestamp": "2024-12-28"
+                    }
+            ],
+            "cartItems": [
+              {
+                "productId": "product1",
+                "quantity": 2
+              },
+              {
+                "productId": "product2",
+                "quantity": 1
+              }
+            ]
+    }
+                

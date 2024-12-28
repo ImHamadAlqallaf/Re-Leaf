@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="KQQ-7q-BsO" kind="show" id="MEW-la-D8v"/>
+                                    <segue destination="KQQ-7q-BsO" kind="show" id="ew2-NZ-PTd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,7 +32,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="StA-Ml-pOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3663.3587786259541" y="-649.29577464788736"/>
+            <point key="canvasLocation" x="-3876" y="-637"/>
         </scene>
         <!--Discountpage-->
         <scene sceneID="wgZ-cS-f2v">
@@ -57,7 +57,7 @@
         <!--DiscountCards-->
         <scene sceneID="L80-Ue-0Hf">
             <objects>
-                <viewControllerPlaceholder storyboardName="Bader set coupons" referencedIdentifier="DiscountCards" id="KQQ-7q-BsO" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Bader Discountcards" referencedIdentifier="DiscountCards" id="KQQ-7q-BsO" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="pZL-xN-uKA"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pX5-bd-dIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -109,6 +109,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qn-C2-tvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2241" y="-727"/>
+        </scene>
+        <!--disViewController-->
+        <scene sceneID="He5-G6-9t3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bader discount page" referencedIdentifier="disViewController" id="ST1-zF-U8g" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="n3A-fl-Z3R"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWL-Ow-sSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3302" y="-903"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="4gB-G6-mcy">
+            <objects>
+                <viewControllerPlaceholder id="g0k-NJ-3rE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PoN-3y-HZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3396" y="-732"/>
         </scene>
     </scenes>
     <resources>

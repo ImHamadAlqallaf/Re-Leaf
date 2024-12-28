@@ -13,7 +13,7 @@
 		83F9ECA52D0DB8A700816FC8 /* bader special offer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */; };
 		83F9ECA62D0DB8A700816FC8 /* bader's search and filter page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */; };
 		83F9ECA72D0DB8A700816FC8 /* Bader discount page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA32D0DB8A700816FC8 /* Bader discount page.storyboard */; };
-		83F9ECA82D0DB8A700816FC8 /* Bader set coupons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */; };
+		83F9ECA82D0DB8A700816FC8 /* Bader Discountcards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA42D0DB8A700816FC8 /* Bader Discountcards.storyboard */; };
 		83F9ECAA2D0DB9E600816FC8 /* loginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F9ECA92D0DB9E600816FC8 /* loginPage.storyboard */; };
 		ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */; };
 		D096691F2D0DB377003DA933 /* Cart Page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D096691E2D0DB377003DA933 /* Cart Page.storyboard */; };
@@ -24,10 +24,11 @@
 		E92AD4CD2D1D60AC0030F56E /* AddDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92AD4CC2D1D60AC0030F56E /* AddDiscount.swift */; };
 		E92AD4CF2D1D61550030F56E /* DiscountTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92AD4CE2D1D61550030F56E /* DiscountTableCell.swift */; };
 		E92AD4D12D1D6C400030F56E /* DiscountCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92AD4D02D1D6C400030F56E /* DiscountCards.swift */; };
-		E92AD4D52D1E17AD0030F56E /* Discountcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92AD4D42D1E17AD0030F56E /* Discountcell.swift */; };
 		E938CAD22D1C6BC000E850C1 /* localData 2.json in Resources */ = {isa = PBXBuildFile; fileRef = E938CAD12D1C6BC000E850C1 /* localData 2.json */; };
 		E98507132D1ADF980006CE89 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98507122D1ADF980006CE89 /* SearchPage.swift */; };
 		E98507152D1B00180006CE89 /* SearchPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98507142D1B00180006CE89 /* SearchPageTableViewCell.swift */; };
+		E9C065DF2D1EE5480055759E /* dispagecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C065DE2D1EE5480055759E /* dispagecell.swift */; };
+		E9C065E32D1EE5CA0055759E /* disViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C065E22D1EE5CA0055759E /* disViewController.swift */; };
 		F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233682C2CF4854000A988FC /* AppDelegate.swift */; };
 		F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233682E2CF4854000A988FC /* SceneDelegate.swift */; };
 		F23368312CF4854000A988FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23368302CF4854000A988FC /* ViewController.swift */; };
@@ -63,7 +64,7 @@
 		83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "bader special offer.storyboard"; sourceTree = "<group>"; };
 		83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "bader's search and filter page.storyboard"; sourceTree = "<group>"; };
 		83F9ECA32D0DB8A700816FC8 /* Bader discount page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bader discount page.storyboard"; sourceTree = "<group>"; };
-		83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bader set coupons.storyboard"; sourceTree = "<group>"; };
+		83F9ECA42D0DB8A700816FC8 /* Bader Discountcards.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bader Discountcards.storyboard"; sourceTree = "<group>"; };
 		83F9ECA92D0DB9E600816FC8 /* loginPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = loginPage.storyboard; sourceTree = "<group>"; };
 		ACC2D40C2D01A64400074709 /* Product Impact Tracker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Product Impact Tracker.storyboard"; sourceTree = "<group>"; };
 		D096691E2D0DB377003DA933 /* Cart Page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Cart Page.storyboard"; sourceTree = "<group>"; };
@@ -74,10 +75,11 @@
 		E92AD4CC2D1D60AC0030F56E /* AddDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDiscount.swift; sourceTree = "<group>"; };
 		E92AD4CE2D1D61550030F56E /* DiscountTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTableCell.swift; sourceTree = "<group>"; };
 		E92AD4D02D1D6C400030F56E /* DiscountCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCards.swift; sourceTree = "<group>"; };
-		E92AD4D42D1E17AD0030F56E /* Discountcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discountcell.swift; sourceTree = "<group>"; };
 		E938CAD12D1C6BC000E850C1 /* localData 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "localData 2.json"; sourceTree = "<group>"; };
 		E98507122D1ADF980006CE89 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 		E98507142D1B00180006CE89 /* SearchPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageTableViewCell.swift; sourceTree = "<group>"; };
+		E9C065DE2D1EE5480055759E /* dispagecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dispagecell.swift; sourceTree = "<group>"; };
+		E9C065E22D1EE5CA0055759E /* disViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disViewController.swift; sourceTree = "<group>"; };
 		F23368292CF4854000A988FC /* ReLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F233682C2CF4854000A988FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F233682E2CF4854000A988FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,7 +146,6 @@
 				F233682C2CF4854000A988FC /* AppDelegate.swift */,
 				F233682E2CF4854000A988FC /* SceneDelegate.swift */,
 				F23368302CF4854000A988FC /* ViewController.swift */,
-				E92AD4D42D1E17AD0030F56E /* Discountcell.swift */,
 				D09669242D0DB3DE003DA933 /* Product Info.storyboard */,
 				D09669202D0DB38F003DA933 /* Order page.storyboard */,
 				D096691E2D0DB377003DA933 /* Cart Page.storyboard */,
@@ -154,8 +155,9 @@
 				3F94C8AE2D0DAE1600CEA70D /*  ProdComp.storyboard */,
 				3F94C8AD2D0DAE1500CEA70D /* Reviews.storyboard */,
 				83F9ECA32D0DB8A700816FC8 /* Bader discount page.storyboard */,
-				83F9ECA42D0DB8A700816FC8 /* Bader set coupons.storyboard */,
-				E92AD4CE2D1D61550030F56E /* DiscountTableCell.swift */,
+				E9C065E22D1EE5CA0055759E /* disViewController.swift */,
+				E9C065DE2D1EE5480055759E /* dispagecell.swift */,
+				83F9ECA42D0DB8A700816FC8 /* Bader Discountcards.storyboard */,
 				83F9ECA12D0DB8A700816FC8 /* bader special offer.storyboard */,
 				83F9ECA22D0DB8A700816FC8 /* bader's search and filter page.storyboard */,
 				83F9ECA92D0DB9E600816FC8 /* loginPage.storyboard */,
@@ -169,6 +171,7 @@
 				E98507142D1B00180006CE89 /* SearchPageTableViewCell.swift */,
 				E92AD4CC2D1D60AC0030F56E /* AddDiscount.swift */,
 				E92AD4D02D1D6C400030F56E /* DiscountCards.swift */,
+				E92AD4CE2D1D61550030F56E /* DiscountTableCell.swift */,
 			);
 			path = ReLeaf;
 			sourceTree = "<group>";
@@ -299,7 +302,7 @@
 				D5165D4A2D0DB1B100CC2BF7 /* Notifications.storyboard in Resources */,
 				8398BCD62D07137A00DD8CFD /* AdminDashboard.storyboard in Resources */,
 				ACC2D40D2D01A64400074709 /* Product Impact Tracker.storyboard in Resources */,
-				83F9ECA82D0DB8A700816FC8 /* Bader set coupons.storyboard in Resources */,
+				83F9ECA82D0DB8A700816FC8 /* Bader Discountcards.storyboard in Resources */,
 				83F9ECA52D0DB8A700816FC8 /* bader special offer.storyboard in Resources */,
 				D09669212D0DB38F003DA933 /* Order page.storyboard in Resources */,
 				F23368362CF4854200A988FC /* Assets.xcassets in Resources */,
@@ -337,14 +340,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E92AD4CD2D1D60AC0030F56E /* AddDiscount.swift in Sources */,
+				E9C065E32D1EE5CA0055759E /* disViewController.swift in Sources */,
 				F23368312CF4854000A988FC /* ViewController.swift in Sources */,
 				E92AD4CF2D1D61550030F56E /* DiscountTableCell.swift in Sources */,
 				F233682D2CF4854000A988FC /* AppDelegate.swift in Sources */,
 				E92AD4D12D1D6C400030F56E /* DiscountCards.swift in Sources */,
 				E98507132D1ADF980006CE89 /* SearchPage.swift in Sources */,
 				F233682F2CF4854000A988FC /* SceneDelegate.swift in Sources */,
-				E92AD4D52D1E17AD0030F56E /* Discountcell.swift in Sources */,
 				E98507152D1B00180006CE89 /* SearchPageTableViewCell.swift in Sources */,
+				E9C065DF2D1EE5480055759E /* dispagecell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

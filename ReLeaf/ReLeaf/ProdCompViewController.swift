@@ -34,13 +34,13 @@ class ProdCompViewController: UIViewController, UICollectionViewDataSource, UICo
            if let product = originalProduct {
                productImageView.image = UIImage(named: product.image)
                originalPriceLabel.text = "\(product.price)"
-               originalCo2EmissionLabel.text = "\(product.co2EmissionSaved)"
+               originalCo2EmissionLabel.text = "\(product.co2Emission)"
            }
        }
        
        private func loadAlternativeProducts() {
            guard let category = originalProduct?.category else { return }
-           let allProducts = LocalDataManager.shared.loadLocalData()?.shops.flatMap { $0.products } ?? []
+           let allProducts = LocalDataManager.shared.loadLocalData()?.stores.flatMap { $0.products } ?? []
            alternativeProducts = allProducts.filter { $0.category == category && $0.id != originalProduct?.id }
            alternativeCollectionView.reloadData()
        }
@@ -68,7 +68,7 @@ class ProdCompViewController: UIViewController, UICollectionViewDataSource, UICo
        
        private func updateComparison(with alternative: Product) {
            alternativePriceLabel.text = "BHD \(alternative.price)"
-           alternativeCo2EmissionLabel.text = "\(alternative.co2EmissionSaved) kg CO2"
+           alternativeCo2EmissionLabel.text = "\(alternative.co2Emission) kg CO2"
            
 //           if let originalCo2 = originalProduct?.co2EmissionSaved {
 //               let co2Difference = originalCo2 - alternative.co2EmissionSaved

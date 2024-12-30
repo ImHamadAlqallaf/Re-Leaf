@@ -49,19 +49,19 @@ class ViewMoreInfoViewController: UIViewController {
             print("🛠️ Updating UI with Product Data")
             print("📝 Product Name: \(product.name)")
             print("💵 Product Price: \(product.price)")
-            print("🌍 CO₂ Emission: \(product.co2EmissionSaved)")
-            print("💧 Water Conserved: \(product.waterConserved)")
-            print("🗑️ Waste Reduced: \(product.wasteReduced)")
-            print("🛡️ Certificate Image: \(product.certificateImage)")
+            print("🌍 CO₂ Emission: \(product.co2Emission)")
+            print("💧 Water Conserved: \(product.waterUsage)")
+            print("🗑️ Waste Reduced: \(product.plasticUsage)")
+            print("🛡️ Certificate Image: \(product.badge)")
 
             // Update Labels
             productTitleLabel.text = product.name
-            co2EmissionLabel.text = "\(product.co2EmissionSaved) Kg"
-            waterConservedLabel.text = "\(product.waterConserved) L"
-            wasteReducedLabel.text = "\(product.wasteReduced) g"
-            materialsTextView.text = product.materialsUsed
+            co2EmissionLabel.text = "\(product.co2Emission) Kg"
+            waterConservedLabel.text = "\(product.waterUsage) L"
+            wasteReducedLabel.text = "\(product.plasticUsage) g"
+            materialsTextView.text = product.materials
             
-            if let image = UIImage(named: product.certificateImage) {
+            if let image = UIImage(named: product.badge) {
                 certificateImageView.image = image
             } else {
                 certificateImageView.image = UIImage(named: "placeholder")

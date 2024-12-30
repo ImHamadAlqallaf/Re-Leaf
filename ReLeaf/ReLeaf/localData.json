@@ -15,6 +15,14 @@
             "text": "Amazing product!",
             "rating": 3,
             "timestamp": "2024-11-19T17:37:05Z"
+        },
+        {
+            "id": "22C70F2A-AE88-4A4A-A041-9E5A68A6D960",
+            "userName": "User",
+            "productID": "product2",
+            "text": "Amazing product!",
+            "rating": 3,
+            "timestamp": "2024-11-19T17:37:05Z"
         }
     ],
     "stores": [
@@ -325,6 +333,14 @@
                     "email": "hu@store.releaf.com",
                     "userName": "tota",
                     "number": "33857463"
+                },
+                {
+                    "id": "user4",
+                    "password": "12345678",
+                    "role": "store-manager",
+                    "email": "ab@releaf.com",
+                    "userName": "Abood",
+                    "number": "12345678"
                 }
             ],
             "orders": [

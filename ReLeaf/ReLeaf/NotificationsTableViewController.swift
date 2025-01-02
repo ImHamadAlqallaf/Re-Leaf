@@ -6,15 +6,30 @@
 //
 
 import UIKit
+import UserNotifications // Import UserNotifications framework
 
 class NotificationsTableViewController: UITableViewController {
 
     var notifications: [Notification] = []
 
+    @IBOutlet weak var notifbtn: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadNotifications()
         tableView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+        tableView.rowHeight = 100 // Set default row height
+        
+        // Request notification authorization
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if granted {
+                print("Notification permission granted.")
+            } else if let error = error {
+                print("Notification permission denied: \(error.localizedDescription)")
+            }
+        }
+        
+        // Show alert when entering the page
+        showAlert()
     }
 
     func loadNotifications() {
@@ -50,8 +65,47 @@ class NotificationsTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-}
+    
+    // Implement the heightForRowAt method
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100 // Set the height for each row
+    }
+    
+    // Action method for tab bar button
+    @IBAction func tabBarItemTapped(_ sender: UIBarButtonItem) {
+        loadNotifications()
+        sendNotification() // Call sendNotification to schedule a notification
+    }
+    
+    // Create and schedule a notification
+    func sendNotification() {
+        let content = UNMutableNotificationContent()
+        content.title = "New Notifications"
+        content.body = "You have new notifications."
+        content.sound = UNNotificationSound.default
 
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "notification.id.01", content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error adding notification: \(error.localizedDescription)")
+            } else {
+                print("Notification scheduled successfully.")
+                // Debugging: Print the notification details
+                print("Notification content: \(content)")
+                print("Notification trigger: \(trigger)")
+            }
+        }
+    }
+    
+    // Show alert when entering the page
+    func showAlert() {
+        let alert = UIAlertController(title: "Notification", message: "You have new notifications.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+}
 //    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        // #warning Incomplete implementation, return the number of rows
 //        return 0

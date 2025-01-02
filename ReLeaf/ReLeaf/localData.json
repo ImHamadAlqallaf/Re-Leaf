@@ -168,7 +168,7 @@
             {
                 "id": "notification2",
                 "type": "order3",
-                "message": "EcoMart order is almost at your location ",
+                "message": "Order has been accepted. ",
                 "productId": "product1",
                 "timestamp": "2024-12-28"
             }

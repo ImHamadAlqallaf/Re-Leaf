@@ -58,7 +58,16 @@
                             <outlet property="delegate" destination="ZMS-wi-Pwc" id="Y5D-Kt-7qx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notifications" id="c4c-sj-MwW"/>
+                    <navigationItem key="navigationItem" title="Notifications" id="c4c-sj-MwW">
+                        <barButtonItem key="rightBarButtonItem" title="Show Notifs" style="plain" id="ACC-fb-DrD">
+                            <connections>
+                                <action selector="tabBarItemTapped:" destination="ZMS-wi-Pwc" id="lSM-Qe-hC7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="notifbtn" destination="ACC-fb-DrD" id="keo-X9-hUM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zpw-fp-ced" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

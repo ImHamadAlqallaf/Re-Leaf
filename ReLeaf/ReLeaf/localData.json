@@ -161,14 +161,21 @@
             {
                 "id": "notification1",
                 "type": "order2",
-                "message": "EcoMart order being delivered.",
+                "message": "Order #1 has been accepted.",
                 "productId": "product1",
                 "timestamp": "2024-12-28"
             },
             {
                 "id": "notification2",
                 "type": "order3",
-                "message": "Order has been accepted. ",
+                "message": "EcoMart order out for delivery. ",
+                "productId": "product1",
+                "timestamp": "2024-12-28"
+            },
+            {
+                "id": "notification3",
+                "type": "order3",
+                "message": "Your Order #1 is close to you.",
                 "productId": "product1",
                 "timestamp": "2024-12-28"
             }

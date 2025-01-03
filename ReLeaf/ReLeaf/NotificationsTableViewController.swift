@@ -107,7 +107,7 @@ class NotificationsTableViewController: UITableViewController, UNUserNotificatio
 
     // Show alert when there are no more notifications
     func showNoMoreNotificationsAlert() {
-        let alert = UIAlertController(title: "No More Notifications", message: "You do not have any notifications.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "No More Notifications", message: "You do not have any more notifications.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }

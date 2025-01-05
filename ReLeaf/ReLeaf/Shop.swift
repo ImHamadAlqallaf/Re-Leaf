@@ -12,12 +12,12 @@ import UIKit
 // Product Model
 struct Product: Codable {
     let id: String
-    let name: String
-    let price: Double
-    let stock: Int
+    var name: String
+    var price: Double
+    var stock: Int
     let description: String
     let category: String
-    let image: String
+    var image: String
     let badge: String // For `ProductBadgetxt`
     let materials: String // For `Materialstxt`
     let co2Emission: String // For `CO2txt`
@@ -28,11 +28,11 @@ struct Product: Codable {
 // Shop Model
 struct Shop: Codable {
     let id: String
-    let name: String
-    let location: String
-    let owner: String
-    let contact: String
-    let products: [Product]
+    var name: String
+    var location: String
+    var owner: String
+    var contact: String
+    var products: [Product]
 }
 
 // Root Model for the JSON structure

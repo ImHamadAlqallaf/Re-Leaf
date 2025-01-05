@@ -66,7 +66,7 @@ class AddProductTableViewController: UITableViewController {
            
            guard let badge = ProductBadgetxt.text, !badge.isEmpty else {
                print("Validation Failed: Badge is empty.")
-               showAlert(message: "Badge cannot be empty")
+               showAlert(message: "Please input a valid Badge, such as: Eco, Organic, etc..")
                return
            }
            print("Product Badge: \(badge)")
@@ -80,7 +80,7 @@ class AddProductTableViewController: UITableViewController {
            
            guard let category = Categorytxt.text, !category.isEmpty else {
                print("Validation Failed: Category is empty.")
-               showAlert(message: "Category must be either Food&Drinks, OuterWear, Hygiene or BodyCare")
+               showAlert(message: "Category must be either Food&Drinks, OuterWear, Hygiene or BodyCare, etc..")
                return
            }
            print("Product Category: \(category)")

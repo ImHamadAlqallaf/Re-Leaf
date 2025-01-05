@@ -10,13 +10,10 @@ import UIKit
 class ShopTableViewController: UITableViewController {
 
     var shops: [Shop] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-
         // Load the JSON data when the view loads
         if let loadedShops = loadJSONFile(named: "localData") {
             self.shops = loadedShops
@@ -30,28 +27,17 @@ class ShopTableViewController: UITableViewController {
         
         tableView.rowHeight = 85
         tableView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
-
     }
 
-
-    
     // Function to load the JSON file from the app's bundle
     func loadJSONFile(named fileName: String) -> [Shop]? {
-        // Get the URL to the JSON file in the app bundle
         if let fileURL = Bundle.main.url(forResource: fileName, withExtension: "json") {
-            print("File found at: \(fileURL.path)")  // Check the actual path in the console
+            print("File found at: \(fileURL.path)")
             do {
-                // Read the file data into a Data object
                 let data = try Data(contentsOf: fileURL)
-                
-                // Decode the JSON data into the RootData object
                 let decoder = JSONDecoder()
                 let rootData = try decoder.decode(RootData.self, from: data)
-                
-                print("Decoded shops: \(rootData.shops)") // Debug print to verify the shops data
-
-                
-                // Return the shops array
+                print("Decoded shops: \(rootData.shops)")
                 return rootData.shops
             } catch {
                 print("Error loading or decoding JSON: \(error)")
@@ -63,14 +49,7 @@ class ShopTableViewController: UITableViewController {
         }
     }
 
-    
-    
-
-    // MARK: - Table view data source
-   
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
@@ -78,32 +57,27 @@ class ShopTableViewController: UITableViewController {
         guard !shops.isEmpty else { return 0 }
         return 3 + shops[0].products.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            // First cell: Store Name
             let cell = tableView.dequeueReusableCell(withIdentifier: "storeCell", for: indexPath)
-            cell.textLabel?.text = shops[0].name // Display the shop name
+            cell.textLabel?.text = shops[0].name
             return cell
         } else if indexPath.row == 1 {
-            // Second cell: Store Info (e.g., location, owner, or contact)
             let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
             cell.textLabel?.text = """
             Location: \(shops[0].location)
             Owner: \(shops[0].owner)
             Contact: \(shops[0].contact)
-            """ // Display multiple pieces of shop information
+            """
             return cell
         } else if indexPath.row == 2 {
-            // Third cell: Products Header
             let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
             cell.textLabel?.text = "Store Products"
             return cell
         } else {
-            // Remaining cells: Product details
             let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomTableViewCell
-
-            let productIndex = indexPath.row - 3 // Adjust for the first three rows
+            let productIndex = indexPath.row - 3
             let product = shops[0].products[productIndex]
             
             cell.ProductNamelbl?.text = product.name
@@ -111,15 +85,33 @@ class ShopTableViewController: UITableViewController {
             cell.ProductQTYlbl?.text = "QTY: \(product.stock)"
             cell.ProductPictureimg?.image = UIImage(named: product.image)
             
+            cell.deleteAction = { [weak self] in // ***
+                self?.confirmDeleteProduct(at: indexPath) // ***
+            }
+            
             return cell
-        
+        }
     }
 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? { // ***
+        let shop = shops[section] // ***
+        return shop.name // ***
+    } // ***
+
+    func confirmDeleteProduct(at indexPath: IndexPath) { // ***
+        let alert = UIAlertController(title: "Delete Product", message: "Are you sure you want to delete this product?", preferredStyle: .alert) // ***
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil)) // ***
+        alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { [weak self] _ in // ***
+            self?.deleteProduct(at: indexPath) // ***
+        })) // ***
+        present(alert, animated: true, completion: nil) // ***
     }
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let shop = shops[section]
-        return shop.name
+
+    func deleteProduct(at indexPath: IndexPath) { // ***
+        shops[0].products.remove(at: indexPath.row - 3) // ***
+        tableView.deleteRows(at: [indexPath], with: .automatic) // ***
     }
+}
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -175,4 +167,4 @@ class ShopTableViewController: UITableViewController {
     }
     */
 
-}
+

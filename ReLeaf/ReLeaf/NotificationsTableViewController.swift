@@ -86,7 +86,7 @@ class NotificationsTableViewController: UITableViewController, UNUserNotificatio
         content.body = message  // Set the body to the message
         content.sound = UNNotificationSound.default
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         let request = UNNotificationRequest(identifier: "notification.id.\(currentNotificationIndex)", content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request) { error in
